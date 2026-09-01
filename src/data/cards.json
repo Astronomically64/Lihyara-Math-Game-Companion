@@ -1,0 +1,4570 @@
+{
+  "cards": [
+    {
+      "qrId": "g7e01",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "polygons-angles",
+      "title": "Interior Angle Formula",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "(n - 2) * 180°",
+      "acceptableAnswers": [
+        "(n-2)*180",
+        "(n-2)180",
+        "(n - 2) * 180°",
+        "(n-2)180°",
+        "(n-2)*180 deg"
+      ],
+      "problemText": "Which formula gives the sum of interior angles of a polygon with n sides?",
+      "answers": [
+        {
+          "text": "(n - 2) * 180°",
+          "isCorrect": true
+        },
+        {
+          "text": "n * 180°",
+          "isCorrect": false
+        },
+        {
+          "text": "(n + 2) * 180°",
+          "isCorrect": false
+        },
+        {
+          "text": "(n - 2) * 90°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The sum of the interior angles of an n-sided polygon is given by S = (n - 2) × 180°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e02",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "polygons-angles",
+      "title": "Supplementary Angle Quest",
+      "questionType": "input",
+      "expectedAnswer": "105°",
+      "acceptableAnswers": [
+        "105",
+        "105°",
+        "105 deg",
+        "105 degrees"
+      ],
+      "problemText": "In the figure, ∠ABD and ∠CBD are supplementary angles. If m∠ABD = 75°, what is m∠CBD?",
+      "answers": [
+        {
+          "text": "105°",
+          "isCorrect": true
+        },
+        {
+          "text": "15°",
+          "isCorrect": false
+        },
+        {
+          "text": "95°",
+          "isCorrect": false
+        },
+        {
+          "text": "115°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Supplementary angles add up to 180°. Therefore, m∠CBD = 180° - 75° = 105°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e03",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "fractions-rational",
+      "title": "Simple Interest Formula",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "I = Prt",
+      "acceptableAnswers": [
+        "I=Prt",
+        "I = Prt",
+        "Prt"
+      ],
+      "problemText": "Maria invested ₱10,000 in a savings account that earns simple interest at a rate of 5% per year for 2 years. Which formula should Maria use to calculate the simple interest I?",
+      "answers": [
+        {
+          "text": "I = Prt",
+          "isCorrect": true
+        },
+        {
+          "text": "I = P + r + t",
+          "isCorrect": false
+        },
+        {
+          "text": "I = P(1 + r)^t",
+          "isCorrect": false
+        },
+        {
+          "text": "I = P / (rt)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Simple interest is calculated using I = Prt, where P is principal, r is the annual rate, and t is time in years.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e04",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "fractions-rational",
+      "title": "Identifying Rational Numbers",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "0.121212…",
+      "acceptableAnswers": [
+        "0.121212…",
+        "0.121212...",
+        "0.121212",
+        "4/33"
+      ],
+      "problemText": "Which of the following is a rational number?",
+      "answers": [
+        {
+          "text": "0.121212…",
+          "isCorrect": true
+        },
+        {
+          "text": "π",
+          "isCorrect": false
+        },
+        {
+          "text": "100 / 0",
+          "isCorrect": false
+        },
+        {
+          "text": "√5",
+          "isCorrect": false
+        }
+      ],
+      "solution": "0.121212… is a repeating decimal equal to 4/33, which is rational because it is a quotient of two integers.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e05",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "polygons-angles",
+      "title": "Regular Polygon Naming",
+      "questionType": "input",
+      "expectedAnswer": "Regular Hexagon",
+      "acceptableAnswers": [
+        "regular hexagon",
+        "hexagon",
+        "a regular hexagon"
+      ],
+      "problemText": "What do you call a polygon with six equal sides and six equal interior angles?",
+      "answers": [
+        {
+          "text": "Regular Hexagon",
+          "isCorrect": true
+        },
+        {
+          "text": "Regular Pentagon",
+          "isCorrect": false
+        },
+        {
+          "text": "Regular Octagon",
+          "isCorrect": false
+        },
+        {
+          "text": "Regular Heptagon",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A 6-sided polygon with all equal sides and angles is a regular hexagon.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e06",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "polygons-angles",
+      "title": "Complementary Angles Sum",
+      "questionType": "input",
+      "expectedAnswer": "90°",
+      "acceptableAnswers": [
+        "90",
+        "90°",
+        "90 deg",
+        "90 degrees"
+      ],
+      "problemText": "What is the sum of the measures of two complementary angles?",
+      "answers": [
+        {
+          "text": "90°",
+          "isCorrect": true
+        },
+        {
+          "text": "180°",
+          "isCorrect": false
+        },
+        {
+          "text": "360°",
+          "isCorrect": false
+        },
+        {
+          "text": "45°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Two angles are complementary if the sum of their measures is 90°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e07",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "fractions-rational",
+      "title": "Definition of Discount",
+      "questionType": "true_false",
+      "expectedAnswer": "True",
+      "acceptableAnswers": [
+        "true",
+        "t",
+        "yes"
+      ],
+      "problemText": "True or False: Discount is the amount deducted from the original price.",
+      "answers": [
+        {
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Discount is the amount deducted from the original or marked price.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e08",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "fractions-rational",
+      "title": "Definition of Unit Rate",
+      "questionType": "true_false",
+      "expectedAnswer": "True",
+      "acceptableAnswers": [
+        "true",
+        "t",
+        "yes"
+      ],
+      "problemText": "True or False: A unit rate is a rate that has 1 as its denominator.",
+      "answers": [
+        {
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A unit rate is a comparison to 1 unit of another measure.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e09",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "fractions-rational",
+      "title": "Rational Number Condition",
+      "questionType": "input",
+      "expectedAnswer": "b ≠ 0",
+      "acceptableAnswers": [
+        "b!=0",
+        "b ≠ 0",
+        "b is not equal to 0",
+        "b not 0",
+        "b=/=0"
+      ],
+      "problemText": "A rational number is a number that can be written as a fraction a/b, where a and b are integers and what condition holds for b?",
+      "answers": [
+        {
+          "text": "b ≠ 0",
+          "isCorrect": true
+        },
+        {
+          "text": "b = 0",
+          "isCorrect": false
+        },
+        {
+          "text": "a = 0",
+          "isCorrect": false
+        },
+        {
+          "text": "a > b",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Because division by zero is undefined, the denominator b must be nonzero (b ≠ 0).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e10",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "fractions-rational",
+      "title": "Number Line Direction",
+      "questionType": "input",
+      "expectedAnswer": "Left",
+      "acceptableAnswers": [
+        "left",
+        "to the left",
+        "left of zero"
+      ],
+      "problemText": "On a standard horizontal number line, negative rational numbers are located to the _________ of zero.",
+      "answers": [
+        {
+          "text": "Left",
+          "isCorrect": true
+        },
+        {
+          "text": "Right",
+          "isCorrect": false
+        },
+        {
+          "text": "Above",
+          "isCorrect": false
+        },
+        {
+          "text": "Below",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Negative numbers are always positioned to the left of zero on a standard horizontal number line.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7e11",
+      "grade": 7,
+      "difficulty": 1,
+      "category": "fractions-rational",
+      "title": "Nature of Zero",
+      "questionType": "true_false",
+      "expectedAnswer": "True",
+      "acceptableAnswers": [
+        "true",
+        "t",
+        "yes"
+      ],
+      "problemText": "True or False: Zero is neither positive nor negative.",
+      "answers": [
+        {
+          "text": "True",
+          "isCorrect": true
+        },
+        {
+          "text": "False",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Zero is the neutral point between positive and negative numbers on the real number line.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a01",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "polygons-angles",
+      "title": "Properties of Vertical Angles",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "They are complementary.",
+      "acceptableAnswers": [
+        "they are complementary",
+        "complementary"
+      ],
+      "problemText": "Which of the following statements DOES NOT correctly describe vertical angles?",
+      "answers": [
+        {
+          "text": "They are complementary.",
+          "isCorrect": true
+        },
+        {
+          "text": "They are congruent.",
+          "isCorrect": false
+        },
+        {
+          "text": "They are non-adjacent angles.",
+          "isCorrect": false
+        },
+        {
+          "text": "They are formed from two intersecting lines.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Vertical angles are opposite angles formed by intersecting lines and are congruent, not necessarily complementary (summing to 90°).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a02",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Recognizing Unit Rates",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Running at a speed of 24 kilometers per hour.",
+      "acceptableAnswers": [
+        "running at a speed of 24 kilometers per hour.",
+        "24 kilometers per hour",
+        "24 km/h"
+      ],
+      "problemText": "Which of the following is expressed as a unit rate?",
+      "answers": [
+        {
+          "text": "Running at a speed of 24 kilometers per hour.",
+          "isCorrect": true
+        },
+        {
+          "text": "Buying 4 apples for ₱100.",
+          "isCorrect": false
+        },
+        {
+          "text": "Paying ₱349 for 2 meals.",
+          "isCorrect": false
+        },
+        {
+          "text": "Traveling 3 kilometers in 10 minutes.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "24 kilometers per 1 hour has a denominator of 1 unit of time, which defines a unit rate.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a03",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Fraction to Decimal Conversion",
+      "questionType": "input",
+      "expectedAnswer": "0.375",
+      "acceptableAnswers": [
+        "0.375",
+        ".375",
+        "3/8"
+      ],
+      "problemText": "Manuel is making a recipe that requires 3/8 cup of sugar. What is the decimal equivalent of 3/8?",
+      "answers": [
+        {
+          "text": "0.375",
+          "isCorrect": true
+        },
+        {
+          "text": "0.38",
+          "isCorrect": false
+        },
+        {
+          "text": "0.625",
+          "isCorrect": false
+        },
+        {
+          "text": "0.333",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Dividing 3 by 8: 3 ÷ 8 = 0.375.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a04",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Percentage to Fraction",
+      "questionType": "input",
+      "expectedAnswer": "1/2",
+      "acceptableAnswers": [
+        "1/2",
+        "0.5",
+        "50/100",
+        "2/4"
+      ],
+      "problemText": "What fraction in simplest form represents 50%?",
+      "answers": [
+        {
+          "text": "1/2",
+          "isCorrect": true
+        },
+        {
+          "text": "1/4",
+          "isCorrect": false
+        },
+        {
+          "text": "1/5",
+          "isCorrect": false
+        },
+        {
+          "text": "2/5",
+          "isCorrect": false
+        }
+      ],
+      "solution": "50% = 50/100 = 1/2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a05",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Earth's Water Percentage",
+      "questionType": "input",
+      "expectedAnswer": "0.97",
+      "acceptableAnswers": [
+        "0.97",
+        ".97",
+        "97/100"
+      ],
+      "problemText": "The ocean holds 97% of the Earth’s water. What is 97% in decimal form?",
+      "answers": [
+        {
+          "text": "0.97",
+          "isCorrect": true
+        },
+        {
+          "text": "9.7",
+          "isCorrect": false
+        },
+        {
+          "text": "0.097",
+          "isCorrect": false
+        },
+        {
+          "text": "0.0097",
+          "isCorrect": false
+        }
+      ],
+      "solution": "97% = 97 ÷ 100 = 0.97.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a06",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Decimal to Fraction Simplification",
+      "questionType": "input",
+      "expectedAnswer": "5/4",
+      "acceptableAnswers": [
+        "5/4",
+        "1 1/4",
+        "1.25",
+        "1 1/4"
+      ],
+      "problemText": "What is the equivalent fraction of 1.25 in simplest form?",
+      "answers": [
+        {
+          "text": "5/4",
+          "isCorrect": true
+        },
+        {
+          "text": "4/5",
+          "isCorrect": false
+        },
+        {
+          "text": "12/5",
+          "isCorrect": false
+        },
+        {
+          "text": "6/5",
+          "isCorrect": false
+        }
+      ],
+      "solution": "1.25 = 125/100 = (125 ÷ 25) / (100 ÷ 25) = 5/4.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a07",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Simplest Form Definition",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "The GCF of the numerator and denominator is 1.",
+      "acceptableAnswers": [
+        "gcf of numerator and denominator is 1",
+        "gcf is 1"
+      ],
+      "problemText": "What does it mean when a fraction is in simplest form?",
+      "answers": [
+        {
+          "text": "The GCF of the numerator and denominator is 1.",
+          "isCorrect": true
+        },
+        {
+          "text": "The numerator is always smaller than the denominator.",
+          "isCorrect": false
+        },
+        {
+          "text": "The number is a decimal.",
+          "isCorrect": false
+        },
+        {
+          "text": "The number is an integer.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A fraction is simplified when the Greatest Common Factor of its numerator and denominator is 1.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a08",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Comparing Unit Fractions",
+      "questionType": "input",
+      "expectedAnswer": "1/6",
+      "acceptableAnswers": [
+        "1/6",
+        "one sixth",
+        "1 / 6"
+      ],
+      "problemText": "Which of the following fractions is the smallest: 1/2, 1/3, 1/5, or 1/6?",
+      "answers": [
+        {
+          "text": "1/6",
+          "isCorrect": true
+        },
+        {
+          "text": "1/2",
+          "isCorrect": false
+        },
+        {
+          "text": "1/3",
+          "isCorrect": false
+        },
+        {
+          "text": "1/5",
+          "isCorrect": false
+        }
+      ],
+      "solution": "When numerators are equal to 1, larger denominators produce smaller fractions: 1/6 < 1/5 < 1/3 < 1/2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a09",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "fractions-rational",
+      "title": "Fraction on Number Line",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Between -1 and 0, closer to -1",
+      "acceptableAnswers": [
+        "between -1 and 0, closer to -1"
+      ],
+      "problemText": "On a standard number line, where is -3/4 located relative to -1 and 0?",
+      "answers": [
+        {
+          "text": "Between -1 and 0, closer to -1",
+          "isCorrect": true
+        },
+        {
+          "text": "Between -1 and 0, closer to 0",
+          "isCorrect": false
+        },
+        {
+          "text": "To the left of -1",
+          "isCorrect": false
+        },
+        {
+          "text": "To the right of 0",
+          "isCorrect": false
+        }
+      ],
+      "solution": "-3/4 = -0.75, which lies between 0 and -1, closer to -1.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a10",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "polygons-angles",
+      "title": "Fountain Regular Pentagon",
+      "questionType": "input",
+      "expectedAnswer": "4m and 108°",
+      "acceptableAnswers": [
+        "4m and 108°",
+        "4 m and 108 degrees",
+        "4m, 108°",
+        "4, 108",
+        "4m",
+        "108°"
+      ],
+      "problemText": "Fountain Design: A fountain is a regular pentagon. One of the sides is 4 meters long, and one interior angle measures 108°. What are the lengths of the other sides and measures of the other interior angles?",
+      "answers": [
+        {
+          "text": "All sides = 4 m, All interior angles = 108°",
+          "isCorrect": true
+        },
+        {
+          "text": "All sides = 4 m, All interior angles = 72°",
+          "isCorrect": false
+        },
+        {
+          "text": "All sides = 5 m, All interior angles = 108°",
+          "isCorrect": false
+        },
+        {
+          "text": "All sides = 4 m, All interior angles = 120°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "In any regular polygon, all sides are congruent (4 m) and all interior angles are congruent (108°).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7a11",
+      "grade": 7,
+      "difficulty": 3,
+      "category": "polygons-angles",
+      "title": "Park Entrance Supplementary Angles",
+      "questionType": "input",
+      "expectedAnswer": "70°",
+      "acceptableAnswers": [
+        "70",
+        "70°",
+        "70 deg",
+        "70 degrees"
+      ],
+      "problemText": "Park Entrance: Two paths meet at the park entrance and form a pair of supplementary angles. If one angle measures 110°, what is the measure of the other angle?",
+      "answers": [
+        {
+          "text": "70°",
+          "isCorrect": true
+        },
+        {
+          "text": "80°",
+          "isCorrect": false
+        },
+        {
+          "text": "90°",
+          "isCorrect": false
+        },
+        {
+          "text": "110°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Supplementary angles sum to 180°: 180° - 110° = 70°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d01",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "polygons-angles",
+      "title": "Triangle Angle Sum Theorem",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "42°, 58°, 80°",
+      "acceptableAnswers": [
+        "42°, 58°, 80°",
+        "42, 58, 80",
+        "42,58,80"
+      ],
+      "problemText": "Jose will draw a triangle using a protractor. Which set of angle measures can form a triangle?",
+      "answers": [
+        {
+          "text": "42°, 58°, 80°",
+          "isCorrect": true
+        },
+        {
+          "text": "35°, 65°, 75°",
+          "isCorrect": false
+        },
+        {
+          "text": "45°, 45°, 45°",
+          "isCorrect": false
+        },
+        {
+          "text": "63°, 27°, 100°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The interior angles of a triangle must sum to exactly 180°: 42° + 58° + 80° = 180°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d02",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "polygons-angles",
+      "title": "Classifying Non-Convex Polygons",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Irregular and non-convex polygons",
+      "acceptableAnswers": [
+        "irregular and non-convex polygons",
+        "irregular and non-convex",
+        "concave"
+      ],
+      "problemText": "Which classification correctly describes polygons with unequal sides/angles that have at least one interior angle greater than 180°?",
+      "answers": [
+        {
+          "text": "Irregular and non-convex polygons",
+          "isCorrect": true
+        },
+        {
+          "text": "Irregular and convex polygons",
+          "isCorrect": false
+        },
+        {
+          "text": "Regular and convex polygons",
+          "isCorrect": false
+        },
+        {
+          "text": "Regular and non-convex polygons",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Polygons with unequal properties are irregular, and an interior angle > 180° makes them non-convex (concave).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d03",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "polygons-angles",
+      "title": "Intersecting Lines Angle Measures",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "x = 104°, y = 76°, z = 104°",
+      "acceptableAnswers": [
+        "x = 104°, y = 76°, z = 104°",
+        "104, 76, 104"
+      ],
+      "problemText": "Two straight lines intersect. If one angle measures 76°, which statement gives the measures of the other three angles (x, y, z)?",
+      "answers": [
+        {
+          "text": "x = 104°, y = 76°, z = 104°",
+          "isCorrect": true
+        },
+        {
+          "text": "x = 104°, y = 104°, z = 76°",
+          "isCorrect": false
+        },
+        {
+          "text": "x = 76°, y = 76°, z = 104°",
+          "isCorrect": false
+        },
+        {
+          "text": "x = 76°, y = 104°, z = 76°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Vertical angle y = 76°. Adjacent supplementary angles x = z = 180° - 76° = 104°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d04",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Average Runner Speed",
+      "questionType": "input",
+      "expectedAnswer": "10 m/s",
+      "acceptableAnswers": [
+        "10",
+        "10 m/s",
+        "10m/s",
+        "10 meters per second",
+        "10mps"
+      ],
+      "problemText": "A runner completes a 200-meter race in 20 seconds. What is the average speed in meters per second?",
+      "answers": [
+        {
+          "text": "10 m/s",
+          "isCorrect": true
+        },
+        {
+          "text": "20 m/s",
+          "isCorrect": false
+        },
+        {
+          "text": "5 m/s",
+          "isCorrect": false
+        },
+        {
+          "text": "15 m/s",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Speed = Distance ÷ Time = 200 m ÷ 20 s = 10 m/s.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d05",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Photocopy Machine Rate",
+      "questionType": "input",
+      "expectedAnswer": "200 papers",
+      "acceptableAnswers": [
+        "200",
+        "200 papers",
+        "200 pages"
+      ],
+      "problemText": "If a machine produces 120 photocopy papers in 3 hours, how many papers will be produced in 5 hours at the same rate?",
+      "answers": [
+        {
+          "text": "200 papers",
+          "isCorrect": true
+        },
+        {
+          "text": "180 papers",
+          "isCorrect": false
+        },
+        {
+          "text": "240 papers",
+          "isCorrect": false
+        },
+        {
+          "text": "150 papers",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Rate = 120 ÷ 3 = 40 papers/hr. In 5 hours: 40 × 5 = 200 papers.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d06",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Speed Comparison",
+      "questionType": "input",
+      "expectedAnswer": "Car B at 60 km/h",
+      "acceptableAnswers": [
+        "Car B",
+        "Car B at 60 km/h",
+        "Car B, 60 km/h",
+        "Car B 60",
+        "Car B, at 60 km/h",
+        "60 km/h"
+      ],
+      "problemText": "Car A travels 200 km in 5 hours, while Car B travels 240 km in 4 hours. Which vehicle is faster, and what is its speed?",
+      "answers": [
+        {
+          "text": "Car B, at 60 km/h",
+          "isCorrect": true
+        },
+        {
+          "text": "Car A, at 40 km/h",
+          "isCorrect": false
+        },
+        {
+          "text": "Car B, at 50 km/h",
+          "isCorrect": false
+        },
+        {
+          "text": "Both have equal speed",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Speed A = 200/5 = 40 km/h. Speed B = 240/4 = 60 km/h. Car B is faster at 60 km/h.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d07",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Repeating Decimal to Fraction",
+      "questionType": "input",
+      "expectedAnswer": "2/3",
+      "acceptableAnswers": [
+        "2/3",
+        "2 / 3"
+      ],
+      "problemText": "What is the equivalent fraction of the repeating decimal 0.666… in simplest form?",
+      "answers": [
+        {
+          "text": "2/3",
+          "isCorrect": true
+        },
+        {
+          "text": "3/5",
+          "isCorrect": false
+        },
+        {
+          "text": "6/10",
+          "isCorrect": false
+        },
+        {
+          "text": "4/6",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Let x = 0.666…; 10x = 6.666…; 9x = 6 => x = 6/9 = 2/3.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d08",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Mixed Number to Improper Fraction",
+      "questionType": "input",
+      "expectedAnswer": "53/6",
+      "acceptableAnswers": [
+        "53/6",
+        "53 / 6"
+      ],
+      "problemText": "What is 8 5/6 expressed as an improper fraction?",
+      "answers": [
+        {
+          "text": "53/6",
+          "isCorrect": true
+        },
+        {
+          "text": "48/6",
+          "isCorrect": false
+        },
+        {
+          "text": "45/6",
+          "isCorrect": false
+        },
+        {
+          "text": "40/6",
+          "isCorrect": false
+        }
+      ],
+      "solution": "(8 × 6 + 5) / 6 = (48 + 5) / 6 = 53/6.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d09",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Rational Numbers on Number Line",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "-3.0 is left of 0, and 5.5 is right of 0",
+      "acceptableAnswers": [
+        "-3.0 is left of 0, and 5.5 is right of 0",
+        "A"
+      ],
+      "problemText": "Which statement correctly describes the plotting of rational numbers -3.0, 0, and 5.5 on a number line?",
+      "answers": [
+        {
+          "text": "-3.0 is left of 0, and 5.5 is right of 0",
+          "isCorrect": true
+        },
+        {
+          "text": "-3.0 is right of 0, and 5.5 is left of 0",
+          "isCorrect": false
+        },
+        {
+          "text": "All three numbers lie to the right of 0",
+          "isCorrect": false
+        },
+        {
+          "text": "0 is to the left of -3.0",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Negative rational numbers lie to the left of zero, and positive rational numbers lie to the right.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d10",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Locating 7/4 on Number Line",
+      "questionType": "input",
+      "expectedAnswer": "1.75",
+      "acceptableAnswers": [
+        "1.75",
+        "1 3/4",
+        "7/4",
+        "between 1 and 2, closer to 2",
+        "Point A"
+      ],
+      "problemText": "What decimal value best locates the improper fraction 7/4 on a number line?",
+      "answers": [
+        {
+          "text": "1.75 (between 1 and 2, closer to 2)",
+          "isCorrect": true
+        },
+        {
+          "text": "1.25 (between 1 and 2, closer to 1)",
+          "isCorrect": false
+        },
+        {
+          "text": "2.25 (between 2 and 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "0.75 (between 0 and 1)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "7/4 = 1.75, which lies between 1 and 2, closer to 2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d11",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Ascending Order of Real Numbers",
+      "questionType": "input",
+      "expectedAnswer": "7/2, 5.6, 6",
+      "acceptableAnswers": [
+        "7/2, 5.6, 6",
+        "7/2, 5.6, 6.0",
+        "3.5, 5.6, 6",
+        "7/2,5.6,6"
+      ],
+      "problemText": "Arrange the following numbers in ascending order: 6, 7/2, 5.6",
+      "answers": [
+        {
+          "text": "7/2, 5.6, 6",
+          "isCorrect": true
+        },
+        {
+          "text": "5.6, 7/2, 6",
+          "isCorrect": false
+        },
+        {
+          "text": "6, 5.6, 7/2",
+          "isCorrect": false
+        },
+        {
+          "text": "7/2, 6, 5.6",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Convert 7/2 to 3.5. Comparing 3.5 < 5.6 < 6 gives: 7/2, 5.6, 6.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d12",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Electronics Commission Calculation",
+      "questionType": "input",
+      "expectedAnswer": "₱900",
+      "acceptableAnswers": [
+        "900",
+        "₱900",
+        "P900",
+        "Php 900",
+        "900 pesos"
+      ],
+      "problemText": "Gregorio earns a 5% commission on electronics sales. He sold a tablet originally priced at ₱18,000. How much commission will Gregorio earn?",
+      "answers": [
+        {
+          "text": "₱900",
+          "isCorrect": true
+        },
+        {
+          "text": "₱1,800",
+          "isCorrect": false
+        },
+        {
+          "text": "₱750",
+          "isCorrect": false
+        },
+        {
+          "text": "₱1,200",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Commission = 5% of ₱18,000 = 0.05 × 18,000 = ₱900.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d13",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Discount Calculation",
+      "questionType": "input",
+      "expectedAnswer": "₱1,800",
+      "acceptableAnswers": [
+        "1800",
+        "1,800",
+        "₱1800",
+        "₱1,800",
+        "P1800",
+        "Php 1800"
+      ],
+      "problemText": "A tablet is originally priced at ₱18,000. Customers who pay in full receive a 10% discount. How much is the discount?",
+      "answers": [
+        {
+          "text": "₱1,800",
+          "isCorrect": true
+        },
+        {
+          "text": "₱900",
+          "isCorrect": false
+        },
+        {
+          "text": "₱1,500",
+          "isCorrect": false
+        },
+        {
+          "text": "₱2,000",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Discount = 10% of ₱18,000 = 0.10 × 18,000 = ₱1,800.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d14",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Running Trail Lap Time",
+      "questionType": "input",
+      "expectedAnswer": "200 seconds",
+      "acceptableAnswers": [
+        "200",
+        "200 seconds",
+        "200 s",
+        "200 sec"
+      ],
+      "problemText": "Running Trail: A park has a 400-meter running trail. A runner moves at a constant speed of 2 meters per second. How many seconds does the runner need to complete one lap (400 meters)?",
+      "answers": [
+        {
+          "text": "200 seconds",
+          "isCorrect": true
+        },
+        {
+          "text": "100 seconds",
+          "isCorrect": false
+        },
+        {
+          "text": "400 seconds",
+          "isCorrect": false
+        },
+        {
+          "text": "800 seconds",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Time = Distance ÷ Speed = 400 m ÷ 2 m/s = 200 seconds.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7d15",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "fractions-rational",
+      "title": "Park Distance Signs Ordering",
+      "questionType": "input",
+      "expectedAnswer": "0.1 km, 1/4 km, 1/2 km, 0.75 km",
+      "acceptableAnswers": [
+        "0.1 km, 1/4 km, 1/2 km, 0.75 km",
+        "0.1km, 1/4km, 1/2km, 0.75km",
+        "0.1, 1/4, 1/2, 0.75",
+        "0.1, 0.25, 0.5, 0.75"
+      ],
+      "problemText": "Park Entrance Signs: Distances to four areas are 0.1 km, 1/4 km, 0.75 km, and 1/2 km. Arrange the distances from nearest to farthest.",
+      "answers": [
+        {
+          "text": "0.1 km, 1/4 km, 1/2 km, 0.75 km",
+          "isCorrect": true
+        },
+        {
+          "text": "1/4 km, 0.1 km, 1/2 km, 0.75 km",
+          "isCorrect": false
+        },
+        {
+          "text": "0.1 km, 1/2 km, 1/4 km, 0.75 km",
+          "isCorrect": false
+        },
+        {
+          "text": "0.75 km, 1/2 km, 1/4 km, 0.1 km",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Convert all to decimals: 0.1 km, 0.25 km (1/4), 0.50 km (1/2), 0.75 km. Order: 0.1 km, 1/4 km, 1/2 km, 0.75 km.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e01",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "rational-algebraic-expressions",
+      "title": "Simplest Form of Rational Expressions",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "When numerator and denominator have no common factors other than 1",
+      "acceptableAnswers": [
+        "when numerator and denominator have no common factors other than 1",
+        "no common factors other than 1"
+      ],
+      "problemText": "When is a rational algebraic expression considered to be in its simplest form?",
+      "answers": [
+        {
+          "text": "When the numerator and denominator have no common factors other than 1.",
+          "isCorrect": true
+        },
+        {
+          "text": "When the denominator is 1.",
+          "isCorrect": false
+        },
+        {
+          "text": "When the numerator is a monomial.",
+          "isCorrect": false
+        },
+        {
+          "text": "When both polynomials have degree 1.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A rational expression is in simplest form when numerator and denominator have no common factors other than ±1.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e02",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "rational-algebraic-expressions",
+      "title": "Multiplying Rational Expressions First Step",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Factor all numerators and denominators completely.",
+      "acceptableAnswers": [
+        "factor all numerators and denominators completely.",
+        "factor completely",
+        "factor"
+      ],
+      "problemText": "What is the first step before multiplying rational algebraic expressions containing polynomials?",
+      "answers": [
+        {
+          "text": "Factor all numerators and denominators completely.",
+          "isCorrect": true
+        },
+        {
+          "text": "Multiply numerators directly without factoring.",
+          "isCorrect": false
+        },
+        {
+          "text": "Find a common denominator.",
+          "isCorrect": false
+        },
+        {
+          "text": "Cancel terms that are not factors.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factoring all numerators and denominators completely allows you to simplify common factors before multiplying.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e03",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "rational-algebraic-expressions",
+      "title": "Product of Monomial Fractions",
+      "questionType": "input",
+      "expectedAnswer": "6/(xy)",
+      "acceptableAnswers": [
+        "6/(xy)",
+        "6/xy",
+        "6 / (xy)",
+        "6 / xy"
+      ],
+      "problemText": "What is the product of the expression (2/x) * (3/y)?",
+      "answers": [
+        {
+          "text": "6 / (xy)",
+          "isCorrect": true
+        },
+        {
+          "text": "5 / (x + y)",
+          "isCorrect": false
+        },
+        {
+          "text": "6 / (x + y)",
+          "isCorrect": false
+        },
+        {
+          "text": "5 / (xy)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Multiply numerators and denominators: (2 * 3) / (x * y) = 6 / (xy).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e04",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "rational-algebraic-expressions",
+      "title": "Reciprocal of Rational Expression",
+      "questionType": "input",
+      "expectedAnswer": "(x + 5)/(x - 3)",
+      "acceptableAnswers": [
+        "(x+5)/(x-3)",
+        "(x + 5)/(x - 3)",
+        "(x+5) / (x-3)"
+      ],
+      "problemText": "What is the reciprocal (multiplicative inverse) of the rational expression (x - 3)/(x + 5)?",
+      "answers": [
+        {
+          "text": "(x + 5) / (x - 3)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x - 3) / (x + 5)",
+          "isCorrect": false
+        },
+        {
+          "text": "-(x - 3) / (x + 5)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 5) / (x + 3)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The reciprocal of A/B is B/A: the reciprocal of (x - 3)/(x + 5) is (x + 5)/(x - 3).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e05",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "rational-algebraic-expressions",
+      "title": "Division Process for Rational Expressions",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "(A/B) * (D/C)",
+      "acceptableAnswers": [
+        "(A/B) * (D/C)",
+        "A/B * D/C",
+        "A/B * (D/C)",
+        "B"
+      ],
+      "problemText": "Which of the following describes the correct process for dividing two rational algebraic expressions: (A/B) ÷ (C/D)?",
+      "answers": [
+        {
+          "text": "(A/B) * (D/C)",
+          "isCorrect": true
+        },
+        {
+          "text": "(A/B) * (C/D)",
+          "isCorrect": false
+        },
+        {
+          "text": "(B/A) * (C/D)",
+          "isCorrect": false
+        },
+        {
+          "text": "(B/A) * (D/C)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Dividing by a fraction is equivalent to multiplying by its reciprocal: (A/B) ÷ (C/D) = (A/B) * (D/C).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e06",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "special-products-factoring",
+      "title": "GCF of Polynomial",
+      "questionType": "input",
+      "expectedAnswer": "4x",
+      "acceptableAnswers": [
+        "4x",
+        "4*x",
+        "4 x"
+      ],
+      "problemText": "To factor the polynomial 8x² - 12x, what is the greatest common factor (GCF) of the terms?",
+      "answers": [
+        {
+          "text": "4x",
+          "isCorrect": true
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "text": "2x",
+          "isCorrect": false
+        },
+        {
+          "text": "8x",
+          "isCorrect": false
+        }
+      ],
+      "solution": "GCF of coefficients 8 and 12 is 4, and common variable factor is x: GCF = 4x.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e07",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "special-products-factoring",
+      "title": "Difference of Two Squares Factors",
+      "questionType": "input",
+      "expectedAnswer": "Conjugate binomials",
+      "acceptableAnswers": [
+        "conjugate",
+        "conjugate binomials",
+        "sum and difference",
+        "conjugates"
+      ],
+      "problemText": "The factors of the difference of two squares (a² - b²) are always a pair of __________.",
+      "answers": [
+        {
+          "text": "Conjugate binomials (a - b)(a + b)",
+          "isCorrect": true
+        },
+        {
+          "text": "Identical binomials (a - b)(a - b)",
+          "isCorrect": false
+        },
+        {
+          "text": "Monomials",
+          "isCorrect": false
+        },
+        {
+          "text": "Trinomials",
+          "isCorrect": false
+        }
+      ],
+      "solution": "a² - b² factors into conjugate binomials: (a - b)(a + b).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e08",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "special-products-factoring",
+      "title": "Perfect Square Trinomial Factoring",
+      "questionType": "input",
+      "expectedAnswer": "Square of a binomial",
+      "acceptableAnswers": [
+        "square",
+        "square of a binomial",
+        "binomial square"
+      ],
+      "problemText": "A perfect square trinomial (a² + 2ab + b²) always factors into the ______ of a binomial.",
+      "answers": [
+        {
+          "text": "Square of a binomial (a + b)²",
+          "isCorrect": true
+        },
+        {
+          "text": "Difference of squares",
+          "isCorrect": false
+        },
+        {
+          "text": "Product of conjugates",
+          "isCorrect": false
+        },
+        {
+          "text": "Cube of a binomial",
+          "isCorrect": false
+        }
+      ],
+      "solution": "a² + 2ab + b² = (a + b)², which is the square of a binomial.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e09",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "special-products-factoring",
+      "title": "Product of Sum and Difference",
+      "questionType": "input",
+      "expectedAnswer": "x² - 16",
+      "acceptableAnswers": [
+        "x^2 - 16",
+        "x² - 16",
+        "x^2-16",
+        "x²-16"
+      ],
+      "problemText": "What is the product of (x + 4)(x - 4)?",
+      "answers": [
+        {
+          "text": "x² - 16",
+          "isCorrect": true
+        },
+        {
+          "text": "x² + 16",
+          "isCorrect": false
+        },
+        {
+          "text": "x² - 8x - 16",
+          "isCorrect": false
+        },
+        {
+          "text": "x² + 8x + 16",
+          "isCorrect": false
+        }
+      ],
+      "solution": "(x + 4)(x - 4) = x² - 4² = x² - 16.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e10",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "special-products-factoring",
+      "title": "Square of Binomial Expansion",
+      "questionType": "input",
+      "expectedAnswer": "x² + 10x + 25",
+      "acceptableAnswers": [
+        "x^2 + 10x + 25",
+        "x² + 10x + 25",
+        "x^2+10x+25",
+        "x²+10x+25"
+      ],
+      "problemText": "Expand the square of a binomial: (x + 5)²",
+      "answers": [
+        {
+          "text": "x² + 10x + 25",
+          "isCorrect": true
+        },
+        {
+          "text": "x² + 25",
+          "isCorrect": false
+        },
+        {
+          "text": "x² + 5x + 25",
+          "isCorrect": false
+        },
+        {
+          "text": "x² + 10x + 10",
+          "isCorrect": false
+        }
+      ],
+      "solution": "(x + 5)² = x² + 2(5)(x) + 5² = x² + 10x + 25.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e11",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "special-products-factoring",
+      "title": "Factoring Simple Trinomials",
+      "questionType": "input",
+      "expectedAnswer": "(x + 2)(x + 3)",
+      "acceptableAnswers": [
+        "(x+2)(x+3)",
+        "(x + 2)(x + 3)",
+        "(x+3)(x+2)",
+        "(x + 3)(x + 2)"
+      ],
+      "problemText": "What are the factors of x² + 5x + 6?",
+      "answers": [
+        {
+          "text": "(x + 2)(x + 3)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x + 1)(x + 6)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 2)(x - 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 1)(x - 6)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Find numbers that multiply to 6 and add to 5: 2 and 3 => (x + 2)(x + 3).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e12",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "special-products-factoring",
+      "title": "Factoring Difference of Squares",
+      "questionType": "input",
+      "expectedAnswer": "(x - 7)(x + 7)",
+      "acceptableAnswers": [
+        "(x-7)(x+7)",
+        "(x - 7)(x + 7)",
+        "(x+7)(x-7)",
+        "(x + 7)(x - 7)"
+      ],
+      "problemText": "What is the factored form of the difference of squares: x² - 49?",
+      "answers": [
+        {
+          "text": "(x - 7)(x + 7)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x - 7)²",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 7)²",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 49)(x + 1)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "x² - 49 = x² - 7² = (x - 7)(x + 7).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8e13",
+      "grade": 8,
+      "difficulty": 1,
+      "category": "rational-algebraic-expressions",
+      "title": "Simplifying Rational Expressions",
+      "questionType": "input",
+      "expectedAnswer": "x + 2",
+      "acceptableAnswers": [
+        "x + 2",
+        "x+2",
+        "(x+2)"
+      ],
+      "problemText": "Simplify the rational expression: (3x + 6) / 3",
+      "answers": [
+        {
+          "text": "x + 2",
+          "isCorrect": true
+        },
+        {
+          "text": "x + 6",
+          "isCorrect": false
+        },
+        {
+          "text": "3x + 2",
+          "isCorrect": false
+        },
+        {
+          "text": "x + 3",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factor numerator: 3(x + 2) / 3 = x + 2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a01",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "special-products-factoring",
+      "title": "Property in Multiplying Polynomials",
+      "questionType": "input",
+      "expectedAnswer": "Distributive Property",
+      "acceptableAnswers": [
+        "distributive property",
+        "distributive",
+        "the distributive property"
+      ],
+      "problemText": "What algebraic property will you use to multiply 3x(2x + 5)?",
+      "answers": [
+        {
+          "text": "Distributive Property",
+          "isCorrect": true
+        },
+        {
+          "text": "Associative Property",
+          "isCorrect": false
+        },
+        {
+          "text": "Commutative Property",
+          "isCorrect": false
+        },
+        {
+          "text": "Identity Property",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The Distributive Property a(b + c) = ab + ac distributes 3x to both 2x and 5.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a02",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "special-products-factoring",
+      "title": "Identifying Non-Special Products",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "(x + 4)(x - 3)",
+      "acceptableAnswers": [
+        "(x + 4)(x - 3)",
+        "(x+4)(x-3)",
+        "C"
+      ],
+      "problemText": "Which of the following expression pairs is NOT an example of a special product?",
+      "answers": [
+        {
+          "text": "(x + 4)(x - 3)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x + 6)(x - 6)",
+          "isCorrect": false
+        },
+        {
+          "text": "(3x + 2)²",
+          "isCorrect": false
+        },
+        {
+          "text": "(2x - 5)(2x + 5)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "(x + 4)(x - 3) gives a general trinomial x² + x - 12, unlike differences of squares or perfect squares.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a03",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "special-products-factoring",
+      "title": "Area of Square with Binomial Side",
+      "questionType": "input",
+      "expectedAnswer": "4x² + 12x + 9",
+      "acceptableAnswers": [
+        "4x^2 + 12x + 9",
+        "4x² + 12x + 9",
+        "4x^2+12x+9",
+        "4x²+12x+9"
+      ],
+      "problemText": "What is the area of a square whose side length is (2x + 3)?",
+      "answers": [
+        {
+          "text": "4x² + 12x + 9",
+          "isCorrect": true
+        },
+        {
+          "text": "4x² + 9",
+          "isCorrect": false
+        },
+        {
+          "text": "4x² + 6x + 9",
+          "isCorrect": false
+        },
+        {
+          "text": "2x² + 6x + 9",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Area = (2x + 3)² = (2x)² + 2(2x)(3) + 3² = 4x² + 12x + 9.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a04",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "rational-algebraic-expressions",
+      "title": "Multiplying Reciprocal Fractions",
+      "questionType": "input",
+      "expectedAnswer": "1",
+      "acceptableAnswers": [
+        "1",
+        "one"
+      ],
+      "problemText": "Simplify the product: ((x - 2) / (x + 3)) * ((x + 3) / (x - 2))",
+      "answers": [
+        {
+          "text": "1",
+          "isCorrect": true
+        },
+        {
+          "text": "0",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 2) / (x + 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 3) / (x - 2)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "All terms in numerator and denominator cancel: ((x - 2)(x + 3)) / ((x + 3)(x - 2)) = 1.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a05",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "rational-algebraic-expressions",
+      "title": "Dividing Monomial Algebraic Fractions",
+      "questionType": "input",
+      "expectedAnswer": "6",
+      "acceptableAnswers": [
+        "6",
+        "six"
+      ],
+      "problemText": "Perform the division: (4x / 5) ÷ (2x / 15)",
+      "answers": [
+        {
+          "text": "6",
+          "isCorrect": true
+        },
+        {
+          "text": "6x",
+          "isCorrect": false
+        },
+        {
+          "text": "8x² / 75",
+          "isCorrect": false
+        },
+        {
+          "text": "3/2",
+          "isCorrect": false
+        }
+      ],
+      "solution": "(4x / 5) * (15 / 2x) = 60x / 10x = 6.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a06",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "special-products-factoring",
+      "title": "Completing Perfect Square Trinomial",
+      "questionType": "input",
+      "expectedAnswer": "16",
+      "acceptableAnswers": [
+        "16",
+        "sixteen"
+      ],
+      "problemText": "What is the missing term to make x² + 8x + ___ a perfect square trinomial?",
+      "answers": [
+        {
+          "text": "16",
+          "isCorrect": true
+        },
+        {
+          "text": "8",
+          "isCorrect": false
+        },
+        {
+          "text": "64",
+          "isCorrect": false
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Take half the middle coefficient squared: (8 / 2)² = 4² = 16.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a07",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "special-products-factoring",
+      "title": "Complete Factoring of Trinomial",
+      "questionType": "input",
+      "expectedAnswer": "2(x + 2)(x + 3)",
+      "acceptableAnswers": [
+        "2(x+2)(x+3)",
+        "2(x + 2)(x + 3)",
+        "2(x+3)(x+2)",
+        "2(x + 3)(x + 2)"
+      ],
+      "problemText": "Factor completely: 2x² + 10x + 12",
+      "answers": [
+        {
+          "text": "2(x + 2)(x + 3)",
+          "isCorrect": true
+        },
+        {
+          "text": "2(x + 1)(x + 6)",
+          "isCorrect": false
+        },
+        {
+          "text": "(2x + 4)(x + 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 2)(2x + 6)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factor out GCF 2: 2(x² + 5x + 6) = 2(x + 2)(x + 3).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8a08",
+      "grade": 8,
+      "difficulty": 3,
+      "category": "rational-algebraic-expressions",
+      "title": "Simplifying Rational Fraction with Difference of Squares",
+      "questionType": "input",
+      "expectedAnswer": "x + 4",
+      "acceptableAnswers": [
+        "x + 4",
+        "x+4",
+        "(x+4)"
+      ],
+      "problemText": "Simplify the rational expression: (x² - 16) / (x - 4)",
+      "answers": [
+        {
+          "text": "x + 4",
+          "isCorrect": true
+        },
+        {
+          "text": "x - 4",
+          "isCorrect": false
+        },
+        {
+          "text": "x + 16",
+          "isCorrect": false
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factor numerator as (x - 4)(x + 4). Cancel (x - 4): result is x + 4.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d01",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "special-products-factoring",
+      "title": "Expanding Monomial by Binomial",
+      "questionType": "input",
+      "expectedAnswer": "6x² + 15x",
+      "acceptableAnswers": [
+        "6x^2 + 15x",
+        "6x² + 15x",
+        "6x^2+15x",
+        "6x²+15x"
+      ],
+      "problemText": "What is the product of 3x(2x + 5)?",
+      "answers": [
+        {
+          "text": "6x² + 15x",
+          "isCorrect": true
+        },
+        {
+          "text": "6x² + 5",
+          "isCorrect": false
+        },
+        {
+          "text": "5x² + 15x",
+          "isCorrect": false
+        },
+        {
+          "text": "6x + 15",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Distribute 3x: 3x(2x) + 3x(5) = 6x² + 15x.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d02",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "special-products-factoring",
+      "title": "Rectangular Board Area Claim",
+      "questionType": "input",
+      "expectedAnswer": "No, the correct area is x² - 49",
+      "acceptableAnswers": [
+        "no, the correct area is x² - 49",
+        "no",
+        "x² - 49",
+        "x^2 - 49",
+        "x^2-49",
+        "x²-49"
+      ],
+      "problemText": "A rectangular bulletin board has length (x + 7) m and width (x - 7) m. A student claims the area is x² + 49. Is the student correct? Why?",
+      "answers": [
+        {
+          "text": "No, the correct area is x² - 49.",
+          "isCorrect": true
+        },
+        {
+          "text": "Yes, the calculation is correct.",
+          "isCorrect": false
+        },
+        {
+          "text": "No, the correct area is x² - 14x + 49.",
+          "isCorrect": false
+        },
+        {
+          "text": "No, the correct area is x² + 14x - 49.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Area = (x + 7)(x - 7) = x² - 49 (difference of two squares). The student's sign was incorrect.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d03",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "rational-algebraic-expressions",
+      "title": "Multiplying Complex Rational Expressions",
+      "questionType": "input",
+      "expectedAnswer": "x - 3",
+      "acceptableAnswers": [
+        "x - 3",
+        "x-3",
+        "(x-3)"
+      ],
+      "problemText": "Simplify: ((x² - 9) / (x + 2)) * ((x + 2) / (x + 3))",
+      "answers": [
+        {
+          "text": "x - 3",
+          "isCorrect": true
+        },
+        {
+          "text": "x + 3",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 3) / (x + 2)",
+          "isCorrect": false
+        },
+        {
+          "text": "1",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factor x² - 9 = (x - 3)(x + 3). Cancel common factors (x + 2) and (x + 3) to get x - 3.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d04",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "rational-algebraic-expressions",
+      "title": "Dividing Complex Rational Expressions",
+      "questionType": "input",
+      "expectedAnswer": "x + 2",
+      "acceptableAnswers": [
+        "x + 2",
+        "x+2",
+        "(x+2)"
+      ],
+      "problemText": "Divide and simplify: ((x² - 4) / (x + 1)) ÷ ((x - 2) / (x + 1))",
+      "answers": [
+        {
+          "text": "x + 2",
+          "isCorrect": true
+        },
+        {
+          "text": "x - 2",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 2) / (x + 1)",
+          "isCorrect": false
+        },
+        {
+          "text": "1",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Multiply by reciprocal: ((x - 2)(x + 2) / (x + 1)) * ((x + 1) / (x - 2)) = x + 2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d05",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "special-products-factoring",
+      "title": "Factoring Binomial Difference",
+      "questionType": "input",
+      "expectedAnswer": "3(x - 3)(x + 3)",
+      "acceptableAnswers": [
+        "3(x-3)(x+3)",
+        "3(x - 3)(x + 3)",
+        "3(x+3)(x-3)",
+        "3(x + 3)(x - 3)"
+      ],
+      "problemText": "Factor completely: 3x² - 27",
+      "answers": [
+        {
+          "text": "3(x - 3)(x + 3)",
+          "isCorrect": true
+        },
+        {
+          "text": "3(x - 9)",
+          "isCorrect": false
+        },
+        {
+          "text": "(3x - 9)(x + 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "3(x - 3)²",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factor out 3: 3(x² - 9) = 3(x - 3)(x + 3).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d06",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "special-products-factoring",
+      "title": "FOIL Binomial Product",
+      "questionType": "input",
+      "expectedAnswer": "6x² - x - 12",
+      "acceptableAnswers": [
+        "6x^2 - x - 12",
+        "6x² - x - 12",
+        "6x^2-x-12",
+        "6x²-x-12"
+      ],
+      "problemText": "What is the product of (2x - 3)(3x + 4)?",
+      "answers": [
+        {
+          "text": "6x² - x - 12",
+          "isCorrect": true
+        },
+        {
+          "text": "6x² + x - 12",
+          "isCorrect": false
+        },
+        {
+          "text": "6x² - 12",
+          "isCorrect": false
+        },
+        {
+          "text": "6x² + 17x - 12",
+          "isCorrect": false
+        }
+      ],
+      "solution": "FOIL: (2x)(3x) + (2x)(4) + (-3)(3x) + (-3)(4) = 6x² + 8x - 9x - 12 = 6x² - x - 12.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d07",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "rational-algebraic-expressions",
+      "title": "Rational Expression Simplification",
+      "questionType": "input",
+      "expectedAnswer": "(x + 3)/(x - 4)",
+      "acceptableAnswers": [
+        "(x+3)/(x-4)",
+        "(x + 3)/(x - 4)",
+        "(x+3) / (x-4)"
+      ],
+      "problemText": "Simplify: (x² + 7x + 12) / (x² - 16)",
+      "answers": [
+        {
+          "text": "(x + 3) / (x - 4)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x + 4) / (x - 4)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 3) / (x + 4)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 3) / (x - 4)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factor: ((x + 3)(x + 4)) / ((x - 4)(x + 4)) = (x + 3) / (x - 4).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d08",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "special-products-factoring",
+      "title": "Garden Area Modification",
+      "questionType": "input",
+      "expectedAnswer": "9 square meters less",
+      "acceptableAnswers": [
+        "9",
+        "9 sq m",
+        "9 sq meters",
+        "9 m²",
+        "9 square meters less",
+        "9 less",
+        "-9"
+      ],
+      "problemText": "A square garden with side length x is extended by 3 m on one side and reduced by 3 m on the other. What is the difference between the original and new area?",
+      "answers": [
+        {
+          "text": "9 square meters less",
+          "isCorrect": true
+        },
+        {
+          "text": "9 square meters more",
+          "isCorrect": false
+        },
+        {
+          "text": "No difference",
+          "isCorrect": false
+        },
+        {
+          "text": "6 square meters less",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Original = x²; New = (x + 3)(x - 3) = x² - 9. The new area is 9 m² less.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d09",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "rational-algebraic-expressions",
+      "title": "Adding Fractions with Like Denominators",
+      "questionType": "input",
+      "expectedAnswer": "5/(x - 1)",
+      "acceptableAnswers": [
+        "5/(x-1)",
+        "5/(x - 1)",
+        "5 / (x-1)"
+      ],
+      "problemText": "Simplify: (2 / (x - 1)) + (3 / (x - 1))",
+      "answers": [
+        {
+          "text": "5 / (x - 1)",
+          "isCorrect": true
+        },
+        {
+          "text": "5 / (2x - 2)",
+          "isCorrect": false
+        },
+        {
+          "text": "6 / (x - 1)",
+          "isCorrect": false
+        },
+        {
+          "text": "5 / (x - 1)²",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Combine numerators over the common denominator: (2 + 3) / (x - 1) = 5 / (x - 1).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d10",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "special-products-factoring",
+      "title": "Finding Dimensions from Area",
+      "questionType": "input",
+      "expectedAnswer": "(x + 4) and (x + 5)",
+      "acceptableAnswers": [
+        "(x+4) and (x+5)",
+        "(x + 4) and (x + 5)",
+        "(x+4), (x+5)",
+        "(x+4)(x+5)"
+      ],
+      "problemText": "What are the dimensions of a rectangle with area x² + 9x + 20?",
+      "answers": [
+        {
+          "text": "(x + 4) and (x + 5)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x + 2) and (x + 10)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 1) and (x + 20)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 4) and (x - 5)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factor x² + 9x + 20 into (x + 4)(x + 5).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d11",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "rational-algebraic-expressions",
+      "title": "Undefined Rational Expression Value",
+      "questionType": "input",
+      "expectedAnswer": "x = 7",
+      "acceptableAnswers": [
+        "7",
+        "x = 7",
+        "x=7"
+      ],
+      "problemText": "For what value of x is the expression (x + 5) / (x - 7) undefined?",
+      "answers": [
+        {
+          "text": "x = 7",
+          "isCorrect": true
+        },
+        {
+          "text": "x = -5",
+          "isCorrect": false
+        },
+        {
+          "text": "x = 0",
+          "isCorrect": false
+        },
+        {
+          "text": "x = -7",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Set denominator to zero: x - 7 = 0 => x = 7.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8d12",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "special-products-factoring",
+      "title": "Factoring by Grouping",
+      "questionType": "input",
+      "expectedAnswer": "(x + 2)(x² + 3)",
+      "acceptableAnswers": [
+        "(x+2)(x^2+3)",
+        "(x + 2)(x² + 3)",
+        "(x^2+3)(x+2)",
+        "(x² + 3)(x + 2)"
+      ],
+      "problemText": "Factor completely by grouping: x³ + 2x² + 3x + 6",
+      "answers": [
+        {
+          "text": "(x + 2)(x² + 3)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x + 3)(x² + 2)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x - 2)(x² + 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 2)(x + 3)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Group: x²(x + 2) + 3(x + 2) = (x + 2)(x² + 3).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e01",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Finding Slope from Equation",
+      "questionType": "input",
+      "expectedAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "m = 3",
+        "m=3"
+      ],
+      "problemText": "What is the slope of the line represented by the equation y = 3x - 5?",
+      "answers": [
+        {
+          "text": "m = 3",
+          "isCorrect": true
+        },
+        {
+          "text": "m = -5",
+          "isCorrect": false
+        },
+        {
+          "text": "m = -3",
+          "isCorrect": false
+        },
+        {
+          "text": "m = 5",
+          "isCorrect": false
+        }
+      ],
+      "solution": "In slope-intercept form y = mx + b, slope m = 3.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e02",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Finding Y-Intercept Ordered Pair",
+      "questionType": "input",
+      "expectedAnswer": "(0, 7)",
+      "acceptableAnswers": [
+        "(0, 7)",
+        "(0,7)",
+        "0,7",
+        "7",
+        "y = 7"
+      ],
+      "problemText": "What ordered pair represents the y-intercept of the line y = 2x + 7?",
+      "answers": [
+        {
+          "text": "(0, 7)",
+          "isCorrect": true
+        },
+        {
+          "text": "(7, 0)",
+          "isCorrect": false
+        },
+        {
+          "text": "(0, 2)",
+          "isCorrect": false
+        },
+        {
+          "text": "(2, 7)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "At x = 0, y = 2(0) + 7 = 7, giving the ordered pair (0, 7).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e03",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Slope of Horizontal Line",
+      "questionType": "input",
+      "expectedAnswer": "0",
+      "acceptableAnswers": [
+        "0",
+        "zero",
+        "m = 0"
+      ],
+      "problemText": "What is the slope of any horizontal line?",
+      "answers": [
+        {
+          "text": "0",
+          "isCorrect": true
+        },
+        {
+          "text": "1",
+          "isCorrect": false
+        },
+        {
+          "text": "Undefined",
+          "isCorrect": false
+        },
+        {
+          "text": "-1",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Horizontal lines have a vertical change (rise) of 0, so slope m = 0.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e04",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Slope of Vertical Line",
+      "questionType": "input",
+      "expectedAnswer": "Undefined",
+      "acceptableAnswers": [
+        "undefined",
+        "no slope"
+      ],
+      "problemText": "What is the slope of any vertical line?",
+      "answers": [
+        {
+          "text": "Undefined",
+          "isCorrect": true
+        },
+        {
+          "text": "0",
+          "isCorrect": false
+        },
+        {
+          "text": "1",
+          "isCorrect": false
+        },
+        {
+          "text": "Infinity",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Vertical lines have a horizontal change (run) of 0; dividing by 0 makes the slope undefined.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e05",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Slope-Intercept Form Form",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "y = mx + b",
+      "acceptableAnswers": [
+        "y = mx + b",
+        "y=mx+b"
+      ],
+      "problemText": "Which form represents the slope-intercept form of a linear equation?",
+      "answers": [
+        {
+          "text": "y = mx + b",
+          "isCorrect": true
+        },
+        {
+          "text": "Ax + By = C",
+          "isCorrect": false
+        },
+        {
+          "text": "y - y₁ = m(x - x₁)",
+          "isCorrect": false
+        },
+        {
+          "text": "x/a + y/b = 1",
+          "isCorrect": false
+        }
+      ],
+      "solution": "y = mx + b is the standard slope-intercept form.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e06",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "quadrilaterals-geometry",
+      "title": "Definition of Parallelogram",
+      "questionType": "input",
+      "expectedAnswer": "Parallelogram",
+      "acceptableAnswers": [
+        "parallelogram",
+        "a parallelogram"
+      ],
+      "problemText": "Which quadrilateral has both pairs of opposite sides parallel and equal in length?",
+      "answers": [
+        {
+          "text": "Parallelogram",
+          "isCorrect": true
+        },
+        {
+          "text": "Trapezoid",
+          "isCorrect": false
+        },
+        {
+          "text": "Kite",
+          "isCorrect": false
+        },
+        {
+          "text": "Triangle",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A parallelogram is defined by having two pairs of parallel opposite sides.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e07",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "quadrilaterals-geometry",
+      "title": "Consecutive Angles in Parallelogram",
+      "questionType": "input",
+      "expectedAnswer": "Supplementary (sum = 180°)",
+      "acceptableAnswers": [
+        "supplementary",
+        "180",
+        "180°",
+        "sum to 180"
+      ],
+      "problemText": "In any parallelogram, consecutive angles are always:",
+      "answers": [
+        {
+          "text": "Supplementary (sum = 180°)",
+          "isCorrect": true
+        },
+        {
+          "text": "Complementary (sum = 90°)",
+          "isCorrect": false
+        },
+        {
+          "text": "Congruent (equal)",
+          "isCorrect": false
+        },
+        {
+          "text": "Right angles",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Consecutive angles lie between parallel lines and are supplementary (sum = 180°).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e08",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "quadrilaterals-geometry",
+      "title": "Opposite Angles in Parallelogram",
+      "questionType": "input",
+      "expectedAnswer": "Congruent (equal)",
+      "acceptableAnswers": [
+        "congruent",
+        "equal",
+        "congruent (equal)"
+      ],
+      "problemText": "In any parallelogram, opposite angles are always:",
+      "answers": [
+        {
+          "text": "Congruent (equal)",
+          "isCorrect": true
+        },
+        {
+          "text": "Supplementary",
+          "isCorrect": false
+        },
+        {
+          "text": "Complementary",
+          "isCorrect": false
+        },
+        {
+          "text": "Acute",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Opposite angles in every parallelogram are congruent (equal in measure).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e09",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "quadrilaterals-geometry",
+      "title": "Equiangular Parallelogram",
+      "questionType": "input",
+      "expectedAnswer": "Rectangle",
+      "acceptableAnswers": [
+        "rectangle",
+        "a rectangle"
+      ],
+      "problemText": "A parallelogram with four right angles is a:",
+      "answers": [
+        {
+          "text": "Rectangle",
+          "isCorrect": true
+        },
+        {
+          "text": "Rhombus",
+          "isCorrect": false
+        },
+        {
+          "text": "Trapezoid",
+          "isCorrect": false
+        },
+        {
+          "text": "Kite",
+          "isCorrect": false
+        }
+      ],
+      "solution": "An equiangular parallelogram has four 90° angles and is called a rectangle.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e10",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "quadrilaterals-geometry",
+      "title": "Equilateral Parallelogram",
+      "questionType": "input",
+      "expectedAnswer": "Rhombus",
+      "acceptableAnswers": [
+        "rhombus",
+        "a rhombus"
+      ],
+      "problemText": "A parallelogram with four congruent (equal) sides is a:",
+      "answers": [
+        {
+          "text": "Rhombus",
+          "isCorrect": true
+        },
+        {
+          "text": "Rectangle",
+          "isCorrect": false
+        },
+        {
+          "text": "Trapezoid",
+          "isCorrect": false
+        },
+        {
+          "text": "Scalene quadrilateral",
+          "isCorrect": false
+        }
+      ],
+      "solution": "An equilateral parallelogram is called a rhombus.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e11",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Y-Intercept of Line",
+      "questionType": "input",
+      "expectedAnswer": "(0, -9)",
+      "acceptableAnswers": [
+        "(0, -9)",
+        "(0,-9)",
+        "-9",
+        "0, -9"
+      ],
+      "problemText": "What is the y-intercept of the line y = -4x - 9?",
+      "answers": [
+        {
+          "text": "(0, -9)",
+          "isCorrect": true
+        },
+        {
+          "text": "(0, -4)",
+          "isCorrect": false
+        },
+        {
+          "text": "(-9, 0)",
+          "isCorrect": false
+        },
+        {
+          "text": "(0, 9)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "At x = 0, y = -9, so the y-intercept is (0, -9).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e12",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Slope through Origin",
+      "questionType": "input",
+      "expectedAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "m = 2",
+        "m=2"
+      ],
+      "problemText": "What is the slope of the line passing through origin (0, 0) and (4, 8)?",
+      "answers": [
+        {
+          "text": "2",
+          "isCorrect": true
+        },
+        {
+          "text": "1/2",
+          "isCorrect": false
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "text": "8",
+          "isCorrect": false
+        }
+      ],
+      "solution": "m = (8 - 0) / (4 - 0) = 8 / 4 = 2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e13",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "quadrilaterals-geometry",
+      "title": "Quadrilateral Interior Angles Sum",
+      "questionType": "input",
+      "expectedAnswer": "360°",
+      "acceptableAnswers": [
+        "360",
+        "360°",
+        "360 deg",
+        "360 degrees"
+      ],
+      "problemText": "What is the sum of all interior angles in any convex quadrilateral?",
+      "answers": [
+        {
+          "text": "360°",
+          "isCorrect": true
+        },
+        {
+          "text": "180°",
+          "isCorrect": false
+        },
+        {
+          "text": "540°",
+          "isCorrect": false
+        },
+        {
+          "text": "720°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "(4 - 2) × 180° = 2 × 180° = 360°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e14",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "linear-equations",
+      "title": "Y-Intercept of Proportional Line",
+      "questionType": "input",
+      "expectedAnswer": "(0, 0)",
+      "acceptableAnswers": [
+        "(0, 0)",
+        "(0,0)",
+        "0,0",
+        "0",
+        "origin"
+      ],
+      "problemText": "In the equation y = 5x, what is the y-intercept?",
+      "answers": [
+        {
+          "text": "(0, 0)",
+          "isCorrect": true
+        },
+        {
+          "text": "(0, 5)",
+          "isCorrect": false
+        },
+        {
+          "text": "(5, 0)",
+          "isCorrect": false
+        },
+        {
+          "text": "None",
+          "isCorrect": false
+        }
+      ],
+      "solution": "y = 5x + 0, so the line passes through the origin (0, 0).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9e15",
+      "grade": 9,
+      "difficulty": 1,
+      "category": "quadrilaterals-geometry",
+      "title": "Bisecting Diagonals Quadrilateral",
+      "questionType": "input",
+      "expectedAnswer": "Parallelogram",
+      "acceptableAnswers": [
+        "parallelogram",
+        "a parallelogram",
+        "rectangle",
+        "rhombus",
+        "square"
+      ],
+      "problemText": "If the diagonals of a quadrilateral bisect each other, what type of quadrilateral must it be?",
+      "answers": [
+        {
+          "text": "Parallelogram",
+          "isCorrect": true
+        },
+        {
+          "text": "Trapezoid",
+          "isCorrect": false
+        },
+        {
+          "text": "General Kite",
+          "isCorrect": false
+        },
+        {
+          "text": "Cyclic polygon",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A quadrilateral whose diagonals bisect each other is a parallelogram.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a01",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Slope Between Two Points",
+      "questionType": "input",
+      "expectedAnswer": "2",
+      "acceptableAnswers": [
+        "2",
+        "m = 2",
+        "m=2"
+      ],
+      "problemText": "A line passes through (2, 3) and (6, 11). What is its slope?",
+      "answers": [
+        {
+          "text": "2",
+          "isCorrect": true
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "text": "1/2",
+          "isCorrect": false
+        },
+        {
+          "text": "8",
+          "isCorrect": false
+        }
+      ],
+      "solution": "m = (11 - 3) / (6 - 2) = 8 / 4 = 2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a02",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Evaluating Linear Function",
+      "questionType": "input",
+      "expectedAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "f(5) = 4",
+        "f(5)=4"
+      ],
+      "problemText": "In the linear function f(x) = 2x - 6, what is the value of f(5)?",
+      "answers": [
+        {
+          "text": "4",
+          "isCorrect": true
+        },
+        {
+          "text": "10",
+          "isCorrect": false
+        },
+        {
+          "text": "-4",
+          "isCorrect": false
+        },
+        {
+          "text": "6",
+          "isCorrect": false
+        }
+      ],
+      "solution": "f(5) = 2(5) - 6 = 10 - 6 = 4.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a03",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Tricycle Fare Model",
+      "questionType": "input",
+      "expectedAnswer": "F = 5x + 20",
+      "acceptableAnswers": [
+        "F = 5x + 20",
+        "F=5x+20",
+        "5x+20",
+        "5x + 20"
+      ],
+      "problemText": "A tricycle charges a ₱20 starting fare plus ₱5 for every additional kilometer. What equation represents the total fare F for x additional kilometers?",
+      "answers": [
+        {
+          "text": "F = 5x + 20",
+          "isCorrect": true
+        },
+        {
+          "text": "F = 20x + 5",
+          "isCorrect": false
+        },
+        {
+          "text": "F = 25x",
+          "isCorrect": false
+        },
+        {
+          "text": "F = 5x - 20",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Base fare = ₱20, rate = ₱5/km => Total Fare F = 5x + 20.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a04",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Perpendicular Slope Calculation",
+      "questionType": "input",
+      "expectedAnswer": "-1/2",
+      "acceptableAnswers": [
+        "-1/2",
+        "-0.5",
+        "- 1/2"
+      ],
+      "problemText": "A line has a slope of 2. What must be the slope of a line perpendicular to it?",
+      "answers": [
+        {
+          "text": "-1/2",
+          "isCorrect": true
+        },
+        {
+          "text": "2",
+          "isCorrect": false
+        },
+        {
+          "text": "-2",
+          "isCorrect": false
+        },
+        {
+          "text": "1/2",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Perpendicular lines have negative reciprocal slopes: m_perp = -1 / 2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a05",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Line Equation from Slope & Intercept",
+      "questionType": "input",
+      "expectedAnswer": "y = -2x + 3",
+      "acceptableAnswers": [
+        "y = -2x + 3",
+        "y=-2x+3",
+        "-2x + 3",
+        "-2x+3"
+      ],
+      "problemText": "A line passes through (0, 3) and has slope -2. What equation represents the line?",
+      "answers": [
+        {
+          "text": "y = -2x + 3",
+          "isCorrect": true
+        },
+        {
+          "text": "y = 2x + 3",
+          "isCorrect": false
+        },
+        {
+          "text": "y = -2x - 3",
+          "isCorrect": false
+        },
+        {
+          "text": "y = 3x - 2",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Using y = mx + b with m = -2 and b = 3: y = -2x + 3.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a06",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "quadrilaterals-geometry",
+      "title": "Congruent Diagonals Parallelogram",
+      "questionType": "input",
+      "expectedAnswer": "Rectangle",
+      "acceptableAnswers": [
+        "rectangle",
+        "square",
+        "rectangle or square"
+      ],
+      "problemText": "What kind of parallelogram has congruent diagonals?",
+      "answers": [
+        {
+          "text": "Rectangle",
+          "isCorrect": true
+        },
+        {
+          "text": "Rhombus",
+          "isCorrect": false
+        },
+        {
+          "text": "Parallelogram",
+          "isCorrect": false
+        },
+        {
+          "text": "Trapezoid",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A parallelogram has equal-length diagonals if and only if it is a rectangle.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a07",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "quadrilaterals-geometry",
+      "title": "Opposite Side Length in Parallelogram",
+      "questionType": "input",
+      "expectedAnswer": "14 cm",
+      "acceptableAnswers": [
+        "14",
+        "14 cm",
+        "14cm"
+      ],
+      "problemText": "In parallelogram ABCD, AB = 14 cm. What is the length of CD?",
+      "answers": [
+        {
+          "text": "14 cm",
+          "isCorrect": true
+        },
+        {
+          "text": "7 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "28 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "Cannot be determined",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Opposite sides of a parallelogram are congruent: CD = AB = 14 cm.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a08",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "quadrilaterals-geometry",
+      "title": "Rectangle Area Calculation",
+      "questionType": "input",
+      "expectedAnswer": "35 cm²",
+      "acceptableAnswers": [
+        "35",
+        "35 cm²",
+        "35cm²",
+        "35 sq cm",
+        "35 cm^2"
+      ],
+      "problemText": "What is the area of a rectangle whose sides are 5 cm and 7 cm?",
+      "answers": [
+        {
+          "text": "35 cm²",
+          "isCorrect": true
+        },
+        {
+          "text": "24 cm²",
+          "isCorrect": false
+        },
+        {
+          "text": "12 cm²",
+          "isCorrect": false
+        },
+        {
+          "text": "70 cm²",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Area = length × width = 5 cm × 7 cm = 35 cm².",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a09",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Parallel Lines Slope Value",
+      "questionType": "input",
+      "expectedAnswer": "4",
+      "acceptableAnswers": [
+        "4",
+        "m = 4",
+        "m=4"
+      ],
+      "problemText": "Two lines have slopes 4 and m. If they are parallel, what is the value of m?",
+      "answers": [
+        {
+          "text": "4",
+          "isCorrect": true
+        },
+        {
+          "text": "-4",
+          "isCorrect": false
+        },
+        {
+          "text": "1/4",
+          "isCorrect": false
+        },
+        {
+          "text": "-1/4",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Parallel lines have identical slopes, so m = 4.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a10",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Slope Identification",
+      "questionType": "input",
+      "expectedAnswer": "3",
+      "acceptableAnswers": [
+        "3",
+        "m = 3",
+        "m=3"
+      ],
+      "problemText": "In the equation y = 3x - 2, what is the slope?",
+      "answers": [
+        {
+          "text": "3",
+          "isCorrect": true
+        },
+        {
+          "text": "-2",
+          "isCorrect": false
+        },
+        {
+          "text": "2",
+          "isCorrect": false
+        },
+        {
+          "text": "-3",
+          "isCorrect": false
+        }
+      ],
+      "solution": "In y = mx + b, slope m is the coefficient of x: m = 3.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a11",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Interpreting Linear Constant",
+      "questionType": "input",
+      "expectedAnswer": "Fixed starting fare",
+      "acceptableAnswers": [
+        "fixed starting fare",
+        "starting fare",
+        "base fare",
+        "initial fare",
+        "fixed fare"
+      ],
+      "problemText": "A taxi fare is modeled by F = 10d + 50, where d is the distance in kilometers. What does the constant 50 represent?",
+      "answers": [
+        {
+          "text": "Fixed starting fare",
+          "isCorrect": true
+        },
+        {
+          "text": "Fare per kilometer",
+          "isCorrect": false
+        },
+        {
+          "text": "Total distance",
+          "isCorrect": false
+        },
+        {
+          "text": "Maximum passenger count",
+          "isCorrect": false
+        }
+      ],
+      "solution": "When distance d = 0, F = 50. The constant represents the initial fixed base fare.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a12",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Identifying Perpendicular Slopes",
+      "questionType": "input",
+      "expectedAnswer": "Perpendicular lines",
+      "acceptableAnswers": [
+        "perpendicular",
+        "perpendicular lines"
+      ],
+      "problemText": "Two lines have slopes 4 and -1/4. What geometric relationship do the two lines have?",
+      "answers": [
+        {
+          "text": "Perpendicular lines",
+          "isCorrect": true
+        },
+        {
+          "text": "Parallel lines",
+          "isCorrect": false
+        },
+        {
+          "text": "Intersecting at 45°",
+          "isCorrect": false
+        },
+        {
+          "text": "Coincident lines",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Product of slopes = 4 × (-1/4) = -1, which defines perpendicular lines.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a13",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "linear-equations",
+      "title": "Lines with Equal Slopes",
+      "questionType": "input",
+      "expectedAnswer": "Parallel lines",
+      "acceptableAnswers": [
+        "parallel",
+        "parallel lines"
+      ],
+      "problemText": "Two lines have the same slopes equal to 2. What relationship do the two lines have?",
+      "answers": [
+        {
+          "text": "Parallel lines",
+          "isCorrect": true
+        },
+        {
+          "text": "Perpendicular lines",
+          "isCorrect": false
+        },
+        {
+          "text": "Intersecting lines",
+          "isCorrect": false
+        },
+        {
+          "text": "Skew lines",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Lines with equal slopes in the same plane are parallel.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a14",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "quadrilaterals-geometry",
+      "title": "Square Flower Bed Area",
+      "questionType": "input",
+      "expectedAnswer": "36 m²",
+      "acceptableAnswers": [
+        "36",
+        "36 m²",
+        "36m²",
+        "36 sq m",
+        "36 m^2"
+      ],
+      "problemText": "A rectangular school garden measures 18 m by 10 m. A square flower bed with side lengths of 6 m is placed inside the garden. What is the area of the flower bed?",
+      "answers": [
+        {
+          "text": "36 m²",
+          "isCorrect": true
+        },
+        {
+          "text": "180 m²",
+          "isCorrect": false
+        },
+        {
+          "text": "24 m²",
+          "isCorrect": false
+        },
+        {
+          "text": "144 m²",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Area of square = side² = 6 m × 6 m = 36 m².",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9a15",
+      "grade": 9,
+      "difficulty": 3,
+      "category": "quadrilaterals-geometry",
+      "title": "Parallelogram Proof Property",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Both pairs of opposite sides are congruent.",
+      "acceptableAnswers": [
+        "both pairs of opposite sides are congruent.",
+        "opposite sides are congruent"
+      ],
+      "problemText": "Quadrilateral ABCD has sides given. What property shows that it is a parallelogram?",
+      "answers": [
+        {
+          "text": "Both pairs of opposite sides are congruent.",
+          "isCorrect": true
+        },
+        {
+          "text": "One pair of adjacent sides is equal.",
+          "isCorrect": false
+        },
+        {
+          "text": "The diagonals are perpendicular.",
+          "isCorrect": false
+        },
+        {
+          "text": "One angle is a right angle.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A quadrilateral is a parallelogram if and only if both pairs of opposite sides are congruent.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9d01",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "linear-equations",
+      "title": "Parallel Slopes Reasoning",
+      "questionType": "input",
+      "expectedAnswer": "Student A",
+      "acceptableAnswers": [
+        "student a",
+        "a",
+        "student a is correct"
+      ],
+      "problemText": "Students claim:\nStudent A: Two lines are parallel because they both have a slope of 3.\nStudent B: Two lines are perpendicular because they both have a slope of 3.\nWhich student is correct?",
+      "answers": [
+        {
+          "text": "Student A",
+          "isCorrect": true
+        },
+        {
+          "text": "Student B",
+          "isCorrect": false
+        },
+        {
+          "text": "Both are correct",
+          "isCorrect": false
+        },
+        {
+          "text": "Neither is correct",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Equal slopes mean parallel lines, so Student A is correct.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9d02",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "quadrilaterals-geometry",
+      "title": "Fence Perimeter Calculation",
+      "questionType": "input",
+      "expectedAnswer": "36 m",
+      "acceptableAnswers": [
+        "36",
+        "36 m",
+        "36m",
+        "36 meters"
+      ],
+      "problemText": "A rectangular fence has measurements of 10 m and 8 m on the sides. What is its perimeter?",
+      "answers": [
+        {
+          "text": "36 m",
+          "isCorrect": true
+        },
+        {
+          "text": "80 m",
+          "isCorrect": false
+        },
+        {
+          "text": "18 m",
+          "isCorrect": false
+        },
+        {
+          "text": "40 m",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Perimeter = 2(length + width) = 2(10 + 8) = 2(18) = 36 m.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9d03",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "quadrilaterals-geometry",
+      "title": "Vegetable Garden Dimensions",
+      "questionType": "input",
+      "expectedAnswer": "15 m by 8 m",
+      "acceptableAnswers": [
+        "15 m by 8 m",
+        "15 by 8",
+        "15x8",
+        "15m by 8m",
+        "15, 8",
+        "12 by 10",
+        "20 by 6",
+        "24 by 5",
+        "30 by 4",
+        "40 by 3",
+        "60 by 2",
+        "120 by 1"
+      ],
+      "problemText": "Grade 9 students want to create a rectangular vegetable garden with an area of exactly 120 m² and length greater than width. Give a possible dimension pair (Length × Width).",
+      "answers": [
+        {
+          "text": "15 m by 8 m",
+          "isCorrect": true
+        },
+        {
+          "text": "10 m by 12 m",
+          "isCorrect": false
+        },
+        {
+          "text": "14 m by 9 m",
+          "isCorrect": false
+        },
+        {
+          "text": "25 m by 5 m",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Possible factor pairs where Length > Width: 15m × 8m, 12m × 10m, 20m × 6m, 24m × 5m, 30m × 4m, 40m × 3m, 60m × 2m, 120m × 1m.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9d04",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "linear-equations",
+      "title": "Bridge Boundary Slopes",
+      "questionType": "input",
+      "expectedAnswer": "Both slopes are 2",
+      "acceptableAnswers": [
+        "both 2",
+        "2",
+        "both slopes are 2",
+        "slope 2",
+        "both have a slope of 2"
+      ],
+      "problemText": "Two bridge boundaries are represented by lines:\nBoundary A: y = 2x + 3\nBoundary B: y - 2x = 10\nWhat is the slope of Boundary A and Boundary B?",
+      "answers": [
+        {
+          "text": "Both have a slope of 2",
+          "isCorrect": true
+        },
+        {
+          "text": "Slope A = 2, Slope B = -2",
+          "isCorrect": false
+        },
+        {
+          "text": "Slope A = 3, Slope B = 10",
+          "isCorrect": false
+        },
+        {
+          "text": "Slope A = 2, Slope B = 10",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Boundary A has m = 2. Boundary B is y = 2x + 10, which also has m = 2.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9d05",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "quadrilaterals-geometry",
+      "title": "Picnic Platform Flooring Area",
+      "questionType": "input",
+      "expectedAnswer": "114 m²",
+      "acceptableAnswers": [
+        "114",
+        "114 m²",
+        "114m²",
+        "114 sq m",
+        "114 m^2"
+      ],
+      "problemText": "A public park picnic platform is a rectangle measuring 15 m by 10 m. Inside is a decorative square stone area with 6 m sides. What is the area outside the square to be covered with outdoor flooring?",
+      "answers": [
+        {
+          "text": "114 m²",
+          "isCorrect": true
+        },
+        {
+          "text": "150 m²",
+          "isCorrect": false
+        },
+        {
+          "text": "36 m²",
+          "isCorrect": false
+        },
+        {
+          "text": "126 m²",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Platform area = 15 × 10 = 150 m². Square stone area = 6 × 6 = 36 m². Flooring area = 150 - 36 = 114 m².",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9d06",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "quadrilaterals-geometry",
+      "title": "Border Material Sufficiency",
+      "questionType": "input",
+      "expectedAnswer": "Yes, perimeter is 24 m",
+      "acceptableAnswers": [
+        "yes",
+        "yes, 24m",
+        "yes, perimeter is 24m",
+        "yes, because the perimeter of the square is only 24m"
+      ],
+      "problemText": "A square stone area has 6 m sides. Organizers have 25 meters of border material. Is this enough border material? Why?",
+      "answers": [
+        {
+          "text": "Yes, because the perimeter of the square is only 24 m.",
+          "isCorrect": true
+        },
+        {
+          "text": "No, because the perimeter is 36 m.",
+          "isCorrect": false
+        },
+        {
+          "text": "No, because the perimeter is 26 m.",
+          "isCorrect": false
+        },
+        {
+          "text": "Yes, because the area is 24 m².",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Perimeter of the square = 4 × 6 m = 24 m. Since 25 m > 24 m, the material is enough.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e01",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "trigonometry",
+      "title": "DMS to Decimal Degrees",
+      "questionType": "input",
+      "expectedAnswer": "45.50°",
+      "acceptableAnswers": [
+        "45.50",
+        "45.5",
+        "45.50°",
+        "45.5°",
+        "45.50 degrees"
+      ],
+      "problemText": "Convert the angle measure 45° 30' into decimal degrees.",
+      "answers": [
+        {
+          "text": "45.50°",
+          "isCorrect": true
+        },
+        {
+          "text": "45.30°",
+          "isCorrect": false
+        },
+        {
+          "text": "45.05°",
+          "isCorrect": false
+        },
+        {
+          "text": "45.60°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "30' = 30 / 60 = 0.50°. Therefore 45° 30' = 45.50°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e02",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "trigonometry",
+      "title": "Decimal Degrees to DMS",
+      "questionType": "input",
+      "expectedAnswer": "12° 04' 48''",
+      "acceptableAnswers": [
+        "12° 04' 48''",
+        "12° 4' 48''",
+        "12° 4' 48\"",
+        "12° 04' 48\""
+      ],
+      "problemText": "Which degree, minute, and seconds value is equal to the angle measure 12.08°?",
+      "answers": [
+        {
+          "text": "12° 04' 48''",
+          "isCorrect": true
+        },
+        {
+          "text": "12° 08' 00''",
+          "isCorrect": false
+        },
+        {
+          "text": "12° 48' 04''",
+          "isCorrect": false
+        },
+        {
+          "text": "12° 00' 48''",
+          "isCorrect": false
+        }
+      ],
+      "solution": "0.08° × 60 = 4.8' (4 minutes); 0.8' × 60 = 48''. Thus 12.08° = 12° 04' 48''.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e03",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "trigonometry",
+      "title": "Mt. Isarog Field Triangle Classification",
+      "questionType": "input",
+      "expectedAnswer": "Right triangle",
+      "acceptableAnswers": [
+        "right triangle",
+        "right",
+        "a right triangle"
+      ],
+      "problemText": "A triangular field near Mt. Isarog has sides 30 m, 40 m, and 50 m. What type of triangle is it?",
+      "answers": [
+        {
+          "text": "Right triangle",
+          "isCorrect": true
+        },
+        {
+          "text": "Acute triangle",
+          "isCorrect": false
+        },
+        {
+          "text": "Obtuse triangle",
+          "isCorrect": false
+        },
+        {
+          "text": "Equilateral triangle",
+          "isCorrect": false
+        }
+      ],
+      "solution": "30² + 40² = 900 + 1600 = 2500 = 50². By Pythagorean Theorem, it is a right triangle.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e04",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "trigonometry",
+      "title": "Obtuse Triangle Classification",
+      "questionType": "input",
+      "expectedAnswer": "Obtuse triangle",
+      "acceptableAnswers": [
+        "obtuse",
+        "obtuse triangle",
+        "an obtuse triangle"
+      ],
+      "problemText": "The largest angle of an oblique triangle measures 110°. The triangle is classified as:",
+      "answers": [
+        {
+          "text": "Obtuse triangle",
+          "isCorrect": true
+        },
+        {
+          "text": "Acute triangle",
+          "isCorrect": false
+        },
+        {
+          "text": "Right triangle",
+          "isCorrect": false
+        },
+        {
+          "text": "Equiangular triangle",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Any triangle with an interior angle greater than 90° is an obtuse triangle.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e05",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "trigonometry",
+      "title": "Acute Triangle Classification",
+      "questionType": "input",
+      "expectedAnswer": "Acute triangle",
+      "acceptableAnswers": [
+        "acute",
+        "acute triangle",
+        "an acute triangle"
+      ],
+      "problemText": "If all three angles of a triangle are less than 90°, the triangle is classified as:",
+      "answers": [
+        {
+          "text": "Acute triangle",
+          "isCorrect": true
+        },
+        {
+          "text": "Obtuse triangle",
+          "isCorrect": false
+        },
+        {
+          "text": "Right triangle",
+          "isCorrect": false
+        },
+        {
+          "text": "Reflex triangle",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A triangle in which all three angles measure less than 90° is an acute triangle.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e06",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "trigonometry",
+      "title": "Types of Oblique Triangles",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Acute and obtuse triangles",
+      "acceptableAnswers": [
+        "acute and obtuse",
+        "acute and obtuse triangles"
+      ],
+      "problemText": "An oblique triangle (a triangle with no 90° angle) is classified according to its angles as:",
+      "answers": [
+        {
+          "text": "Acute and obtuse triangles",
+          "isCorrect": true
+        },
+        {
+          "text": "Right and scalene triangles",
+          "isCorrect": false
+        },
+        {
+          "text": "Equilateral and isosceles only",
+          "isCorrect": false
+        },
+        {
+          "text": "Convex and concave",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Non-right (oblique) triangles are either acute (all angles < 90°) or obtuse (one angle > 90°).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e07",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "law-of-sines-cosines",
+      "title": "Law of Sines Equation",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "a/sin(A) = b/sin(B) = c/sin(C)",
+      "acceptableAnswers": [
+        "a/sin(A)=b/sin(B)=c/sin(C)",
+        "a/sinA=b/sinB=c/sinC"
+      ],
+      "problemText": "What formula represents the Law of Sines?",
+      "answers": [
+        {
+          "text": "a / sin(A) = b / sin(B) = c / sin(C)",
+          "isCorrect": true
+        },
+        {
+          "text": "a² = b² + c² - 2bc cos(A)",
+          "isCorrect": false
+        },
+        {
+          "text": "sin(A) + sin(B) = sin(C)",
+          "isCorrect": false
+        },
+        {
+          "text": "a cos(A) = b cos(B)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The Law of Sines states: a / sin(A) = b / sin(B) = c / sin(C).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e08",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "law-of-sines-cosines",
+      "title": "Law of Cosines Equation",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "a² = b² + c² - 2bc cos(A)",
+      "acceptableAnswers": [
+        "a²=b²+c²-2bccos(A)",
+        "a^2 = b^2 + c^2 - 2bc cos(A)",
+        "a^2=b^2+c^2-2bc*cos(A)"
+      ],
+      "problemText": "What formula represents the Law of Cosines?",
+      "answers": [
+        {
+          "text": "a² = b² + c² - 2bc cos(A)",
+          "isCorrect": true
+        },
+        {
+          "text": "a² = b² + c² + 2bc cos(A)",
+          "isCorrect": false
+        },
+        {
+          "text": "a = b cos(C) + c cos(B)",
+          "isCorrect": false
+        },
+        {
+          "text": "a² = b² + c² - 2bc sin(A)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The Law of Cosines is a² = b² + c² - 2bc cos(A).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e09",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "law-of-sines-cosines",
+      "title": "Triangular Garden in Naga City",
+      "questionType": "input",
+      "expectedAnswer": "Law of Cosines",
+      "acceptableAnswers": [
+        "law of cosines",
+        "cosines",
+        "the law of cosines"
+      ],
+      "problemText": "A triangular garden in Naga City has two sides measuring 12 m and 15 m with an included angle of 70°. Which law should be used to find the third side?",
+      "answers": [
+        {
+          "text": "Law of Cosines",
+          "isCorrect": true
+        },
+        {
+          "text": "Law of Sines",
+          "isCorrect": false
+        },
+        {
+          "text": "Pythagorean Theorem",
+          "isCorrect": false
+        },
+        {
+          "text": "Tangent Ratio",
+          "isCorrect": false
+        }
+      ],
+      "solution": "When given two sides and the included angle (SAS), the Law of Cosines is used.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e10",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "trigonometry",
+      "title": "Included Angle Identification",
+      "questionType": "input",
+      "expectedAnswer": "∠C",
+      "acceptableAnswers": [
+        "∠C",
+        "C",
+        "angle C",
+        "angle c",
+        "<C"
+      ],
+      "problemText": "In triangle ABC, the sides AC and BC meet at vertex C. What is the included angle between AC and BC?",
+      "answers": [
+        {
+          "text": "∠C",
+          "isCorrect": true
+        },
+        {
+          "text": "∠A",
+          "isCorrect": false
+        },
+        {
+          "text": "∠B",
+          "isCorrect": false
+        },
+        {
+          "text": "∠ABC",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The angle formed between sides AC and BC sharing vertex C is ∠C.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10e11",
+      "grade": 10,
+      "difficulty": 1,
+      "category": "law-of-sines-cosines",
+      "title": "Naga City Rescue Route Measurement",
+      "questionType": "input",
+      "expectedAnswer": "Law of Cosines",
+      "acceptableAnswers": [
+        "law of cosines",
+        "cosines",
+        "the law of cosines"
+      ],
+      "problemText": "A rescue team in Naga City needs to determine the distance between two locations. They know two sides of a triangular route and the angle between them. Which method is most appropriate?",
+      "answers": [
+        {
+          "text": "Law of Cosines",
+          "isCorrect": true
+        },
+        {
+          "text": "Law of Sines",
+          "isCorrect": false
+        },
+        {
+          "text": "Pythagorean Theorem",
+          "isCorrect": false
+        },
+        {
+          "text": "Right triangle trigonometry",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Given two sides and the included angle (SAS), the Law of Cosines is appropriate.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10a01",
+      "grade": 10,
+      "difficulty": 3,
+      "category": "trigonometry",
+      "title": "Flagpole Height Elevation",
+      "questionType": "input",
+      "expectedAnswer": "15 meters",
+      "acceptableAnswers": [
+        "15",
+        "15 m",
+        "15 meters",
+        "15m"
+      ],
+      "problemText": "An observer stands exactly 15 meters away from the base of a vertical flagpole. The angle of elevation from the observer’s feet to the top of the flagpole is 45°. How tall is the flagpole?",
+      "answers": [
+        {
+          "text": "15 meters",
+          "isCorrect": true
+        },
+        {
+          "text": "30 meters",
+          "isCorrect": false
+        },
+        {
+          "text": "15√2 meters",
+          "isCorrect": false
+        },
+        {
+          "text": "10 meters",
+          "isCorrect": false
+        }
+      ],
+      "solution": "tan(45°) = height / distance => 1 = h / 15 => h = 15 meters.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10a02",
+      "grade": 10,
+      "difficulty": 3,
+      "category": "trigonometry",
+      "title": "Third Angle in Triangle",
+      "questionType": "input",
+      "expectedAnswer": "75°",
+      "acceptableAnswers": [
+        "75",
+        "75°",
+        "75 deg",
+        "75 degrees"
+      ],
+      "problemText": "In triangle ABC, ∠A = 45° and ∠C = 60°. What is the measure of ∠B?",
+      "answers": [
+        {
+          "text": "75°",
+          "isCorrect": true
+        },
+        {
+          "text": "85°",
+          "isCorrect": false
+        },
+        {
+          "text": "65°",
+          "isCorrect": false
+        },
+        {
+          "text": "95°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Sum of angles in a triangle is 180°: ∠B = 180° - 45° - 60° = 75°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10a03",
+      "grade": 10,
+      "difficulty": 3,
+      "category": "law-of-sines-cosines",
+      "title": "Catanduanes Fisherman Law of Sines",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "At least one known side and its opposite angle",
+      "acceptableAnswers": [
+        "at least one known side and its opposite angle",
+        "one known side and its opposite angle"
+      ],
+      "problemText": "A fisherman in the waters near Catanduanes observes two landmarks 20 km apart with angles 45° and 65°. What information is needed to solve for an unknown side using the Law of Sines?",
+      "answers": [
+        {
+          "text": "At least one known side and its opposite angle",
+          "isCorrect": true
+        },
+        {
+          "text": "All three side lengths",
+          "isCorrect": false
+        },
+        {
+          "text": "Two sides and the included angle only",
+          "isCorrect": false
+        },
+        {
+          "text": "The area and perimeter",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The Law of Sines requires at least one side and its corresponding opposite angle pair.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10a04",
+      "grade": 10,
+      "difficulty": 3,
+      "category": "law-of-sines-cosines",
+      "title": "Law of Sines Side Length",
+      "questionType": "input",
+      "expectedAnswer": "4.24 cm",
+      "acceptableAnswers": [
+        "4.24",
+        "4.24 cm",
+        "4.24cm",
+        "4.2"
+      ],
+      "problemText": "In triangle ABC, ∠A = 25°, ∠B = 85°, and AC = 10 cm. Using BC = (10 sin 25°) / sin 85°, what is the approximate length of BC?",
+      "answers": [
+        {
+          "text": "4.24 cm",
+          "isCorrect": true
+        },
+        {
+          "text": "5.12 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "3.85 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "6.20 cm",
+          "isCorrect": false
+        }
+      ],
+      "solution": "BC = 10 * sin(25°) / sin(85°) ≈ 10 * 0.4226 / 0.9962 ≈ 4.24 cm.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10a05",
+      "grade": 10,
+      "difficulty": 3,
+      "category": "trigonometry",
+      "title": "Pasacao Boat Navigation Angle",
+      "questionType": "input",
+      "expectedAnswer": "70°",
+      "acceptableAnswers": [
+        "70",
+        "70°",
+        "70 deg",
+        "70 degrees"
+      ],
+      "problemText": "A boat travels from Pasacao toward a point offshore. If two observed angles are 40° and 70°, what is the third angle of the triangle?",
+      "answers": [
+        {
+          "text": "70°",
+          "isCorrect": true
+        },
+        {
+          "text": "80°",
+          "isCorrect": false
+        },
+        {
+          "text": "60°",
+          "isCorrect": false
+        },
+        {
+          "text": "50°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "180° - 40° - 70° = 70°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10a06",
+      "grade": 10,
+      "difficulty": 3,
+      "category": "law-of-sines-cosines",
+      "title": "Law of Cosines Formulation",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "e² = 10² + 12² - 2(10)(12)cos(60°)",
+      "acceptableAnswers": [
+        "e²=10²+12²-2(10)(12)cos60°",
+        "e^2 = 10^2 + 12^2 - 2(10)(12)cos(60)"
+      ],
+      "problemText": "In triangle DEF, side d = 10 cm, side f = 12 cm, and ∠E = 60°. Which equation correctly determines side e?",
+      "answers": [
+        {
+          "text": "e² = 10² + 12² - 2(10)(12)cos(60°)",
+          "isCorrect": true
+        },
+        {
+          "text": "e² = 10² + 12² + 2(10)(12)cos(60°)",
+          "isCorrect": false
+        },
+        {
+          "text": "e = 10sin(60°) + 12cos(60°)",
+          "isCorrect": false
+        },
+        {
+          "text": "e² = 10² + 12² - 2(10)(12)sin(60°)",
+          "isCorrect": false
+        }
+      ],
+      "solution": "By Law of Cosines for side e opposite ∠E: e² = d² + f² - 2df cos(E) = 10² + 12² - 2(10)(12)cos(60°).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10d01",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "law-of-sines-cosines",
+      "title": "Triangle Angle via Law of Sines",
+      "questionType": "input",
+      "expectedAnswer": "35° 22' 08''",
+      "acceptableAnswers": [
+        "35° 22' 08''",
+        "35° 22' 08\"",
+        "35.37°",
+        "35.37",
+        "35° 22'"
+      ],
+      "problemText": "Determine the measure of ∠C in triangle ABC if AB = 0.77 km, m∠A = 110°, and BC = 1.25 km.",
+      "answers": [
+        {
+          "text": "35° 22' 08''",
+          "isCorrect": true
+        },
+        {
+          "text": "45° 15' 30''",
+          "isCorrect": false
+        },
+        {
+          "text": "28° 40' 12''",
+          "isCorrect": false
+        },
+        {
+          "text": "30° 00' 00''",
+          "isCorrect": false
+        }
+      ],
+      "solution": "sin(C) / 0.77 = sin(110°) / 1.25 => sin(C) = 0.77 * sin(110°) / 1.25 ≈ 0.5788 => ∠C ≈ 35.3688° ≈ 35° 22' 08''.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10d02",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "law-of-sines-cosines",
+      "title": "Triangular Lot Third Side",
+      "questionType": "input",
+      "expectedAnswer": "12.49 m",
+      "acceptableAnswers": [
+        "12.49",
+        "12.49 m",
+        "12.49m",
+        "12.5",
+        "12.5 m"
+      ],
+      "problemText": "A triangular lot has sides 10 m and 14 m with an included angle of 60°. What is the approximate length of the third side?",
+      "answers": [
+        {
+          "text": "12.49 m",
+          "isCorrect": true
+        },
+        {
+          "text": "15.20 m",
+          "isCorrect": false
+        },
+        {
+          "text": "11.18 m",
+          "isCorrect": false
+        },
+        {
+          "text": "14.00 m",
+          "isCorrect": false
+        }
+      ],
+      "solution": "c² = 10² + 14² - 2(10)(14)cos(60°) = 100 + 196 - 140 = 156 => c = √156 ≈ 12.49 m.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10d03",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "law-of-sines-cosines",
+      "title": "Surveyor Triangular Area Third Side",
+      "questionType": "input",
+      "expectedAnswer": "21.25 m",
+      "acceptableAnswers": [
+        "21.25",
+        "21.25 m",
+        "21.25m",
+        "21.3"
+      ],
+      "problemText": "A surveyor measures two sides of a triangular area as 20 m and 30 m and the included angle as 45°. What is the approximate third side?",
+      "answers": [
+        {
+          "text": "21.25 m",
+          "isCorrect": true
+        },
+        {
+          "text": "25.50 m",
+          "isCorrect": false
+        },
+        {
+          "text": "18.75 m",
+          "isCorrect": false
+        },
+        {
+          "text": "28.10 m",
+          "isCorrect": false
+        }
+      ],
+      "solution": "c² = 20² + 30² - 2(20)(30)cos(45°) = 400 + 900 - 1200(0.7071) = 1300 - 848.53 = 451.47 => c = √451.47 ≈ 21.25 m.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10d04",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "law-of-sines-cosines",
+      "title": "Angle Measure from Law of Cosines",
+      "questionType": "input",
+      "expectedAnswer": "55° 46' 16''",
+      "acceptableAnswers": [
+        "55° 46' 16''",
+        "55° 46' 16\"",
+        "55.77°",
+        "55.77",
+        "55° 46'"
+      ],
+      "problemText": "What is m∠E in the equation 10² = 8² + 12² - 2(8)(12)cos(E)?",
+      "answers": [
+        {
+          "text": "55° 46' 16''",
+          "isCorrect": true
+        },
+        {
+          "text": "62° 30' 00''",
+          "isCorrect": false
+        },
+        {
+          "text": "48° 20' 15''",
+          "isCorrect": false
+        },
+        {
+          "text": "50° 12' 40''",
+          "isCorrect": false
+        }
+      ],
+      "solution": "100 = 64 + 144 - 192 cos(E) => 100 = 208 - 192 cos(E) => -108 = -192 cos(E) => cos(E) = 0.5625 => E ≈ 55.7711° ≈ 55° 46' 16''.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10d05",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "law-of-sines-cosines",
+      "title": "Law of Sines Side Computation",
+      "questionType": "input",
+      "expectedAnswer": "13.66 cm",
+      "acceptableAnswers": [
+        "13.66",
+        "13.66 cm",
+        "13.66cm",
+        "13.7"
+      ],
+      "problemText": "In triangle ABC, ∠A = 45°, ∠B = 75°, and side a = 10 cm. Using the Law of Sines, approximately how long is side b?",
+      "answers": [
+        {
+          "text": "13.66 cm",
+          "isCorrect": true
+        },
+        {
+          "text": "11.50 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "15.20 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "12.00 cm",
+          "isCorrect": false
+        }
+      ],
+      "solution": "b = a * sin(B) / sin(A) = 10 * sin(75°) / sin(45°) ≈ 10 * 0.9659 / 0.7071 ≈ 13.66 cm.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10d06",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "law-of-sines-cosines",
+      "title": "Triangle PQR Side Length",
+      "questionType": "input",
+      "expectedAnswer": "6.06 cm",
+      "acceptableAnswers": [
+        "6.06",
+        "6.06 cm",
+        "6.06cm",
+        "6.1"
+      ],
+      "problemText": "In triangle PQR, ∠P = 30°, ∠Q = 52°, and side r = 12 cm. What is the approximate length of side p?",
+      "answers": [
+        {
+          "text": "6.06 cm",
+          "isCorrect": true
+        },
+        {
+          "text": "7.45 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "5.12 cm",
+          "isCorrect": false
+        },
+        {
+          "text": "8.20 cm",
+          "isCorrect": false
+        }
+      ],
+      "solution": "∠R = 180° - 30° - 52° = 98°. p = r * sin(P) / sin(R) = 12 * sin(30°) / sin(98°) ≈ 12 * 0.5 / 0.9903 ≈ 6.06 cm.",
+      "imageRes": null
+    }
+  ]
+}

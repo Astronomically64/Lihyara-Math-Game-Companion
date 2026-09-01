@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lihyara QR Code Test Gallery</title>
+  <style>
+    body { font-family: sans-serif; background: #F1ECE0; color: #2A2420; padding: 20px; }
+    h1 { font-family: serif; color: #1E5452; margin-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin-top: 16px; }
+    .card { background: #FAF7F1; border-radius: 16px; padding: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    img { width: 130px; height: 130px; image-rendering: pixelated; margin: 0 auto; display: block; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: bold; margin-top: 6px; }
+    .easy { background: #E2EEDB; color: #2E5A1C; }
+    .average { background: #FEF3D6; color: #8C6208; }
+    .difficult { background: #FCE8E2; color: #9C331B; }
+    .btn { display: inline-block; margin-bottom: 20px; padding: 10px 18px; background: #1E5452; color: white; border-radius: 99px; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <a href="/" class="btn">← Back to App</a>
+  <h1>Lihyara QR Codes Gallery (129 Cards)</h1>
+  <p>Scan any QR code below using your phone camera or the web app scanner.</p>
+  
+  <div id="gallery" class="grid"></div>
+
+  <script>
+    fetch('/lihyara_all_cards.json')
+      .then(res => res.json())
+      .then(data => {
+        const gallery = document.getElementById('gallery');
+        data.cards.forEach(card => {
+          const diffClass = card.difficulty === 1 ? 'easy' : (card.difficulty === 3 ? 'average' : 'difficult');
+          const diffName = card.difficulty === 1 ? 'Easy' : (card.difficulty === 3 ? 'Average' : 'Difficult');
+          const cardEl = document.createElement('div');
+          cardEl.className = 'card';
+          cardEl.innerHTML = `
+            <img src="/qr_codes/${card.qrId}.png" alt="${card.qrId}" onerror="this.src='/favicon.svg'" />
+            <div style="font-weight: bold; margin-top: 8px; font-family: monospace;">${card.qrId.toUpperCase()}</div>
+            <div style="font-size: 11px; color: #8C8579;">Grade ${card.grade}</div>
+            <span class="tag ${diffClass}">${diffName}</span>
+          `;
+          gallery.appendChild(cardEl);
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+import React, { useState, useMemo } from 'react';
+import { Card, AnswerOption } from '../types/card';
+import { getCategoryLabel, getDifficultyLabel, validateInputAnswer } from '../utils/cardService';
+import { ArrowLeft, Target, Send, ToggleLeft, ToggleRight, HelpCircle } from 'lucide-react';
+
+interface ProblemViewProps {
+  card: Card;
+  onSelectAnswer: (selectedOption: AnswerOption) => void;
+  onBack: () => void;
+}
+
+// Utility to shuffle choices deterministically
+function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, onBack }) => {
+  // Mode: 'input' (type exact answer) or 'multiple_choice'
+  const [answerMode, setAnswerMode] = useState<'input' | 'multiple_choice'>(() => {
+    return card.questionType === 'input' ? 'input' : 'multiple_choice';
+  });
+
+  const [typedInput, setTypedInput] = useState('');
+  const [inputError, setInputError] = useState<string | null>(null);
+
+  // Shuffle answer options once per card view
+  const shuffledAnswers = useMemo(() => {
+    return shuffleArray(card.answers);
+  }, [card]);
+
+  const categoryLabel = getCategoryLabel(card.category);
+  const difficultyLabel = getDifficultyLabel(card.difficulty);
+
+  const handleInputSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!typedInput.trim()) {
+      setInputError('Please enter your answer before submitting.');
+      return;
+    }
+
+    const isCorrect = validateInputAnswer(card, typedInput);
+    onSelectAnswer({
+      text: typedInput.trim(),
+      isCorrect,
+    });
+  };
+
+  return (
+    <div className="min-h-[100dvh] flex flex-col justify-between max-w-md mx-auto bg-background select-none">
+      <div>
+        {/* Dark Teal Gradient Header Banner (Rounded Bottom Corners) */}
+        <div className="relative bg-gradient-to-br from-headerTeal-start to-headerTeal-end text-textOnDark rounded-b-[2rem] p-6 pt-8 pb-10 shadow-md">
+          {/* Top navigation row */}
+          <div className="flex items-center justify-between mb-4">
+            <button
+              onClick={onBack}
+              className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-textOnDark hover:bg-white/20 active:scale-95 transition-all"
+              aria-label="Return to Home"
+            >
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+
+            {/* Category Pill Badge */}
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/25 backdrop-blur-sm border border-white/10 text-xs font-semibold text-accentGold tracking-wider uppercase">
+              <Target className="w-3.5 h-3.5 text-accentGold" />
+              <span>{categoryLabel}</span>
+            </div>
+          </div>
+
+          {/* Grade & Difficulty Tag */}
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-xs font-medium text-textOnDark/70 uppercase tracking-wider">
+              Grade {card.grade} • {difficultyLabel}
+            </span>
+            <span className="text-white/30 text-xs">•</span>
+            <span className="text-xs font-mono text-accentGold font-bold">
+              #{card.qrId.toUpperCase()}
+            </span>
+          </div>
+
+          {/* Title / Quest Heading */}
+          <h2 className="text-2xl font-serif font-bold text-textOnDark tracking-tight">
+            {card.title || `Challenge Quest`}
+          </h2>
+        </div>
+
+        {/* Overlapping Problem Text Card */}
+        <div className="px-5 -mt-6">
+          <div className="bg-surfaceCard rounded-3xl p-6 shadow-soft border border-black/5">
+            <p className="text-base sm:text-lg text-textPrimary leading-relaxed font-normal whitespace-pre-line">
+              {card.problemText}
+            </p>
+
+            {/* Extension point for future image rendering if imageRes is added */}
+            {card.imageRes && (
+              <div className="mt-4 rounded-2xl overflow-hidden border border-textMuted/20">
+                <img
+                  src={card.imageRes}
+                  alt="Problem diagram"
+                  className="w-full h-auto object-contain max-h-56"
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Answer Area */}
+      <div className="p-5 pb-8">
+        {/* Mode Switcher Toggle */}
+        <div className="flex items-center justify-between mb-3 px-1">
+          <span className="text-[11px] font-bold tracking-wider text-textMuted uppercase">
+            {answerMode === 'input' ? 'Type Specific Answer' : 'Select Choice'}
+          </span>
+
+          {card.questionType !== 'true_false' && (
+            <button
+              onClick={() => {
+                setAnswerMode(answerMode === 'input' ? 'multiple_choice' : 'input');
+                setInputError(null);
+              }}
+              className="text-xs text-primaryTeal font-semibold flex items-center gap-1.5 hover:underline"
+            >
+              {answerMode === 'input' ? (
+                <>
+                  <ToggleRight className="w-4 h-4 text-accentGold" />
+                  <span>Switch to Choices</span>
+                </>
+              ) : (
+                <>
+                  <ToggleLeft className="w-4 h-4 text-textMuted" />
+                  <span>Type Answer</span>
+                </>
+              )}
+            </button>
+          )}
+        </div>
+
+        {/* MODE 1: Direct Specific Text/Numeric Input */}
+        {answerMode === 'input' ? (
+          <form onSubmit={handleInputSubmit} className="flex flex-col gap-3">
+            <div className="relative">
+              <input
+                type="text"
+                autoFocus
+                placeholder="Type your answer here..."
+                value={typedInput}
+                onChange={(e) => {
+                  setTypedInput(e.target.value);
+                  if (inputError) setInputError(null);
+                }}
+                className="w-full py-4 pl-4 pr-12 text-base font-serif bg-surfaceCard text-textPrimary rounded-2xl border-2 border-primaryTeal/30 focus:border-primaryTeal focus:outline-none shadow-soft transition-all"
+              />
+              <button
+                type="submit"
+                className="absolute right-2.5 top-2.5 bottom-2.5 px-3.5 rounded-xl bg-primaryTeal text-textOnDark font-bold flex items-center justify-center active:scale-95 transition-transform"
+                title="Submit Answer"
+              >
+                <Send className="w-4 h-4" />
+              </button>
+            </div>
+
+            {inputError && (
+              <p className="text-xs text-accentTerracotta font-medium px-2 flex items-center gap-1">
+                <HelpCircle className="w-3.5 h-3.5" />
+                {inputError}
+              </p>
+            )}
+
+            <p className="text-[11px] text-textMuted px-2 leading-tight">
+              Tip: Enter values like numbers (e.g. <span className="font-mono text-textPrimary">105</span>, <span className="font-mono text-textPrimary">0.375</span>, <span className="font-mono text-textPrimary">1/2</span>), units, or terms.
+            </p>
+          </form>
+        ) : (
+          /* MODE 2: 2x2 Answer Grid or True/False Buttons */
+          <div className={`grid gap-3 ${card.answers.length === 2 ? 'grid-cols-2' : 'grid-cols-2'}`}>
+            {shuffledAnswers.map((answer, index) => (
+              <button
+                key={index}
+                onClick={() => onSelectAnswer(answer)}
+                className="bg-surfaceCard rounded-2xl p-4 min-h-[5.5rem] flex items-center justify-center text-center shadow-soft border border-black/5 hover:border-primaryTeal/40 active:scale-[0.97] transition-all group"
+              >
+                <span className="font-serif text-base sm:text-lg font-medium text-textPrimary group-hover:text-primaryTeal transition-colors">
+                  {answer.text}
+                </span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
