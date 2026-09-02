@@ -5,6 +5,7 @@ import { ProblemView } from './components/ProblemView';
 import { FeedbackView } from './components/FeedbackView';
 import { CatalogView } from './components/CatalogView';
 import { CardNotFoundView } from './components/CardNotFoundView';
+import { SpectralClouds } from './components/SpectralClouds';
 import { Card, AnswerOption, GameStats } from './types/card';
 import {
   getCardById,
@@ -107,7 +108,14 @@ export const App: React.FC = () => {
   };
 
   return (
-    <main className="w-full min-h-[100dvh] bg-background">
+    <main className={`relative w-full min-h-[100dvh] ${currentScreen === 'problem' || currentScreen === 'feedback' ? 'bg-background' : 'animate-grade-bg'}`}>
+      {currentScreen !== 'problem' && currentScreen !== 'feedback' && currentScreen !== 'scanner' && (
+        <>
+          <SpectralClouds />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-black/60 opacity-40 pointer-events-none" />
+        </>
+      )}
+      <div className="relative z-10 min-h-[100dvh]">
       {currentScreen === 'home' && (
         <HomeView
           stats={stats}
@@ -159,6 +167,7 @@ export const App: React.FC = () => {
           onGoHome={handleGoHome}
         />
       )}
+      </div>
     </main>
   );
 };

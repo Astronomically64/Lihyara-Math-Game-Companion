@@ -1,7 +1,6 @@
 import React from 'react';
 import { Compass, QrCode, RotateCcw, BookOpen } from 'lucide-react';
 import { GameStats } from '../types/card';
-import { SpectralClouds } from './SpectralClouds';
 
 interface HomeViewProps {
   stats: GameStats;
@@ -20,12 +19,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const accuracy = total > 0 ? Math.round((stats.correct / total) * 100) : 0;
 
   return (
-    <div className="relative min-h-[100dvh] flex flex-col justify-between p-6 sm:p-8 max-w-md mx-auto select-none animate-grade-bg text-textOnDark transition-colors duration-1000 overflow-hidden">
-      {/* Spectral Clouds Background Effect */}
-      <SpectralClouds />
-
-      {/* Background Gradient Overlay for Depth */}
-      <div className="absolute inset-0 bg-radial-gradient pointer-events-none opacity-40 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-black/60 z-0" />
+    <div className="relative min-h-[100dvh] w-full flex flex-col justify-between p-[clamp(1rem,4vw,3rem)] max-w-5xl mx-auto select-none text-textOnDark transition-colors duration-1000 overflow-hidden">
       {/* Top Bar with Catalog & Stats Reset */}
       <div className="flex items-center justify-end pt-2">
         <div className="flex items-center gap-2">
@@ -64,14 +58,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
         </div>
 
         {/* Wordmark & Subtitle */}
-        <h1 className="text-4xl sm:text-5xl font-serif font-bold text-white tracking-tight mb-1 drop-shadow-md">
+        <h1 className="text-[clamp(2.25rem,6vw,4rem)] font-serif font-bold text-white tracking-tight mb-1 drop-shadow-md">
           Baniwara
         </h1>
-        <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] text-accentGold uppercase drop-shadow-sm">
+        <p className="text-[clamp(0.75rem,1.5vw,1rem)] font-semibold tracking-[0.25em] text-accentGold uppercase drop-shadow-sm">
           Math Quest of Bicol
         </p>
 
-        <p className="mt-3 text-xs text-white/85 max-w-[280px] leading-relaxed font-normal drop-shadow-sm">
+        <p className="mt-3 text-[clamp(0.75rem,1.2vw,1rem)] text-white/85 max-w-[38rem] leading-relaxed font-normal drop-shadow-sm">
           The interactive web companion for the physical board game. Scan any card QR code or browse quests to play.
         </p>
       </div>
@@ -79,7 +73,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       {/* Bottom Section: Stat Card + CTA Buttons */}
       <div className="flex flex-col gap-3 pb-4 z-10">
         {/* Stat Card */}
-        <div className="bg-black/35 backdrop-blur-md rounded-3xl p-5 shadow-lg border border-white/15 flex items-center justify-around text-white">
+        <div className="bg-black/35 backdrop-blur-md rounded-3xl p-[clamp(1rem,3vw,2rem)] shadow-lg border border-white/15 flex items-center justify-around text-white">
           {/* Correct Column */}
           <div className="flex-1 text-center">
             <span className="block text-[11px] font-bold tracking-wider text-emerald-300 uppercase mb-1">

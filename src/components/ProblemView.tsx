@@ -55,12 +55,12 @@ function getGradeTheme(grade: number): GradeTheme {
   }
 }
 
-// Timer based on difficulty: 1 (Easy: 60s), 3 (Average: 45s), 5 (Hard: 30s)
+// Timer based on difficulty: 1 (Easy: 30s), 3 (Medium: 60s), 5 (Hard: 90s)
 function getInitialTimerSeconds(difficulty: number): number {
-  if (difficulty === 1) return 60;
-  if (difficulty === 3) return 45;
-  if (difficulty === 5) return 30;
-  return 45;
+  if (difficulty === 1) return 30;
+  if (difficulty === 3) return 60;
+  if (difficulty === 5) return 90;
+  return 60;
 }
 
 export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, onBack }) => {
@@ -121,10 +121,10 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   };
 
   return (
-    <div className="min-h-[100dvh] flex flex-col justify-between max-w-md mx-auto bg-background select-none">
+    <div className="min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto bg-background select-none">
       <div>
         {/* Dynamic Grade-Themed Gradient Header Banner (Rounded Bottom Corners) */}
-        <div className={`relative bg-gradient-to-br ${theme.gradient} text-textOnDark rounded-b-[2rem] p-6 pt-8 pb-10 shadow-md transition-colors duration-500`}>
+        <div className={`relative bg-gradient-to-br ${theme.gradient} text-textOnDark rounded-b-[clamp(1.5rem,4vw,2.5rem)] p-[clamp(1.25rem,4vw,2.5rem)] pt-[clamp(1.5rem,5vw,3rem)] pb-[clamp(2rem,5vw,3.5rem)] shadow-md transition-colors duration-500`}>
           {/* Top navigation row */}
           <div className="flex items-center justify-between mb-4">
             <button
@@ -176,9 +176,9 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
         </div>
 
         {/* Overlapping Problem Text Card */}
-        <div className="px-5 -mt-6">
-          <div className="bg-surfaceCard rounded-3xl p-6 shadow-soft border border-black/5">
-            <p className="text-base sm:text-lg text-textPrimary leading-relaxed font-normal whitespace-pre-line">
+        <div className="px-[clamp(1rem,4vw,3rem)] -mt-[clamp(1.25rem,3vw,1.5rem)]">
+          <div className="bg-surfaceCard rounded-3xl p-[clamp(1.25rem,4vw,2.5rem)] shadow-soft border border-black/5">
+            <p className="text-[clamp(1rem,1.2vw,1.25rem)] text-textPrimary leading-relaxed font-normal whitespace-pre-line">
               {card.problemText}
             </p>
 
@@ -197,7 +197,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
       </div>
 
       {/* Answer Area */}
-      <div className="p-5 pb-8">
+      <div className="w-full p-[clamp(1rem,4vw,3rem)] pb-[clamp(1.5rem,4vw,3rem)]">
         {/* Mode Switcher Toggle */}
         <div className="flex items-center justify-between mb-3 px-1">
           <span className="text-[11px] font-bold tracking-wider text-textMuted uppercase">
@@ -264,12 +264,12 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
           </form>
         ) : (
           /* MODE 2: 2x2 Answer Grid or True/False Buttons */
-          <div className={`grid gap-3 ${card.answers.length === 2 ? 'grid-cols-2' : 'grid-cols-2'}`}>
+          <div className={`grid gap-[clamp(0.75rem,2vw,1.25rem)] ${card.answers.length === 2 ? 'grid-cols-2' : 'grid-cols-2 lg:grid-cols-4'}`}>
             {shuffledAnswers.map((answer, index) => (
               <button
                 key={index}
                 onClick={() => onSelectAnswer(answer)}
-                className="bg-surfaceCard rounded-2xl p-4 min-h-[5.5rem] flex items-center justify-center text-center shadow-soft border border-black/5 hover:border-primaryTeal/40 active:scale-[0.97] transition-all group"
+                className="bg-surfaceCard rounded-2xl p-[clamp(1rem,2.5vw,1.5rem)] min-h-[clamp(5.5rem,10vw,8rem)] flex items-center justify-center text-center shadow-soft border border-black/5 hover:border-primaryTeal/40 active:scale-[0.97] transition-all group"
               >
                 <span className="font-serif text-base sm:text-lg font-medium text-textPrimary group-hover:text-primaryTeal transition-colors">
                   {answer.text}

@@ -35,7 +35,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
   }, [allCards, selectedGrade, selectedDiff, searchQuery]);
 
   return (
-    <div className="min-h-[100dvh] max-w-lg mx-auto bg-background p-5 pt-8 pb-12 select-none flex flex-col justify-between">
+    <div className="min-h-[100dvh] w-full max-w-6xl mx-auto bg-background/85 backdrop-blur-sm p-[clamp(1rem,4vw,3rem)] pt-[clamp(1.5rem,5vw,3rem)] pb-[clamp(2rem,5vw,4rem)] select-none flex flex-col justify-between">
       <div>
         {/* Header */}
         <div className="flex items-center justify-between mb-5">
@@ -113,7 +113,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
           </button>
           {[
             { level: 1, label: 'Easy' },
-            { level: 3, label: 'Average' },
+            { level: 3, label: 'Medium' },
             { level: 5, label: 'Difficult' },
           ].map((d) => (
             <button

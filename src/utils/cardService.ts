@@ -198,7 +198,7 @@ export function getCategoryLabel(category: string): string {
  */
 export function getDifficultyLabel(diff: number): string {
   if (diff === 1) return 'Easy';
-  if (diff === 3) return 'Average';
+  if (diff === 3) return 'Medium';
   if (diff === 5) return 'Difficult';
   return 'Standard';
 }
