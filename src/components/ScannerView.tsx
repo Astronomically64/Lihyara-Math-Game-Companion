@@ -133,7 +133,7 @@ export const ScannerView: React.FC<ScannerViewProps> = ({ onScanSuccess, onBack 
         await stopScanner();
         onScanSuccess(qrId);
       } else {
-        setErrorMessage('Could not find a valid Lihyara QR code in that image.');
+        setErrorMessage('Could not find a valid Baniwara QR code in that image.');
       }
     } catch (err) {
       setErrorMessage('Could not detect a QR code from the selected image.');

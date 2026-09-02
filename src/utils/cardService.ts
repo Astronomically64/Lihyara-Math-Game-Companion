@@ -33,7 +33,9 @@ export function parseQrPayload(rawPayload: string): string {
     }
   }
 
-  if (cleaned.toUpperCase().startsWith('LIHYARA:')) {
+  if (cleaned.toUpperCase().startsWith('BANIWARA:')) {
+    cleaned = cleaned.substring(9).trim();
+  } else if (cleaned.toUpperCase().startsWith('LIHYARA:')) {
     cleaned = cleaned.substring(8).trim();
   }
 

@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Card, AnswerOption } from '../types/card';
 import { getCategoryLabel, getDifficultyLabel, validateInputAnswer } from '../utils/cardService';
-import { ArrowLeft, Target, Send, ToggleLeft, ToggleRight, HelpCircle } from 'lucide-react';
+import { ArrowLeft, Target, Send, ToggleLeft, ToggleRight, HelpCircle, Timer } from 'lucide-react';
 
 interface ProblemViewProps {
   card: Card;
@@ -19,6 +19,50 @@ function shuffleArray<T>(array: T[]): T[] {
   return arr;
 }
 
+interface GradeTheme {
+  gradient: string;
+  themeName: string;
+  badgeAccent: string;
+}
+
+function getGradeTheme(grade: number): GradeTheme {
+  switch (grade) {
+    case 7: // Forest Green
+      return {
+        gradient: 'from-[#143d2b] via-[#1e563b] to-[#2d7a4d]',
+        themeName: 'Forest Realm',
+        badgeAccent: 'text-emerald-300',
+      };
+    case 8: // Magical Gold/Yellow
+      return {
+        gradient: 'from-[#4a3205] via-[#785309] to-[#b38312]',
+        themeName: 'Magical Realm',
+        badgeAccent: 'text-amber-300',
+      };
+    case 9: // Fiery Red
+      return {
+        gradient: 'from-[#4d0c0c] via-[#7f1d1d] to-[#b91c1c]',
+        themeName: 'Fiery Realm',
+        badgeAccent: 'text-red-300',
+      };
+    case 10: // Oceanic Blue
+    default:
+      return {
+        gradient: 'from-[#0b2545] via-[#134074] to-[#0077b6]',
+        themeName: 'Oceanic Realm',
+        badgeAccent: 'text-sky-300',
+      };
+  }
+}
+
+// Timer based on difficulty: 1 (Easy: 60s), 3 (Average: 45s), 5 (Hard: 30s)
+function getInitialTimerSeconds(difficulty: number): number {
+  if (difficulty === 1) return 60;
+  if (difficulty === 3) return 45;
+  if (difficulty === 5) return 30;
+  return 45;
+}
+
 export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, onBack }) => {
   // Mode: 'input' (type exact answer) or 'multiple_choice'
   const [answerMode, setAnswerMode] = useState<'input' | 'multiple_choice'>(() => {
@@ -28,6 +72,31 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   const [typedInput, setTypedInput] = useState('');
   const [inputError, setInputError] = useState<string | null>(null);
 
+  // Difficulty Countdown Timer State
+  const [timeLeft, setTimeLeft] = useState<number>(() => getInitialTimerSeconds(card.difficulty));
+
+  useEffect(() => {
+    if (timeLeft <= 0) {
+      onSelectAnswer({
+        text: 'Time Expired',
+        isCorrect: false,
+      });
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [timeLeft, onSelectAnswer]);
+
+  const formatTime = (sec: number): string => {
+    const m = Math.floor(sec / 60);
+    const s = sec % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
+
   // Shuffle answer options once per card view
   const shuffledAnswers = useMemo(() => {
     return shuffleArray(card.answers);
@@ -35,6 +104,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
 
   const categoryLabel = getCategoryLabel(card.category);
   const difficultyLabel = getDifficultyLabel(card.difficulty);
+  const theme = getGradeTheme(card.grade);
 
   const handleInputSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,8 +123,8 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   return (
     <div className="min-h-[100dvh] flex flex-col justify-between max-w-md mx-auto bg-background select-none">
       <div>
-        {/* Dark Teal Gradient Header Banner (Rounded Bottom Corners) */}
-        <div className="relative bg-gradient-to-br from-headerTeal-start to-headerTeal-end text-textOnDark rounded-b-[2rem] p-6 pt-8 pb-10 shadow-md">
+        {/* Dynamic Grade-Themed Gradient Header Banner (Rounded Bottom Corners) */}
+        <div className={`relative bg-gradient-to-br ${theme.gradient} text-textOnDark rounded-b-[2rem] p-6 pt-8 pb-10 shadow-md transition-colors duration-500`}>
           {/* Top navigation row */}
           <div className="flex items-center justify-between mb-4">
             <button
@@ -65,17 +135,33 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
               <ArrowLeft className="w-5 h-5" />
             </button>
 
-            {/* Category Pill Badge */}
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/25 backdrop-blur-sm border border-white/10 text-xs font-semibold text-accentGold tracking-wider uppercase">
-              <Target className="w-3.5 h-3.5 text-accentGold" />
-              <span>{categoryLabel}</span>
+            <div className="flex items-center gap-2">
+              {/* Category Pill Badge */}
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/30 backdrop-blur-sm border border-white/15 text-xs font-semibold text-accentGold tracking-wider uppercase">
+                <Target className="w-3.5 h-3.5 text-accentGold" />
+                <span>{categoryLabel}</span>
+              </div>
+
+              {/* Dynamic Difficulty Timer Badge */}
+              <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full backdrop-blur-sm border text-xs font-mono font-medium shadow-inner ${
+                timeLeft <= 10
+                  ? 'bg-red-950/80 border-red-500/50 text-red-200 animate-bounce'
+                  : 'bg-black/35 border-white/15 text-white/90'
+              }`} title={`Timer for ${difficultyLabel} difficulty`}>
+                <Timer className={`w-3.5 h-3.5 ${timeLeft <= 10 ? 'text-red-400 animate-ping' : theme.badgeAccent}`} />
+                <span>{formatTime(timeLeft)}</span>
+              </div>
             </div>
           </div>
 
           {/* Grade & Difficulty Tag */}
           <div className="flex items-center gap-2 mb-1">
-            <span className="text-xs font-medium text-textOnDark/70 uppercase tracking-wider">
-              Grade {card.grade} • {difficultyLabel}
+            <span className={`text-xs font-semibold uppercase tracking-wider ${theme.badgeAccent}`}>
+              Grade {card.grade} • {theme.themeName}
+            </span>
+            <span className="text-white/30 text-xs">•</span>
+            <span className="text-xs font-medium text-white/70">
+              {difficultyLabel}
             </span>
             <span className="text-white/30 text-xs">•</span>
             <span className="text-xs font-mono text-accentGold font-bold">

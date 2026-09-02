@@ -24,7 +24,7 @@ export const CardNotFoundView: React.FC<CardNotFoundViewProps> = ({
         </h2>
 
         <p className="text-sm text-textPrimary/80 mb-4 max-w-xs leading-relaxed">
-          The scanned code did not match any of the 129 cards in the Lihyara Math Quest deck.
+          The scanned code did not match any of the 129 cards in the Baniwara Math Quest deck.
         </p>
 
         <div className="bg-surfaceCard px-4 py-2 rounded-xl border border-textMuted/20 text-xs font-mono text-textMuted mb-6">
@@ -32,7 +32,7 @@ export const CardNotFoundView: React.FC<CardNotFoundViewProps> = ({
         </div>
 
         <p className="text-xs text-textMuted max-w-xs">
-          Make sure you are scanning an official Lihyara game card QR code.
+          Make sure you are scanning an official Baniwara game card QR code.
         </p>
       </div>
 

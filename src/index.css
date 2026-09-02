@@ -42,3 +42,60 @@
   background: #D8D2C4;
   border-radius: 9999px;
 }
+
+/* Smooth color transition cycling between Gr7 (Forest Green), Gr8 (Magical Gold), Gr9 (Fiery Red), Gr10 (Oceanic Blue) */
+@keyframes grade-colors-shift {
+  0%, 100% {
+    background-color: #143d2b; /* Gr7 Forest Green */
+  }
+  25% {
+    background-color: #6e4e08; /* Gr8 Magical Gold */
+  }
+  50% {
+    background-color: #661414; /* Gr9 Fiery Red */
+  }
+  75% {
+    background-color: #0d3259; /* Gr10 Oceanic Blue */
+  }
+}
+
+.animate-grade-bg {
+  animation: grade-colors-shift 16s ease-in-out infinite;
+}
+
+/* Radial Spectral Cloud Gradients */
+.bg-radial-spectral-1 {
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.7) 0%, rgba(16, 185, 129, 0.3) 50%, transparent 80%);
+}
+.bg-radial-spectral-2 {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.7) 0%, rgba(217, 119, 6, 0.3) 50%, transparent 80%);
+}
+.bg-radial-spectral-3 {
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.7) 0%, rgba(185, 28, 28, 0.3) 50%, transparent 80%);
+}
+.bg-radial-spectral-4 {
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.7) 0%, rgba(3, 105, 161, 0.3) 50%, transparent 80%);
+}
+
+/* Cloud Volumetric Drifting Keyframes */
+@keyframes cloud-drift-1 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(40px, 30px, 0) scale(1.15); }
+}
+@keyframes cloud-drift-2 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-35px, -25px, 0) scale(1.1); }
+}
+@keyframes cloud-drift-3 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(30px, -35px, 0) scale(1.2); }
+}
+@keyframes cloud-drift-4 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-40px, 20px, 0) scale(1.08); }
+}
+
+.animate-cloud-drift-1 { animation: cloud-drift-1 12s ease-in-out infinite; }
+.animate-cloud-drift-2 { animation: cloud-drift-2 15s ease-in-out infinite; }
+.animate-cloud-drift-3 { animation: cloud-drift-3 14s ease-in-out infinite; }
+.animate-cloud-drift-4 { animation: cloud-drift-4 16s ease-in-out infinite; }

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Sparkles, Compass, QrCode, RotateCcw, BookOpen } from 'lucide-react';
+import { Compass, QrCode, RotateCcw, BookOpen } from 'lucide-react';
 import { GameStats } from '../types/card';
+import { SpectralClouds } from './SpectralClouds';
 
 interface HomeViewProps {
   stats: GameStats;
@@ -19,14 +20,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const accuracy = total > 0 ? Math.round((stats.correct / total) * 100) : 0;
 
   return (
-    <div className="relative min-h-[100dvh] flex flex-col justify-between p-6 sm:p-8 max-w-md mx-auto select-none">
-      {/* Top Bar with Level Pill Badge & Catalog */}
-      <div className="flex items-center justify-between pt-2">
-        <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surfaceCard border border-textMuted/15 shadow-sm text-xs font-semibold text-textPrimary tracking-wide">
-          <Sparkles className="w-3.5 h-3.5 text-accentGold fill-accentGold" />
-          <span>Level 4 Explorer</span>
-        </div>
+    <div className="relative min-h-[100dvh] flex flex-col justify-between p-6 sm:p-8 max-w-md mx-auto select-none animate-grade-bg text-textOnDark transition-colors duration-1000 overflow-hidden">
+      {/* Spectral Clouds Background Effect */}
+      <SpectralClouds />
 
+      {/* Background Gradient Overlay for Depth */}
+      <div className="absolute inset-0 bg-radial-gradient pointer-events-none opacity-40 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-black/60 z-0" />
+      {/* Top Bar with Catalog & Stats Reset */}
+      <div className="flex items-center justify-end pt-2">
         <div className="flex items-center gap-2">
           <button
             onClick={onOpenCatalog}
@@ -54,50 +55,50 @@ export const HomeView: React.FC<HomeViewProps> = ({
       </div>
 
       {/* Main Branding Section */}
-      <div className="my-auto flex flex-col items-center text-center py-6">
+      <div className="my-auto flex flex-col items-center text-center py-6 z-10">
         {/* Centered Circular Icon Frame */}
-        <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-primaryTeal/30 flex items-center justify-center mb-5 bg-surfaceCard/80 shadow-soft">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-primaryTeal/10 flex items-center justify-center">
-            <Compass className="w-12 h-12 sm:w-14 sm:h-14 text-primaryTeal stroke-[1.5]" />
+        <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-white/25 flex items-center justify-center mb-5 bg-black/30 backdrop-blur-md shadow-lg">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white/10 flex items-center justify-center">
+            <Compass className="w-12 h-12 sm:w-14 sm:h-14 text-accentGold stroke-[1.5] animate-spin-slow" />
           </div>
         </div>
 
         {/* Wordmark & Subtitle */}
-        <h1 className="text-4xl sm:text-5xl font-serif font-bold text-textPrimary tracking-tight mb-1">
-          Lihyara
+        <h1 className="text-4xl sm:text-5xl font-serif font-bold text-white tracking-tight mb-1 drop-shadow-md">
+          Baniwara
         </h1>
-        <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] text-primaryTeal uppercase">
+        <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] text-accentGold uppercase drop-shadow-sm">
           Math Quest of Bicol
         </p>
 
-        <p className="mt-3 text-xs text-textMuted max-w-[280px] leading-relaxed">
+        <p className="mt-3 text-xs text-white/85 max-w-[280px] leading-relaxed font-normal drop-shadow-sm">
           The interactive web companion for the physical board game. Scan any card QR code or browse quests to play.
         </p>
       </div>
 
       {/* Bottom Section: Stat Card + CTA Buttons */}
-      <div className="flex flex-col gap-3 pb-4">
+      <div className="flex flex-col gap-3 pb-4 z-10">
         {/* Stat Card */}
-        <div className="bg-surfaceCard rounded-3xl p-5 shadow-soft border border-black/5 flex items-center justify-around">
+        <div className="bg-black/35 backdrop-blur-md rounded-3xl p-5 shadow-lg border border-white/15 flex items-center justify-around text-white">
           {/* Correct Column */}
           <div className="flex-1 text-center">
-            <span className="block text-[11px] font-bold tracking-wider text-textMuted uppercase mb-1">
+            <span className="block text-[11px] font-bold tracking-wider text-emerald-300 uppercase mb-1">
               Correct
             </span>
-            <span className="text-3xl sm:text-4xl font-serif font-bold text-primaryTeal">
+            <span className="text-3xl sm:text-4xl font-serif font-bold text-emerald-400">
               {stats.correct}
             </span>
           </div>
 
           {/* Thin Vertical Divider */}
-          <div className="w-px h-10 bg-textMuted/20" />
+          <div className="w-px h-10 bg-white/20" />
 
           {/* Incorrect Column */}
           <div className="flex-1 text-center">
-            <span className="block text-[11px] font-bold tracking-wider text-textMuted uppercase mb-1">
+            <span className="block text-[11px] font-bold tracking-wider text-red-300 uppercase mb-1">
               Incorrect
             </span>
-            <span className="text-3xl sm:text-4xl font-serif font-bold text-accentTerracotta">
+            <span className="text-3xl sm:text-4xl font-serif font-bold text-red-400">
               {stats.incorrect}
             </span>
           </div>
@@ -105,12 +106,12 @@ export const HomeView: React.FC<HomeViewProps> = ({
           {/* Accuracy Badge if played */}
           {total > 0 && (
             <>
-              <div className="w-px h-10 bg-textMuted/20" />
+              <div className="w-px h-10 bg-white/20" />
               <div className="flex-1 text-center">
-                <span className="block text-[11px] font-bold tracking-wider text-textMuted uppercase mb-1">
+                <span className="block text-[11px] font-bold tracking-wider text-amber-300 uppercase mb-1">
                   Accuracy
                 </span>
-                <span className="text-2xl sm:text-3xl font-serif font-bold text-textPrimary">
+                <span className="text-2xl sm:text-3xl font-serif font-bold text-amber-400">
                   {accuracy}%
                 </span>
               </div>
@@ -118,10 +119,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
           )}
         </div>
 
-        {/* Primary CTA Button (Terracotta) */}
+        {/* Primary CTA Button (Terracotta/Gold Glow) */}
         <button
           onClick={onStartScan}
-          className="w-full py-4 px-6 rounded-full bg-accentTerracotta text-textOnDark font-bold text-base shadow-soft-lg flex items-center justify-center gap-3 active:scale-[0.98] transition-transform"
+          className="w-full py-4 px-6 rounded-full bg-accentTerracotta hover:bg-accentTerracotta/90 text-textOnDark font-bold text-base shadow-lg flex items-center justify-center gap-3 active:scale-[0.98] transition-all border border-white/20"
         >
           <QrCode className="w-5 h-5 text-textOnDark" />
           <span>Scan Location Card</span>
@@ -130,9 +131,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
         {/* Secondary Browse Deck Button */}
         <button
           onClick={onOpenCatalog}
-          className="w-full py-3 px-6 rounded-full bg-surfaceCard text-primaryTeal font-bold text-sm border border-primaryTeal/20 shadow-sm flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
+          className="w-full py-3 px-6 rounded-full bg-white/15 hover:bg-white/25 text-white font-bold text-sm border border-white/20 backdrop-blur-md shadow-sm flex items-center justify-center gap-2 active:scale-[0.98] transition-all"
         >
-          <BookOpen className="w-4 h-4 text-primaryTeal" />
+          <BookOpen className="w-4 h-4 text-accentGold" />
           <span>Browse 129 Cards Deck</span>
         </button>
 
@@ -141,7 +142,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           href="/test-qr.html"
           target="_blank"
           rel="noreferrer"
-          className="text-center text-[11px] text-textMuted hover:text-primaryTeal font-medium pt-1 underline"
+          className="text-center text-[11px] text-white/70 hover:text-white font-medium pt-1 underline transition-colors"
         >
           View all 129 QR Codes Gallery (Print / Screen)
         </a>
