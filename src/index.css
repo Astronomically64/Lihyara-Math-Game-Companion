@@ -5,12 +5,15 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
+    font-size: clamp(15px, 0.35vw + 14px, 18px);
   }
   
   body {
     background-color: #F1ECE0;
     color: #2A2420;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
   }
 }
 

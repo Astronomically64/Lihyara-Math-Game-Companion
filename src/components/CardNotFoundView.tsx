@@ -13,7 +13,7 @@ export const CardNotFoundView: React.FC<CardNotFoundViewProps> = ({
   onGoHome,
 }) => {
   return (
-    <div className="min-h-[100dvh] flex flex-col justify-between max-w-md mx-auto p-6 sm:p-8 bg-background select-none">
+    <div className="min-h-[100dvh] w-full flex flex-col justify-between max-w-3xl mx-auto p-[clamp(1rem,4vw,3rem)] bg-background/85 backdrop-blur-sm select-none">
       <div className="my-auto flex flex-col items-center text-center">
         <div className="w-20 h-20 rounded-full bg-accentTerracotta/15 flex items-center justify-center text-accentTerracotta mb-5 shadow-soft">
           <HelpCircle className="w-10 h-10" />

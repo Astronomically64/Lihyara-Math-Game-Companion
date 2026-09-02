@@ -35,10 +35,10 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
   }, [isCorrect]);
 
   return (
-    <div className="min-h-[100dvh] flex flex-col justify-between max-w-md mx-auto bg-background select-none">
+    <div className="min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto bg-background select-none">
       <div>
         {/* Header Banner (Dark Teal Gradient) */}
-        <div className="relative bg-gradient-to-br from-headerTeal-start to-headerTeal-end text-textOnDark rounded-b-[2rem] p-6 pt-8 pb-10 shadow-md text-center">
+        <div className="relative bg-gradient-to-br from-headerTeal-start to-headerTeal-end text-textOnDark rounded-b-[clamp(1.5rem,4vw,2.5rem)] p-[clamp(1.25rem,4vw,2.5rem)] pt-[clamp(1.5rem,5vw,3rem)] pb-[clamp(2rem,5vw,3.5rem)] shadow-md text-center">
           {/* Status Icon in Filled Circle */}
           <div className="flex justify-center mb-3">
             {isCorrect ? (
@@ -62,8 +62,8 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
         </div>
 
         {/* Answer Breakdown Card */}
-        <div className="px-5 -mt-6">
-          <div className="bg-surfaceCard rounded-3xl p-5 shadow-soft border border-black/5 mb-4">
+        <div className="px-[clamp(1rem,4vw,3rem)] -mt-[clamp(1.25rem,3vw,1.5rem)]">
+          <div className="bg-surfaceCard rounded-3xl p-[clamp(1.25rem,4vw,2.5rem)] shadow-soft border border-black/5 mb-4">
             {/* User Submitted Answer Row */}
             <div className="flex flex-col gap-3">
               <div className="flex items-center justify-between p-3.5 rounded-2xl bg-background border border-textMuted/15">
@@ -100,7 +100,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
           </div>
 
           {/* Solution Card */}
-          <div className="bg-surfaceCard rounded-3xl p-5 shadow-soft border border-black/5">
+          <div className="bg-surfaceCard rounded-3xl p-[clamp(1.25rem,4vw,2.5rem)] shadow-soft border border-black/5">
             <div className="flex items-center gap-2 mb-2">
               <BookOpen className="w-4 h-4 text-primaryTeal" />
               <span className="text-xs font-bold tracking-wider text-primaryTeal uppercase">
@@ -115,7 +115,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
       </div>
 
       {/* Action Buttons */}
-      <div className="p-5 pb-8 flex flex-col gap-3">
+      <div className="w-full p-[clamp(1rem,4vw,3rem)] pb-[clamp(1.5rem,4vw,3rem)] flex flex-col gap-3">
         <button
           onClick={onNextScan}
           className="w-full py-4 px-6 rounded-full bg-primaryTeal text-textOnDark font-bold text-base shadow-soft-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
