@@ -8,14 +8,14 @@ Cards in the game feature printed QR codes. Players open the companion site on t
 
 ## ✨ Features
 
-- **📱 Offline-First & Client-Only:** Zero server dependencies, databases, or accounts needed. All 129 questions, choices, and solutions are bundled locally.
+- **📱 Offline-First & Client-Only:** Zero server dependencies, databases, or accounts needed. All 154 questions, choices, and solutions are bundled locally.
 - **📷 Camera QR Scanner (`html5-qrcode`):** Responsive camera feed with targeting frame, camera flip, photo upload, and manual code entry options.
 - **🔗 Direct Page for Every Card:** Scanning a QR code or visiting `/?card=g7e01` opens that question's dedicated quest page.
 - **✏️ Dual Answering Modes:**
   - **Typed Input:** Direct text/numeric input with smart validation (tolerates units, degrees, equivalent decimals/fractions).
   - **Multiple Choice Grid:** 2×2 balanced choice grid with seamless mode switching.
 - **💡 Step-by-Step Worked Solutions:** Instant visual and color-blind accessible feedback with full mathematical explanations.
-- **📚 129-Card Deck Catalog & Search:** Search and filter cards by Grade (7–10) and Difficulty (Easy, Average, Difficult).
+- **📚 154-Card Deck Catalog & Search:** Search and filter cards by Grade (7–10) and Difficulty (Easy, Average, Difficult).
 - **📊 Session Persistence:** `localStorage` records correct and incorrect answers for the session.
 
 ---

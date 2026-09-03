@@ -50,7 +50,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
           <div className="text-center">
             <h1 className="text-xl font-serif font-bold text-textPrimary">Card Catalog</h1>
             <span className="text-[11px] font-semibold text-primaryTeal uppercase tracking-wider">
-              All 129 Board Game Cards
+              All {allCards.length} Board Game Cards
             </span>
           </div>
 

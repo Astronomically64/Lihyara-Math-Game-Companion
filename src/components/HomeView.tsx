@@ -1,5 +1,6 @@
 import React from 'react';
 import { Compass, QrCode, BookOpen } from 'lucide-react';
+import { getTotalCardsCount } from '../utils/cardService';
 
 interface HomeViewProps {
   onStartScan: () => void;
@@ -10,6 +11,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
   onStartScan,
   onOpenCatalog,
 }) => {
+  const totalCards = getTotalCardsCount();
+
   return (
     <div className="relative min-h-[100dvh] w-full flex flex-col justify-between p-[clamp(1rem,4vw,3rem)] max-w-5xl mx-auto select-none text-textOnDark transition-colors duration-1000 overflow-hidden">
       {/* Top Bar with catalog access */}
@@ -18,7 +21,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <button
             onClick={onOpenCatalog}
             className="px-3 py-1.5 rounded-full bg-surfaceCard border border-textMuted/20 text-xs font-semibold text-primaryTeal flex items-center gap-1.5 shadow-sm hover:bg-surfaceCard/80 active:scale-95 transition-all"
-            title="Browse all 129 cards"
+            title={`Browse all ${totalCards} cards`}
           >
             <BookOpen className="w-3.5 h-3.5" />
             <span>Card Deck</span>
@@ -66,7 +69,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           className="w-full py-3 px-6 rounded-full bg-white/15 hover:bg-white/25 text-white font-bold text-sm border border-white/20 backdrop-blur-md shadow-sm flex items-center justify-center gap-2 active:scale-[0.98] transition-all"
         >
           <BookOpen className="w-4 h-4 text-accentGold" />
-          <span>Browse 129 Cards Deck</span>
+          <span>Browse {totalCards} Cards Deck</span>
         </button>
 
         {/* QR Code Gallery Link for Testing */}
@@ -76,7 +79,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           rel="noreferrer"
           className="text-center text-[11px] text-white/70 hover:text-white font-medium pt-1 underline transition-colors"
         >
-          View all 129 QR Codes Gallery (Print / Screen)
+          View all {totalCards} QR Codes Gallery (Print / Screen)
         </a>
       </div>
     </div>

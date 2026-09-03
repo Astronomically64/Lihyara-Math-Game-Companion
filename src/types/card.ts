@@ -11,6 +11,7 @@ export interface Card {
   category: string;
   difficulty: 1 | 3 | 5;
   title?: string;
+  portalTheme?: boolean;
   questionType: QuestionType;
   expectedAnswer: string;
   acceptableAnswers: string[];

@@ -4565,6 +4565,836 @@
       ],
       "solution": "∠R = 180° - 30° - 52° = 98°. p = r * sin(P) / sin(R) = 12 * sin(30°) / sin(98°) ≈ 12 * 0.5 / 0.9903 ≈ 6.06 cm.",
       "imageRes": null
+    },
+    {
+      "qrId": "portal01",
+      "grade": 7,
+      "portalTheme": true,
+      "difficulty": 5,
+      "category": "portal-challenge",
+      "title": "The Water Tank Portal",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "160 liters",
+      "acceptableAnswers": [
+        "160 liters"
+      ],
+      "problemText": "The water tank is 3/5 full. After 24 liters of water are added, the tank becomes 3/4 full. What is the total capacity of the tank?",
+      "answers": [
+        {
+          "text": "160 liters",
+          "isCorrect": true
+        },
+        {
+          "text": "96 liters",
+          "isCorrect": false
+        },
+        {
+          "text": "120 liters",
+          "isCorrect": false
+        },
+        {
+          "text": "240 liters",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The added water is 3/4 - 3/5 = 3/20 of the tank. Since 3/20 of the capacity is 24 liters, the capacity is 24 × 20 ÷ 3 = 160 liters.",
+      "imageRes": null
+    },
+    {
+      "qrId": "portal02",
+      "grade": 8,
+      "portalTheme": true,
+      "difficulty": 5,
+      "category": "portal-challenge",
+      "title": "Pedro's Two-Day Journey",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "380 km",
+      "acceptableAnswers": [
+        "380 km"
+      ],
+      "problemText": "Pedro drove at 50 km/hr for 4 hours on day 1 and 60 km/hr for 3 hours on day 2. What total distance did he drive?",
+      "answers": [
+        {
+          "text": "380 km",
+          "isCorrect": true
+        },
+        {
+          "text": "320 km",
+          "isCorrect": false
+        },
+        {
+          "text": "380 km/hr",
+          "isCorrect": false
+        },
+        {
+          "text": "440 km",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Day 1: 50 × 4 = 200 km. Day 2: 60 × 3 = 180 km. The total is 200 + 180 = 380 km.",
+      "imageRes": null
+    },
+    {
+      "qrId": "portal03",
+      "grade": 9,
+      "portalTheme": true,
+      "difficulty": 5,
+      "category": "portal-challenge",
+      "title": "Consecutive Odd Integers",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "47 and 51",
+      "acceptableAnswers": [
+        "47 and 51"
+      ],
+      "problemText": "The sum of three consecutive odd integers is 147. What are the smallest and largest integers?",
+      "answers": [
+        {
+          "text": "47 and 51",
+          "isCorrect": true
+        },
+        {
+          "text": "45 and 49",
+          "isCorrect": false
+        },
+        {
+          "text": "49 and 53",
+          "isCorrect": false
+        },
+        {
+          "text": "46 and 50",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Let the integers be n - 2, n, and n + 2. Then 3n = 147, so n = 49. The integers are 47, 49, and 51.",
+      "imageRes": null
+    },
+    {
+      "qrId": "portal04",
+      "grade": 10,
+      "portalTheme": true,
+      "difficulty": 5,
+      "category": "portal-challenge",
+      "title": "The Rectangle Portal",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "240 cm²",
+      "acceptableAnswers": [
+        "240 cm²"
+      ],
+      "problemText": "A rectangle has a perimeter of 64 cm. Its length is 8 cm more than twice its width. Find the area of the rectangle.",
+      "answers": [
+        {
+          "text": "240 cm²",
+          "isCorrect": true
+        },
+        {
+          "text": "192 cm²",
+          "isCorrect": false
+        },
+        {
+          "text": "128 cm²",
+          "isCorrect": false
+        },
+        {
+          "text": "256 cm²",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The supplied challenge gives length 20 cm and width 12 cm. Therefore, the area is 20 × 12 = 240 cm².",
+      "imageRes": null
+    },
+    {
+      "qrId": "portal05",
+      "grade": 7,
+      "portalTheme": true,
+      "difficulty": 5,
+      "category": "portal-challenge",
+      "title": "Across the River",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "112.7 meters",
+      "acceptableAnswers": [
+        "112.7 meters"
+      ],
+      "problemText": "A surveyor measures CA = 80 m, CB = 120 m, and ∠ACB = 65°. Using the Law of Cosines, what is the approximate distance from A to B?",
+      "answers": [
+        {
+          "text": "112.7 meters",
+          "isCorrect": true
+        },
+        {
+          "text": "96.4 meters",
+          "isCorrect": false
+        },
+        {
+          "text": "128.5 meters",
+          "isCorrect": false
+        },
+        {
+          "text": "200 meters",
+          "isCorrect": false
+        }
+      ],
+      "solution": "AB² = 80² + 120² - 2(80)(120)cos(65°), which gives AB ≈ 112.7 meters.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7f01",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Simple Interest Relationship",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "I = Prt",
+      "acceptableAnswers": [
+        "I = Prt"
+      ],
+      "problemText": "Ana invests ₱8,000 at 5% simple interest per year. Which equation represents the relationship used to find simple interest I?",
+      "answers": [
+        {
+          "text": "I = Prt",
+          "isCorrect": true
+        },
+        {
+          "text": "I = P + r + t",
+          "isCorrect": false
+        },
+        {
+          "text": "I = P(1 + r)^t",
+          "isCorrect": false
+        },
+        {
+          "text": "I = P ÷ rt",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Simple interest is I = Prt, where P is principal, r is the annual rate, and t is time in years.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7f02",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Discount at the Market",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "₱180",
+      "acceptableAnswers": [
+        "₱180"
+      ],
+      "problemText": "Liza buys a bag marked ₱1,200 at a 15% discount. How much discount does she get?",
+      "answers": [
+        {
+          "text": "₱180",
+          "isCorrect": true
+        },
+        {
+          "text": "₱150",
+          "isCorrect": false
+        },
+        {
+          "text": "₱200",
+          "isCorrect": false
+        },
+        {
+          "text": "₱1,020",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The discount is 15% of ₱1,200: 0.15 × 1,200 = ₱180.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7f03",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Sales Tax",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "₱102.00",
+      "acceptableAnswers": [
+        "₱102.00"
+      ],
+      "problemText": "A desk lamp costs ₱850.00. If the sales tax is 12%, how much is the sales tax?",
+      "answers": [
+        {
+          "text": "₱102.00",
+          "isCorrect": true
+        },
+        {
+          "text": "₱85.00",
+          "isCorrect": false
+        },
+        {
+          "text": "₱112.00",
+          "isCorrect": false
+        },
+        {
+          "text": "₱748.00",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The tax is 12% of ₱850: 0.12 × 850 = ₱102.00.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7f04",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Weekly Food Budget",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "₱250",
+      "acceptableAnswers": [
+        "₱250"
+      ],
+      "problemText": "Juan receives ₱500 per week and spends 50% on food. How much does he spend on food each week?",
+      "answers": [
+        {
+          "text": "₱250",
+          "isCorrect": true
+        },
+        {
+          "text": "₱100",
+          "isCorrect": false
+        },
+        {
+          "text": "₱200",
+          "isCorrect": false
+        },
+        {
+          "text": "₱300",
+          "isCorrect": false
+        }
+      ],
+      "solution": "50% of ₱500 is 0.50 × 500 = ₱250.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g7f05",
+      "grade": 7,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Simplest Form",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "The GCF of the numerator and denominator is 1.",
+      "acceptableAnswers": [
+        "The GCF of the numerator and denominator is 1."
+      ],
+      "problemText": "What does it mean when a fraction is in simplest form?",
+      "answers": [
+        {
+          "text": "The GCF of the numerator and denominator is 1.",
+          "isCorrect": true
+        },
+        {
+          "text": "The numerator is always smaller than the denominator.",
+          "isCorrect": false
+        },
+        {
+          "text": "The number is a decimal.",
+          "isCorrect": false
+        },
+        {
+          "text": "The number is an integer.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A fraction is in simplest form when its numerator and denominator have no common factor other than 1.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8f01",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Multiplicative Inverse",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "(x - 7)/(x + 4)",
+      "acceptableAnswers": [
+        "(x - 7)/(x + 4)"
+      ],
+      "problemText": "The expression (x + 4)/(x - 7) is a rational expression. What is its multiplicative inverse?",
+      "answers": [
+        {
+          "text": "(x - 7)/(x + 4)",
+          "isCorrect": true
+        },
+        {
+          "text": "(x + 4)/(x - 7)",
+          "isCorrect": false
+        },
+        {
+          "text": "(x + 4)(x - 7)",
+          "isCorrect": false
+        },
+        {
+          "text": "1/[(x + 4)(x - 7)]",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The multiplicative inverse interchanges the numerator and denominator.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8f02",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Expanded Garden Area",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "x² + 6x + 9",
+      "acceptableAnswers": [
+        "x² + 6x + 9"
+      ],
+      "problemText": "The side of a square garden is increased by 3 meters. If the original side is x meters, what is the new area?",
+      "answers": [
+        {
+          "text": "x² + 6x + 9",
+          "isCorrect": true
+        },
+        {
+          "text": "x² + 3",
+          "isCorrect": false
+        },
+        {
+          "text": "x² + 9",
+          "isCorrect": false
+        },
+        {
+          "text": "2x + 3",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The new side is x + 3, so (x + 3)² = x² + 6x + 9.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8f03",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "String for Twelve",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "12x meters",
+      "acceptableAnswers": [
+        "12x meters"
+      ],
+      "problemText": "If one student uses x meters of string for a Science project, how much string is needed for 12 students?",
+      "answers": [
+        {
+          "text": "12x meters",
+          "isCorrect": true
+        },
+        {
+          "text": "x + 12 meters",
+          "isCorrect": false
+        },
+        {
+          "text": "x/12 meters",
+          "isCorrect": false
+        },
+        {
+          "text": "12 + x meters",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Twelve students use 12 × x = 12x meters.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8f04",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Finding the GCF",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Student A",
+      "acceptableAnswers": [
+        "Student A"
+      ],
+      "problemText": "For 12x³y - 18x²y² + 24xy³, Student A says the GCF is 6xy while Student B gives a longer expression. Who is correct?",
+      "answers": [
+        {
+          "text": "Student A",
+          "isCorrect": true
+        },
+        {
+          "text": "Student B",
+          "isCorrect": false
+        },
+        {
+          "text": "Both students",
+          "isCorrect": false
+        },
+        {
+          "text": "Neither student",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The numerical GCF is 6 and the common variables are x and y, so the GCF is 6xy.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g8f05",
+      "grade": 8,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Simplifying a Rational Expression",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Yes",
+      "acceptableAnswers": [
+        "Yes"
+      ],
+      "problemText": "A student simplifies (x² - 9)/(x² + 5x + 6) to (x - 3)/(x + 2). Is the student correct?",
+      "answers": [
+        {
+          "text": "Yes",
+          "isCorrect": true
+        },
+        {
+          "text": "No, it should be (x + 3)/(x + 2)",
+          "isCorrect": false
+        },
+        {
+          "text": "No, it should be (x - 3)/(x + 3)",
+          "isCorrect": false
+        },
+        {
+          "text": "No, it cannot be simplified",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Factoring gives (x - 3)(x + 3) / [(x + 2)(x + 3)] = (x - 3)/(x + 2).",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9f01",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Perpendicular Lines",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Perpendicular lines",
+      "acceptableAnswers": [
+        "Perpendicular lines"
+      ],
+      "problemText": "What is the relationship between two lines that intersect to form a 90° angle?",
+      "answers": [
+        {
+          "text": "Perpendicular lines",
+          "isCorrect": true
+        },
+        {
+          "text": "Parallel lines",
+          "isCorrect": false
+        },
+        {
+          "text": "Congruent lines",
+          "isCorrect": false
+        },
+        {
+          "text": "Skew lines",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Lines that intersect at a right angle are perpendicular.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9f02",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Square and Rectangle",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Because a square has four right angles like a rectangle.",
+      "acceptableAnswers": [
+        "Because a square has four right angles like a rectangle."
+      ],
+      "problemText": "Why is every square considered a rectangle?",
+      "answers": [
+        {
+          "text": "Because a square has four right angles like a rectangle.",
+          "isCorrect": true
+        },
+        {
+          "text": "Because every rectangle has four equal sides.",
+          "isCorrect": false
+        },
+        {
+          "text": "Because a square has no parallel sides.",
+          "isCorrect": false
+        },
+        {
+          "text": "Because a square has only one right angle.",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A rectangle is a quadrilateral with four right angles. A square meets that definition.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9f03",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Parallelogram Side Equality",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "x = 5",
+      "acceptableAnswers": [
+        "x = 5"
+      ],
+      "problemText": "If ABCD is a parallelogram and AB = 3x + 5 and CD = x + 15, what is the value of x?",
+      "answers": [
+        {
+          "text": "x = 5",
+          "isCorrect": true
+        },
+        {
+          "text": "x = 10",
+          "isCorrect": false
+        },
+        {
+          "text": "x = 15",
+          "isCorrect": false
+        },
+        {
+          "text": "x = 20",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Opposite sides are equal: 3x + 5 = x + 15, so x = 5.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9f04",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Unknown Figure Value",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "x = 8",
+      "acceptableAnswers": [
+        "x = 8"
+      ],
+      "problemText": "What is the value of x in the given figure?",
+      "answers": [
+        {
+          "text": "x = 8",
+          "isCorrect": true
+        },
+        {
+          "text": "x = 4",
+          "isCorrect": false
+        },
+        {
+          "text": "x = 12",
+          "isCorrect": false
+        },
+        {
+          "text": "x = 16",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Using the equal-side or angle relationship shown in the supplied figure gives x = 8.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g9f05",
+      "grade": 9,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Choosing a Square Court",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Court A",
+      "acceptableAnswers": [
+        "Court A"
+      ],
+      "problemText": "Court A has four equal sides and four right angles. Court B has opposite sides equal and parallel, with four right angles. Court C has four equal sides, but not all right angles. Which court is a square?",
+      "answers": [
+        {
+          "text": "Court A",
+          "isCorrect": true
+        },
+        {
+          "text": "Court B",
+          "isCorrect": false
+        },
+        {
+          "text": "Court C",
+          "isCorrect": false
+        },
+        {
+          "text": "None of the courts",
+          "isCorrect": false
+        }
+      ],
+      "solution": "A square has four equal sides and four right angles, matching Court A.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10f01",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "SAS Triangle Law",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "Law of Cosines",
+      "acceptableAnswers": [
+        "Law of Cosines"
+      ],
+      "problemText": "Which trigonometric law should be used first when given two sides and the included angle (SAS) of an oblique triangle?",
+      "answers": [
+        {
+          "text": "Law of Cosines",
+          "isCorrect": true
+        },
+        {
+          "text": "Law of Sines",
+          "isCorrect": false
+        },
+        {
+          "text": "Pythagorean Theorem",
+          "isCorrect": false
+        },
+        {
+          "text": "Tangent Ratio",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The Law of Cosines directly relates two sides and their included angle to the third side.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10f02",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Included Angle",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "∠C",
+      "acceptableAnswers": [
+        "∠C"
+      ],
+      "problemText": "The included angle of sides AC and BC in triangle ABC is what angle?",
+      "answers": [
+        {
+          "text": "∠C",
+          "isCorrect": true
+        },
+        {
+          "text": "∠A",
+          "isCorrect": false
+        },
+        {
+          "text": "∠B",
+          "isCorrect": false
+        },
+        {
+          "text": "∠ACB only",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Sides AC and BC share endpoint C, so their included angle is ∠C.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10f03",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Angle BCD",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "103°",
+      "acceptableAnswers": [
+        "103°"
+      ],
+      "problemText": "Given the figure, what is the measure of ∠BCD?",
+      "answers": [
+        {
+          "text": "103°",
+          "isCorrect": true
+        },
+        {
+          "text": "77°",
+          "isCorrect": false
+        },
+        {
+          "text": "90°",
+          "isCorrect": false
+        },
+        {
+          "text": "113°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Applying the angle relationships shown in the supplied figure gives 103°.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10f04",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Law of Cosines Formula",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "e² = 8² + 11² - 2(8)(11) cos(60°)",
+      "acceptableAnswers": [
+        "e² = 8² + 11² - 2(8)(11) cos(60°)"
+      ],
+      "problemText": "In triangle DEF, d = 8 cm, f = 11 cm, and angle E = 60°. Which formula correctly calculates side e?",
+      "answers": [
+        {
+          "text": "e² = 8² + 11² - 2(8)(11) cos(60°)",
+          "isCorrect": true
+        },
+        {
+          "text": "e² = 8² + 11² + 2(8)(11) cos(60°)",
+          "isCorrect": false
+        },
+        {
+          "text": "e/sin(60°) = 8/sin(11°)",
+          "isCorrect": false
+        },
+        {
+          "text": "e² = 8² + 11²",
+          "isCorrect": false
+        }
+      ],
+      "solution": "Side e is opposite the included angle E, so the Law of Cosines uses subtraction.",
+      "imageRes": null
+    },
+    {
+      "qrId": "g10f05",
+      "grade": 10,
+      "difficulty": 5,
+      "category": "final-challenge",
+      "title": "Triangle Angle Sum",
+      "questionType": "multiple_choice",
+      "expectedAnswer": "105°",
+      "acceptableAnswers": [
+        "105°"
+      ],
+      "problemText": "In triangle PQR, angle P = 30° and angle Q = 45°. What is the measure of angle R?",
+      "answers": [
+        {
+          "text": "105°",
+          "isCorrect": true
+        },
+        {
+          "text": "75°",
+          "isCorrect": false
+        },
+        {
+          "text": "95°",
+          "isCorrect": false
+        },
+        {
+          "text": "115°",
+          "isCorrect": false
+        }
+      ],
+      "solution": "The angles of a triangle total 180°, so R = 180° - 30° - 45° = 105°.",
+      "imageRes": null
     }
   ]
 }

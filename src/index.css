@@ -69,6 +69,21 @@ html {
   animation: grade-colors-shift 16s ease-in-out infinite;
 }
 
+@keyframes portal-colors-shift {
+  0%, 100% { background-color: #143d2b; }
+  25% { background-color: #6e4e08; }
+  50% { background-color: #661414; }
+  75% { background-color: #0d3259; }
+}
+
+.portal-card-page {
+  background: linear-gradient(135deg, #d7eadf, #f1e5bd, #f0d1c5, #cfe5ef);
+}
+
+.portal-card-header {
+  animation: portal-colors-shift 16s ease-in-out infinite;
+}
+
 @keyframes grade-ambient-drift {
   0%, 100% {
     transform: translate3d(0, 0, 0) scale(1);

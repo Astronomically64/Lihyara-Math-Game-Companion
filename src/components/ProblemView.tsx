@@ -115,6 +115,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   const categoryLabel = getCategoryLabel(card.category);
   const difficultyLabel = getDifficultyLabel(card.difficulty);
   const theme = getGradeTheme(card.grade);
+  const isPortal = card.portalTheme === true;
 
   const handleInputSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -131,7 +132,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   };
 
   return (
-    <div className={`relative min-h-[100dvh] w-full flex flex-col justify-between overflow-hidden bg-gradient-to-br ${theme.pageGradient} select-none`}>
+    <div className={`relative min-h-[100dvh] w-full flex flex-col justify-between overflow-hidden ${isPortal ? 'portal-card-page' : `bg-gradient-to-br ${theme.pageGradient}`} select-none`}>
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div className={`grade-ambient-orb absolute -left-40 -top-40 h-[42rem] w-[42rem] rounded-full ${theme.ambientColor} blur-3xl`} />
         <div className={`grade-ambient-orb grade-ambient-orb-delayed absolute -bottom-48 -right-40 h-[44rem] w-[44rem] rounded-full ${theme.ambientColor} blur-3xl`} />
@@ -139,7 +140,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
 
       <div className="relative z-10 w-full">
         {/* Dynamic Grade-Themed Gradient Header Banner (Rounded Bottom Corners) */}
-        <div className={`relative min-h-[clamp(20rem,42vh,31rem)] bg-gradient-to-br ${theme.gradient} text-textOnDark rounded-b-[clamp(1.5rem,4vw,2.5rem)] p-[clamp(1.25rem,4vw,2.5rem)] pt-[clamp(1.5rem,5vw,3rem)] pb-[clamp(2rem,5vw,3.5rem)] shadow-md transition-colors duration-500`}>
+        <div className={`relative min-h-[clamp(20rem,42vh,31rem)] ${isPortal ? 'portal-card-header' : `bg-gradient-to-br ${theme.gradient}`} text-textOnDark rounded-b-[clamp(1.5rem,4vw,2.5rem)] p-[clamp(1.25rem,4vw,2.5rem)] pt-[clamp(1.5rem,5vw,3rem)] pb-[clamp(2rem,5vw,3.5rem)] shadow-md transition-colors duration-500`}>
           {/* Top navigation row */}
           <div className="flex items-center justify-between mb-4">
             <button
