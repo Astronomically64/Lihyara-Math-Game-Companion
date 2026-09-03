@@ -23,7 +23,7 @@ interface GradeTheme {
   gradient: string;
   themeName: string;
   badgeAccent: string;
-  pageWash: string;
+  ambientColor: string;
 }
 
 function getGradeTheme(grade: number): GradeTheme {
@@ -33,21 +33,21 @@ function getGradeTheme(grade: number): GradeTheme {
         gradient: 'from-[#143d2b] via-[#1e563b] to-[#2d7a4d]',
         themeName: 'Water Realm',
         badgeAccent: 'text-emerald-300',
-        pageWash: 'from-emerald-950/30 via-background to-background',
+        ambientColor: 'bg-emerald-400/20',
       };
     case 8: // Yellow = Earth
       return {
         gradient: 'from-[#4a3205] via-[#785309] to-[#b38312]',
         themeName: 'Earth Realm',
         badgeAccent: 'text-amber-300',
-        pageWash: 'from-amber-950/25 via-background to-background',
+        ambientColor: 'bg-amber-400/20',
       };
     case 9: // Red = Fire
       return {
         gradient: 'from-[#4d0c0c] via-[#7f1d1d] to-[#b91c1c]',
         themeName: 'Fire Realm',
         badgeAccent: 'text-red-300',
-        pageWash: 'from-red-950/25 via-background to-background',
+        ambientColor: 'bg-red-400/20',
       };
     case 10: // Blue = Air
     default:
@@ -55,7 +55,7 @@ function getGradeTheme(grade: number): GradeTheme {
         gradient: 'from-[#0b2545] via-[#134074] to-[#0077b6]',
         themeName: 'Air Realm',
         badgeAccent: 'text-sky-300',
-        pageWash: 'from-sky-950/25 via-background to-background',
+        ambientColor: 'bg-sky-400/20',
       };
   }
 }
@@ -66,13 +66,6 @@ function getInitialTimerSeconds(difficulty: number): number {
   if (difficulty === 3) return 60;
   if (difficulty === 5) return 90;
   return 60;
-}
-
-function getDifficultyWash(difficulty: number): string {
-  if (difficulty === 1) return 'from-emerald-950/35 via-background to-background';
-  if (difficulty === 3) return 'from-amber-950/35 via-background to-background';
-  if (difficulty === 5) return 'from-red-950/35 via-background to-background';
-  return 'from-slate-950/25 via-background to-background';
 }
 
 export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, onBack }) => {
@@ -117,7 +110,6 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   const categoryLabel = getCategoryLabel(card.category);
   const difficultyLabel = getDifficultyLabel(card.difficulty);
   const theme = getGradeTheme(card.grade);
-  const difficultyWash = getDifficultyWash(card.difficulty);
 
   const handleInputSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -134,8 +126,13 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   };
 
   return (
-    <div className={`min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto bg-gradient-to-b ${difficultyWash} select-none`}>
-      <div>
+    <div className="relative min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto overflow-hidden bg-background select-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className={`grade-ambient-orb absolute -left-28 -top-24 h-96 w-96 rounded-full ${theme.ambientColor} blur-3xl`} />
+        <div className={`grade-ambient-orb grade-ambient-orb-delayed absolute -bottom-32 -right-24 h-[30rem] w-[30rem] rounded-full ${theme.ambientColor} blur-3xl`} />
+      </div>
+
+      <div className="relative z-10">
         {/* Dynamic Grade-Themed Gradient Header Banner (Rounded Bottom Corners) */}
         <div className={`relative min-h-[clamp(20rem,42vh,31rem)] bg-gradient-to-br ${theme.gradient} text-textOnDark rounded-b-[clamp(1.5rem,4vw,2.5rem)] p-[clamp(1.25rem,4vw,2.5rem)] pt-[clamp(1.5rem,5vw,3rem)] pb-[clamp(2rem,5vw,3.5rem)] shadow-md transition-colors duration-500`}>
           {/* Top navigation row */}

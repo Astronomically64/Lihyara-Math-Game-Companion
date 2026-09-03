@@ -69,6 +69,26 @@ html {
   animation: grade-colors-shift 16s ease-in-out infinite;
 }
 
+@keyframes grade-ambient-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(3rem, 2rem, 0) scale(1.12);
+    opacity: 0.8;
+  }
+}
+
+.grade-ambient-orb {
+  animation: grade-ambient-drift 18s ease-in-out infinite;
+}
+
+.grade-ambient-orb-delayed {
+  animation-delay: -9s;
+  animation-duration: 22s;
+}
+
 /* Radial Spectral Cloud Gradients */
 .bg-radial-spectral-1 {
   background: radial-gradient(circle, rgba(45, 212, 191, 0.7) 0%, rgba(16, 185, 129, 0.3) 50%, transparent 80%);
