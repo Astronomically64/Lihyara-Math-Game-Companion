@@ -1,6 +1,6 @@
 import React from 'react';
 import { Compass, QrCode, BookOpen } from 'lucide-react';
-import { getTotalCardsCount } from '../utils/cardService';
+  import { getTotalCardsCount } from '../utils/cardService';
 
 interface HomeViewProps {
   onStartScan: () => void;
