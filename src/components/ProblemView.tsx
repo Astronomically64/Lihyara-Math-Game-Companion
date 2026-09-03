@@ -21,6 +21,7 @@ function shuffleArray<T>(array: T[]): T[] {
 
 interface GradeTheme {
   gradient: string;
+  pageGradient: string;
   themeName: string;
   badgeAccent: string;
   ambientColor: string;
@@ -31,6 +32,7 @@ function getGradeTheme(grade: number): GradeTheme {
     case 7: // Green = Water
       return {
         gradient: 'from-[#143d2b] via-[#1e563b] to-[#2d7a4d]',
+        pageGradient: 'from-[#3f8067] via-[#78b69a] to-[#c9e5d5]',
         themeName: 'Water Realm',
         badgeAccent: 'text-emerald-300',
         ambientColor: 'bg-emerald-300/35',
@@ -38,6 +40,7 @@ function getGradeTheme(grade: number): GradeTheme {
     case 8: // Yellow = Earth
       return {
         gradient: 'from-[#4a3205] via-[#785309] to-[#b38312]',
+        pageGradient: 'from-[#9d7822] via-[#d6b95e] to-[#f0e2b5]',
         themeName: 'Earth Realm',
         badgeAccent: 'text-amber-300',
         ambientColor: 'bg-amber-300/35',
@@ -45,6 +48,7 @@ function getGradeTheme(grade: number): GradeTheme {
     case 9: // Red = Fire
       return {
         gradient: 'from-[#4d0c0c] via-[#7f1d1d] to-[#b91c1c]',
+        pageGradient: 'from-[#a84f48] via-[#d58b76] to-[#f1d0c2]',
         themeName: 'Fire Realm',
         badgeAccent: 'text-red-300',
         ambientColor: 'bg-red-300/35',
@@ -53,6 +57,7 @@ function getGradeTheme(grade: number): GradeTheme {
     default:
       return {
         gradient: 'from-[#0b2545] via-[#134074] to-[#0077b6]',
+        pageGradient: 'from-[#397da5] via-[#83bcd4] to-[#d1e9f0]',
         themeName: 'Air Realm',
         badgeAccent: 'text-sky-300',
         ambientColor: 'bg-sky-300/35',
@@ -126,7 +131,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   };
 
   return (
-    <div className={`relative min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto overflow-hidden bg-gradient-to-br ${theme.gradient} select-none`}>
+    <div className={`relative min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto overflow-hidden bg-gradient-to-br ${theme.pageGradient} select-none`}>
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <div className={`grade-ambient-orb absolute -left-40 -top-40 h-[42rem] w-[42rem] rounded-full ${theme.ambientColor} blur-3xl`} />
         <div className={`grade-ambient-orb grade-ambient-orb-delayed absolute -bottom-48 -right-40 h-[44rem] w-[44rem] rounded-full ${theme.ambientColor} blur-3xl`} />
