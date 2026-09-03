@@ -11,12 +11,17 @@ interface CatalogViewProps {
 export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }) => {
   const allCards = useMemo(() => getAllCards(), []);
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedSection, setSelectedSection] = useState<'all' | 'portal' | 'grades'>('all');
   const [selectedGrade, setSelectedGrade] = useState<number | 'all'>('all');
   const [selectedDiff, setSelectedDiff] = useState<number | 'all'>('all');
+  const portalCards = allCards.filter((card) => card.portalTheme);
+  const gradeCards = allCards.filter((card) => !card.portalTheme);
 
   // Filter cards
   const filteredCards = useMemo(() => {
     return allCards.filter((card) => {
+      if (selectedSection === 'portal' && !card.portalTheme) return false;
+      if (selectedSection === 'grades' && card.portalTheme) return false;
       // Grade filter
       if (selectedGrade !== 'all' && card.grade !== selectedGrade) return false;
       // Difficulty filter
@@ -32,7 +37,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
       }
       return true;
     });
-  }, [allCards, selectedGrade, selectedDiff, searchQuery]);
+  }, [allCards, selectedGrade, selectedDiff, searchQuery, selectedSection]);
 
   return (
     <div className="min-h-[100dvh] w-full max-w-6xl mx-auto bg-background/85 backdrop-blur-sm p-[clamp(1rem,4vw,3rem)] pt-[clamp(1.5rem,5vw,3rem)] pb-[clamp(2rem,5vw,4rem)] select-none flex flex-col justify-between">
@@ -69,8 +74,37 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
           />
         </div>
 
+        {/* Deck Sections */}
+        <div className="mb-2">
+          <p className="px-1 mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-textMuted">Deck Sections</p>
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
+            {[
+              { key: 'all' as const, label: `All Cards (${allCards.length})` },
+              { key: 'portal' as const, label: `Portal Challenges (${portalCards.length})` },
+              { key: 'grades' as const, label: `Grade Levels (${gradeCards.length})` },
+            ].map((section) => (
+              <button
+                key={section.key}
+                onClick={() => {
+                  setSelectedSection(section.key);
+                  if (section.key === 'portal') setSelectedGrade('all');
+                }}
+                className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
+                  selectedSection === section.key
+                    ? 'bg-primaryTeal text-white shadow-sm'
+                    : 'bg-surfaceCard text-textMuted border border-textMuted/20'
+                }`}
+              >
+                {section.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Grade Filters */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-2 scrollbar-none">
+        <div className={`mb-2 ${selectedSection === 'portal' ? 'hidden' : ''}`}>
+          <p className="px-1 mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-textMuted">Grade Levels</p>
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
           <button
             onClick={() => setSelectedGrade('all')}
             className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
@@ -79,10 +113,10 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
                 : 'bg-surfaceCard text-textMuted border border-textMuted/20'
             }`}
           >
-            All Grades ({allCards.length})
+            All Grades ({gradeCards.length})
           </button>
           {[7, 8, 9, 10].map((grade) => {
-            const count = allCards.filter((c) => c.grade === grade).length;
+            const count = gradeCards.filter((c) => c.grade === grade).length;
             return (
               <button
                 key={grade}
@@ -97,6 +131,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
               </button>
             );
           })}
+          </div>
         </div>
 
         {/* Difficulty Filters */}
@@ -158,7 +193,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
                       {card.qrId.toUpperCase()}
                     </span>
                     <span className="text-[11px] font-medium text-textMuted">
-                      Grade {card.grade} • {diffName}
+                      {card.portalTheme ? 'Portal Challenge' : `Grade ${card.grade}`} • {diffName}
                     </span>
                     <span className="text-[10px] uppercase font-bold text-accentGold">
                       {catLabel}
