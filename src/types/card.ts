@@ -24,7 +24,3 @@ export interface CardsData {
   cards: Card[];
 }
 
-export interface GameStats {
-  correct: number;
-  incorrect: number;
-}
