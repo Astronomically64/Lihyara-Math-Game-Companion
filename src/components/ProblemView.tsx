@@ -33,21 +33,21 @@ function getGradeTheme(grade: number): GradeTheme {
         gradient: 'from-[#143d2b] via-[#1e563b] to-[#2d7a4d]',
         themeName: 'Water Realm',
         badgeAccent: 'text-emerald-300',
-        ambientColor: 'bg-emerald-400/20',
+        ambientColor: 'bg-emerald-300/35',
       };
     case 8: // Yellow = Earth
       return {
         gradient: 'from-[#4a3205] via-[#785309] to-[#b38312]',
         themeName: 'Earth Realm',
         badgeAccent: 'text-amber-300',
-        ambientColor: 'bg-amber-400/20',
+        ambientColor: 'bg-amber-300/35',
       };
     case 9: // Red = Fire
       return {
         gradient: 'from-[#4d0c0c] via-[#7f1d1d] to-[#b91c1c]',
         themeName: 'Fire Realm',
         badgeAccent: 'text-red-300',
-        ambientColor: 'bg-red-400/20',
+        ambientColor: 'bg-red-300/35',
       };
     case 10: // Blue = Air
     default:
@@ -55,7 +55,7 @@ function getGradeTheme(grade: number): GradeTheme {
         gradient: 'from-[#0b2545] via-[#134074] to-[#0077b6]',
         themeName: 'Air Realm',
         badgeAccent: 'text-sky-300',
-        ambientColor: 'bg-sky-400/20',
+        ambientColor: 'bg-sky-300/35',
       };
   }
 }
@@ -126,10 +126,10 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   };
 
   return (
-    <div className="relative min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto overflow-hidden bg-background select-none">
+    <div className={`relative min-h-[100dvh] w-full flex flex-col justify-between max-w-5xl mx-auto overflow-hidden bg-gradient-to-br ${theme.gradient} select-none`}>
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-        <div className={`grade-ambient-orb absolute -left-28 -top-24 h-96 w-96 rounded-full ${theme.ambientColor} blur-3xl`} />
-        <div className={`grade-ambient-orb grade-ambient-orb-delayed absolute -bottom-32 -right-24 h-[30rem] w-[30rem] rounded-full ${theme.ambientColor} blur-3xl`} />
+        <div className={`grade-ambient-orb absolute -left-40 -top-40 h-[42rem] w-[42rem] rounded-full ${theme.ambientColor} blur-3xl`} />
+        <div className={`grade-ambient-orb grade-ambient-orb-delayed absolute -bottom-48 -right-40 h-[44rem] w-[44rem] rounded-full ${theme.ambientColor} blur-3xl`} />
       </div>
 
       <div className="relative z-10">
