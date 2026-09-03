@@ -6,12 +6,9 @@ import { FeedbackView } from './components/FeedbackView';
 import { CatalogView } from './components/CatalogView';
 import { CardNotFoundView } from './components/CardNotFoundView';
 import { SpectralClouds } from './components/SpectralClouds';
-import { Card, AnswerOption, GameStats } from './types/card';
+import { Card, AnswerOption } from './types/card';
 import {
   getCardById,
-  getStoredStats,
-  recordAnswer,
-  resetStoredStats,
   parseQrPayload,
 } from './utils/cardService';
 
@@ -21,7 +18,6 @@ export const App: React.FC = () => {
   const [currentScreen, setCurrentScreen] = useState<ScreenState>('home');
   const [activeCard, setActiveCard] = useState<Card | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<AnswerOption | null>(null);
-  const [stats, setStats] = useState<GameStats>({ correct: 0, incorrect: 0 });
   const [lastScannedCode, setLastScannedCode] = useState<string>('');
 
   // Helper to open a specific card page
@@ -44,8 +40,6 @@ export const App: React.FC = () => {
 
   // Check URL on start or back button (e.g. ?card=g7e01 or #/card/g7e01)
   useEffect(() => {
-    setStats(getStoredStats());
-
     const checkUrlRoute = () => {
       const urlParams = new URLSearchParams(window.location.search);
       const cardParam = urlParams.get('card');
@@ -88,8 +82,6 @@ export const App: React.FC = () => {
   // Handle answer selection on Problem screen
   const handleSelectAnswer = (option: AnswerOption) => {
     setSelectedAnswer(option);
-    const updatedStats = recordAnswer(option.isCorrect);
-    setStats(updatedStats);
     setCurrentScreen('feedback');
   };
 
@@ -99,12 +91,6 @@ export const App: React.FC = () => {
     setSelectedAnswer(null);
     setCurrentScreen('home');
     window.history.pushState({}, '', window.location.pathname);
-  };
-
-  // Reset stats
-  const handleResetStats = () => {
-    const freshStats = resetStoredStats();
-    setStats(freshStats);
   };
 
   return (
@@ -118,10 +104,8 @@ export const App: React.FC = () => {
       <div className="relative z-10 min-h-[100dvh]">
       {currentScreen === 'home' && (
         <HomeView
-          stats={stats}
           onStartScan={() => setCurrentScreen('scanner')}
           onOpenCatalog={() => setCurrentScreen('catalog')}
-          onResetStats={handleResetStats}
         />
       )}
 

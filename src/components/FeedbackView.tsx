@@ -17,6 +17,10 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
   onGoHome,
 }) => {
   const isCorrect = selectedAnswer.isCorrect;
+  const movementSteps = card.difficulty === 1 ? 1 : card.difficulty === 3 ? 2 : 3;
+  const movementMessage = isCorrect
+    ? `Move ${movementSteps} ${movementSteps === 1 ? 'tile' : 'tiles'} forward`
+    : `Move ${movementSteps} ${movementSteps === 1 ? 'tile' : 'tiles'} backward`;
 
   // Fire celebratory confetti on correct answer
   useEffect(() => {
@@ -59,6 +63,10 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
           <p className="text-xs sm:text-sm text-textOnDark/85 font-medium">
             {isCorrect ? 'You solved the challenge.' : 'Review the worked solution below.'}
           </p>
+          <div className={`mx-auto mt-5 max-w-sm rounded-2xl border px-4 py-3 text-center ${isCorrect ? 'border-accentGold/50 bg-accentGold/20' : 'border-accentTerracotta/60 bg-accentTerracotta/20'}`}>
+            <span className="block text-[10px] font-bold uppercase tracking-[0.18em] text-white/70">Board move</span>
+            <span className="mt-1 block text-lg font-serif font-bold text-white">{movementMessage}</span>
+          </div>
         </div>
 
         {/* Answer Breakdown Card */}

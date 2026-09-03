@@ -1,26 +1,18 @@
 import React from 'react';
-import { Compass, QrCode, RotateCcw, BookOpen } from 'lucide-react';
-import { GameStats } from '../types/card';
+import { Compass, QrCode, BookOpen } from 'lucide-react';
 
 interface HomeViewProps {
-  stats: GameStats;
   onStartScan: () => void;
   onOpenCatalog: () => void;
-  onResetStats: () => void;
 }
 
 export const HomeView: React.FC<HomeViewProps> = ({
-  stats,
   onStartScan,
   onOpenCatalog,
-  onResetStats,
 }) => {
-  const total = stats.correct + stats.incorrect;
-  const accuracy = total > 0 ? Math.round((stats.correct / total) * 100) : 0;
-
   return (
     <div className="relative min-h-[100dvh] w-full flex flex-col justify-between p-[clamp(1rem,4vw,3rem)] max-w-5xl mx-auto select-none text-textOnDark transition-colors duration-1000 overflow-hidden">
-      {/* Top Bar with Catalog & Stats Reset */}
+      {/* Top Bar with catalog access */}
       <div className="flex items-center justify-end pt-2">
         <div className="flex items-center gap-2">
           <button
@@ -32,19 +24,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <span>Card Deck</span>
           </button>
 
-          {total > 0 && (
-            <button
-              onClick={() => {
-                if (window.confirm('Reset your session stats?')) {
-                  onResetStats();
-                }
-              }}
-              title="Reset Session Stats"
-              className="p-2 rounded-full text-textMuted hover:text-textPrimary hover:bg-surfaceCard/60 transition-colors"
-            >
-              <RotateCcw className="w-4 h-4" />
-            </button>
-          )}
         </div>
       </div>
 
@@ -70,49 +49,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
         </p>
       </div>
 
-      {/* Bottom Section: Stat Card + CTA Buttons */}
+      {/* Bottom Section: CTA Buttons */}
       <div className="flex flex-col gap-3 pb-4 z-10">
-        {/* Stat Card */}
-        <div className="bg-black/35 backdrop-blur-md rounded-3xl p-[clamp(1rem,3vw,2rem)] shadow-lg border border-white/15 flex items-center justify-around text-white">
-          {/* Correct Column */}
-          <div className="flex-1 text-center">
-            <span className="block text-[11px] font-bold tracking-wider text-emerald-300 uppercase mb-1">
-              Correct
-            </span>
-            <span className="text-3xl sm:text-4xl font-serif font-bold text-emerald-400">
-              {stats.correct}
-            </span>
-          </div>
-
-          {/* Thin Vertical Divider */}
-          <div className="w-px h-10 bg-white/20" />
-
-          {/* Incorrect Column */}
-          <div className="flex-1 text-center">
-            <span className="block text-[11px] font-bold tracking-wider text-red-300 uppercase mb-1">
-              Incorrect
-            </span>
-            <span className="text-3xl sm:text-4xl font-serif font-bold text-red-400">
-              {stats.incorrect}
-            </span>
-          </div>
-
-          {/* Accuracy Badge if played */}
-          {total > 0 && (
-            <>
-              <div className="w-px h-10 bg-white/20" />
-              <div className="flex-1 text-center">
-                <span className="block text-[11px] font-bold tracking-wider text-amber-300 uppercase mb-1">
-                  Accuracy
-                </span>
-                <span className="text-2xl sm:text-3xl font-serif font-bold text-amber-400">
-                  {accuracy}%
-                </span>
-              </div>
-            </>
-          )}
-        </div>
-
         {/* Primary CTA Button (Terracotta/Gold Glow) */}
         <button
           onClick={onStartScan}
