@@ -212,10 +212,10 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
       </div>
 
       {/* Answer Area */}
-      <div className="w-full p-[clamp(1rem,4vw,3rem)] pb-[clamp(1.5rem,4vw,3rem)]">
+      <div className="w-full rounded-t-[clamp(1.5rem,4vw,2.5rem)] border-t border-black/10 bg-white/75 p-[clamp(1rem,4vw,3rem)] pb-[clamp(1.5rem,4vw,3rem)] shadow-[0_-10px_30px_rgba(42,36,32,0.08)] backdrop-blur-sm">
         {/* Mode Switcher Toggle */}
         <div className="flex items-center justify-between mb-3 px-1">
-          <span className="text-[11px] font-bold tracking-wider text-textMuted uppercase">
+          <span className="text-[11px] font-bold tracking-wider text-textPrimary/80 uppercase">
             {answerMode === 'input' ? 'Type Specific Answer' : 'Select Choice'}
           </span>
 
@@ -234,7 +234,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
                 </>
               ) : (
                 <>
-                  <ToggleLeft className="w-4 h-4 text-textMuted" />
+                  <ToggleLeft className="w-4 h-4 text-textPrimary/70" />
                   <span>Type Answer</span>
                 </>
               )}
@@ -273,7 +273,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
               </p>
             )}
 
-            <p className="text-[11px] text-textMuted px-2 leading-tight">
+            <p className="text-[11px] text-textPrimary/75 px-2 leading-tight">
               Tip: Enter values like numbers (e.g. <span className="font-mono text-textPrimary">105</span>, <span className="font-mono text-textPrimary">0.375</span>, <span className="font-mono text-textPrimary">1/2</span>), units, or terms.
             </p>
           </form>
