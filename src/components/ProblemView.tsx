@@ -65,8 +65,12 @@ function getGradeTheme(grade: number): GradeTheme {
   }
 }
 
-// Timer based on difficulty: 1 (Easy: 30s), 3 (Medium: 60s), 5 (Hard: 90s)
-function getInitialTimerSeconds(difficulty: number): number {
+// Special challenge timers take precedence over the regular difficulty timers.
+function getInitialTimerSeconds(card: Card): number {
+  if (card.portalTheme) return 120;
+  if (card.category === 'final-challenge') return 150;
+
+  const { difficulty } = card;
   if (difficulty === 1) return 30;
   if (difficulty === 3) return 60;
   if (difficulty === 5) return 90;
@@ -83,7 +87,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
   const [inputError, setInputError] = useState<string | null>(null);
 
   // Difficulty Countdown Timer State
-  const [timeLeft, setTimeLeft] = useState<number>(() => getInitialTimerSeconds(card.difficulty));
+  const [timeLeft, setTimeLeft] = useState<number>(() => getInitialTimerSeconds(card));
 
   useEffect(() => {
     if (timeLeft <= 0) {
