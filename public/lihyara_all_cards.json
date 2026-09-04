@@ -47,7 +47,7 @@
       "problemText": "In the figure below, ∠ABD and  ∠CBD are supplementary angles. If m∠ABD=75, what is m∠CBD?\n[IMAGE: ∠ABD = 75° forming a straight line with ∠CBD]",
       "answers": [],
       "solution": "Supplementary angles add up to 180°. Therefore, m∠CBD = 180° - 75° = 105°.",
-      "imageRes": null
+      "imageRes": "/images/gr7e2fig.png"
     },
     {
       "qrId": "g7e03",
@@ -562,7 +562,7 @@
         }
       ],
       "solution": "Polygons with unequal properties are irregular, and an interior angle > 180° makes them non-convex (concave).",
-      "imageRes": null
+      "imageRes": "/images/gr7d2fig.png"
     },
     {
       "qrId": "g7d03",
@@ -595,7 +595,7 @@
         }
       ],
       "solution": "Vertical angle y = 76°. Adjacent supplementary angles x = z = 180° - 76° = 104°.",
-      "imageRes": null
+      "imageRes": "/images/gr7d3fig.png"
     },
     {
       "qrId": "g7d04",
@@ -683,13 +683,34 @@
       "difficulty": 5,
       "category": "fractions-rational",
       "title": "Rational Numbers on Number Line",
-      "questionType": "input",
+      "questionType": "multiple_choice",
       "expectedAnswer": "A",
       "acceptableAnswers": [
         "A"
       ],
       "problemText": "Which of the following number lines shows the correct plotting of rational numbers -3.0, 0 and 5.5?\n[IMAGE: Option A - Number line with points at -3, 0, 5.5]\n[IMAGE: Option B - Number line with points at -5.5, -3, 0]\n[IMAGE: Option C - Number line with points at 0, 3, 5.5]\n[IMAGE: Option D - Number line with points at -5.5, 0, 3]",
-      "answers": [],
+      "answers": [
+        {
+          "text": "A",
+          "isCorrect": true,
+          "imageRes": "/images/gr7d9mc-a.png"
+        },
+        {
+          "text": "B",
+          "isCorrect": false,
+          "imageRes": "/images/gr7d9mc-b.png"
+        },
+        {
+          "text": "C",
+          "isCorrect": false,
+          "imageRes": "/images/gr7d9mc-c.png"
+        },
+        {
+          "text": "D",
+          "isCorrect": false,
+          "imageRes": "/images/gr7d9mc-d.png"
+        }
+      ],
       "solution": "Negative rational numbers lie to the left of zero, and positive rational numbers lie to the right.",
       "imageRes": null
     },
@@ -707,7 +728,7 @@
       "problemText": "Which of the points below best describes 74 ?\n[IMAGE: Number line with labeled points M, A, T, H]",
       "answers": [],
       "solution": "7/4 = 1.75, which lies between 1 and 2, closer to 2.",
-      "imageRes": null
+      "imageRes": "/images/gr7d10fig.png"
     },
     {
       "qrId": "g7d11",
@@ -1414,7 +1435,7 @@
       "problemText": "In parallelogram KLMN, if KL=12cm, what is the length of NM?\n[IMAGE: Parallelogram KLMN]",
       "answers": [],
       "solution": "Horizontal lines have a vertical change (rise) of 0, so slope m = 0.",
-      "imageRes": null
+      "imageRes": "/images/gr9e3fig.png"
     },
     {
       "qrId": "g9e04",
@@ -1846,7 +1867,7 @@
       "problemText": "Quadrilateral ABCD has the following side lengths. What property shows that it is a parallelogram?\n[IMAGE: Rectangle ABCD with sides AB=12cm, CD=12cm, AD=8cm, BC=8cm]",
       "answers": [],
       "solution": "A quadrilateral is a parallelogram if and only if both pairs of opposite sides are congruent.",
-      "imageRes": null
+      "imageRes": "/images/gr9a15fig.png"
     },
     {
       "qrId": "g9d01",
@@ -2636,7 +2657,7 @@
       "problemText": "What is the value of x in the given figure?\n[IMAGE: Parallel lines cut by a transversal with angles 60° and 8x - 4]",
       "answers": [],
       "solution": "Using the equal-side or angle relationship shown in the supplied figure gives x = 8.",
-      "imageRes": null
+      "imageRes": "/images/gr9fc4fig.png"
     },
     {
       "qrId": "g9f05",
@@ -2684,7 +2705,7 @@
       "problemText": "The included angle of sides AC and BC in ∆ABC is\n[IMAGE: Triangle ABC]",
       "answers": [],
       "solution": "Sides AC and BC share endpoint C, so their included angle is ∠C.",
-      "imageRes": null
+      "imageRes": "/images/gr10fc2fig.png"
     },
     {
       "qrId": "g10f03",
@@ -2700,7 +2721,7 @@
       "problemText": "Given the figure, what is the measure of ∠BCD?\n[IMAGE: Triangle ABD with segment BC, showing angles and side lengths]",
       "answers": [],
       "solution": "Applying the angle relationships shown in the supplied figure gives 103°.",
-      "imageRes": null
+      "imageRes": "/images/gr10fc3fig.png"
     },
     {
       "qrId": "g10f04",
@@ -2733,7 +2754,7 @@
         }
       ],
       "solution": "Side e is opposite the included angle E, so the Law of Cosines uses subtraction.",
-      "imageRes": null
+      "imageRes": "/images/gr10fc4fig.png"
     },
     {
       "qrId": "g10f05",
@@ -2749,7 +2770,7 @@
       "problemText": "In △PQR, angle P = 30°, angle Q = 45°, and side r = 12 cm. What is the measure of angle R?\n[IMAGE: Figure 2 showing △PQR with ∠P=30°, ∠Q=45°, r=12cm]",
       "answers": [],
       "solution": "The angles of a triangle total 180°, so R = 180° - 30° - 45° = 105°.",
-      "imageRes": null
+      "imageRes": "/images/gr10fc5fig.png"
     }
   ]
 }

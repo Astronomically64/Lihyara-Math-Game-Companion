@@ -1748,7 +1748,25 @@ const finalOutput = {
   cards: cards.map(c => ({
     ...c,
     answers: c.questionType === 'input' ? [] : c.answers,
-    imageRes: null
+    imageRes: {
+      g7e02: '/images/gr7e2fig.png',
+      g7d02: '/images/gr7d2fig.png',
+      g7d03: '/images/gr7d3fig.png',
+      g7d10: '/images/gr7d10fig.png',
+      g9e03: '/images/gr9e3fig.png',
+      g9a15: '/images/gr9a15fig.png',
+      g9f04: '/images/gr9fc4fig.png',
+      g10f02: '/images/gr10fc2fig.png',
+      g10f03: '/images/gr10fc3fig.png',
+      g10f04: '/images/gr10fc4fig.png',
+      g10f05: '/images/gr10fc5fig.png',
+    }[c.qrId] || null,
+    ...(c.qrId === 'g7d09' ? {
+      answers: c.answers.map((answer, index) => ({
+        ...answer,
+        imageRes: `/images/gr7d9mc-${String.fromCharCode(97 + index)}.png`,
+      })),
+    } : {}),
   }))
 };
 

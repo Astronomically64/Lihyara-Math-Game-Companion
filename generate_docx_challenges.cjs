@@ -55,7 +55,23 @@ const extraCards = [
 const dataPath = path.join(root, 'src', 'data', 'cards.json');
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const existingIds = new Set(data.cards.map((card) => card.qrId));
-const cards = [...data.cards, ...extraCards.filter((card) => !existingIds.has(card.qrId))];
+const figureImages = {
+  g7e02: '/images/gr7e2fig.png',
+  g7d02: '/images/gr7d2fig.png',
+  g7d03: '/images/gr7d3fig.png',
+  g7d10: '/images/gr7d10fig.png',
+  g9e03: '/images/gr9e3fig.png',
+  g9a15: '/images/gr9a15fig.png',
+  g9f04: '/images/gr9fc4fig.png',
+  g10f02: '/images/gr10fc2fig.png',
+  g10f03: '/images/gr10fc3fig.png',
+  g10f04: '/images/gr10fc4fig.png',
+  g10f05: '/images/gr10fc5fig.png',
+};
+const cards = [...data.cards, ...extraCards.filter((card) => !existingIds.has(card.qrId))].map((card) => ({
+  ...card,
+  imageRes: figureImages[card.qrId] || card.imageRes || null,
+}));
 const output = JSON.stringify({ cards }, null, 2);
 for (const file of ['src/data/cards.json', 'lihyara_all_cards.json', 'public/lihyara_all_cards.json']) {
   fs.writeFileSync(path.join(root, file), output, 'utf8');
