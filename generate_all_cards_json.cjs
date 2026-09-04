@@ -1747,6 +1747,7 @@ const cards = [
 const finalOutput = {
   cards: cards.map(c => ({
     ...c,
+    answers: c.questionType === 'input' ? [] : c.answers,
     imageRes: null
   }))
 };

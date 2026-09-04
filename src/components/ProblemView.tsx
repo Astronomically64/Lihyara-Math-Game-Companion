@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Card, AnswerOption } from '../types/card';
 import { getCategoryLabel, getDifficultyLabel, validateInputAnswer } from '../utils/cardService';
-import { ArrowLeft, Target, Send, ToggleLeft, ToggleRight, HelpCircle, Timer } from 'lucide-react';
+import { ArrowLeft, Target, Send, HelpCircle, Timer } from 'lucide-react';
 
 interface ProblemViewProps {
   card: Card;
@@ -78,11 +78,6 @@ function getInitialTimerSeconds(card: Card): number {
 }
 
 export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, onBack }) => {
-  // Mode: 'input' (type exact answer) or 'multiple_choice'
-  const [answerMode, setAnswerMode] = useState<'input' | 'multiple_choice'>(() => {
-    return card.questionType === 'input' ? 'input' : 'multiple_choice';
-  });
-
   const [typedInput, setTypedInput] = useState('');
   const [inputError, setInputError] = useState<string | null>(null);
 
@@ -218,37 +213,11 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
 
       {/* Answer Area */}
       <div className="w-full rounded-t-[clamp(1.5rem,4vw,2.5rem)] border-t border-black/10 bg-white/75 p-[clamp(1rem,4vw,3rem)] pb-[clamp(1.5rem,4vw,3rem)] shadow-[0_-10px_30px_rgba(42,36,32,0.08)] backdrop-blur-sm">
-        {/* Mode Switcher Toggle */}
-        <div className="flex items-center justify-between mb-3 px-1">
-          <span className="text-[11px] font-bold tracking-wider text-textPrimary/80 uppercase">
-            {answerMode === 'input' ? 'Type Specific Answer' : 'Select Choice'}
-          </span>
-
-          {card.questionType !== 'true_false' && (
-            <button
-              onClick={() => {
-                setAnswerMode(answerMode === 'input' ? 'multiple_choice' : 'input');
-                setInputError(null);
-              }}
-              className="text-xs text-primaryTeal font-semibold flex items-center gap-1.5 hover:underline"
-            >
-              {answerMode === 'input' ? (
-                <>
-                  <ToggleRight className="w-4 h-4 text-accentGold" />
-                  <span>Switch to Choices</span>
-                </>
-              ) : (
-                <>
-                  <ToggleLeft className="w-4 h-4 text-textPrimary/70" />
-                  <span>Type Answer</span>
-                </>
-              )}
-            </button>
-          )}
+        <div className="mb-3 px-1 text-[11px] font-bold tracking-wider text-textPrimary/80 uppercase">
+          {card.questionType === 'input' ? 'Type Specific Answer' : 'Select Choice'}
         </div>
 
-        {/* MODE 1: Direct Specific Text/Numeric Input */}
-        {answerMode === 'input' ? (
+        {card.questionType === 'input' ? (
           <form onSubmit={handleInputSubmit} className="flex flex-col gap-3">
             <div className="relative">
               <input
