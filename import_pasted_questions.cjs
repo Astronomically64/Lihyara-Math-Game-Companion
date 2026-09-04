@@ -4,26 +4,21 @@ const path = require('path');
 const root = __dirname;
 const source = fs.readFileSync(path.join(root, 'questions-source.txt'), 'utf8').replace(/\r/g, '');
 const blocks = source.split(/\n\s*\n/).map((block) => block.trim()).filter(Boolean);
-const heading = /^(GRADE\s+\d+\s+QUESTIONS?|Grade\s+\d+|EASY|AVERAGE|DIFFICULT|PORTAL CHALLENGES|FINAL CHALLENGES|ANSWER)(\s|$)/i;
+const heading = /^(GRADE\s+\d+\s+QUESTIONS?|Grade\s+\d+|EASY|AVERAGE|DIFFICULT|PORTAL CHALLENGES|FINAL CHALLENGES)(\s|$)/i;
 const option = /^(?:A|B|C|D)\.\s*/;
 const records = [];
 
 for (const block of blocks) {
   const lines = block.split('\n').map((line) => line.trim()).filter(Boolean);
-  if (!lines.length || heading.test(lines[0]) || lines[0].startsWith('|')) continue;
-  if (/^Choosing the Right Court Design:/i.test(lines[0])) continue;
+  if (!lines.length || heading.test(lines[0])) continue;
 
-  const answerIndex = lines.findIndex((line) => /^\|\s*/.test(line) && !/^\|\s*(ANSWER|Description|Has )/i.test(line));
+  const answerIndex = lines.findIndex((line) => /^Answer:\s*/i.test(line));
+  if (answerIndex < 0) continue;
   let promptLines;
   let answerLines;
-  if (answerIndex >= 0) {
+  {
     promptLines = lines.slice(0, answerIndex);
-    answerLines = lines.slice(answerIndex).map((line) => line.replace(/^\|\s*/, '').trim()).filter(Boolean);
-  } else if (/^Which court is designed/i.test(lines[0])) {
-    promptLines = lines.slice(0, -1);
-    answerLines = [lines.at(-1)];
-  } else {
-    continue;
+    answerLines = lines.slice(answerIndex).map((line, index) => index === 0 ? line.replace(/^Answer:\s*/i, '').trim() : line).filter(Boolean);
   }
 
   const options = [];
@@ -57,6 +52,15 @@ data.cards.forEach((card, index) => {
   } else if (card.questionType !== 'true_false') {
     card.questionType = 'input';
     card.answers = [];
+  }
+
+  if (card.qrId === 'g7d09') {
+    card.questionType = 'multiple_choice';
+    card.answers = ['a', 'b', 'c', 'd'].map((letter) => ({
+      text: letter.toUpperCase(),
+      isCorrect: letter.toUpperCase() === record.answer,
+      imageRes: `/images/gr7d9mc-${letter}.png`,
+    }));
   }
 });
 

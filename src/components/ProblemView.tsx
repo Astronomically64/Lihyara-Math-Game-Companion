@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Card, AnswerOption } from '../types/card';
 import { getCategoryLabel, getDifficultyLabel, validateInputAnswer } from '../utils/cardService';
+import { MathText } from './MathText';
 import { ArrowLeft, Target, Send, HelpCircle, Timer } from 'lucide-react';
 
 interface ProblemViewProps {
@@ -194,7 +195,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
         <div className="px-[clamp(1rem,4vw,3rem)] -mt-[clamp(1.25rem,3vw,1.5rem)]">
           <div className="bg-surfaceCard rounded-3xl p-[clamp(1.25rem,4vw,2.5rem)] shadow-soft border border-black/5">
             <p className="text-[clamp(1rem,1.2vw,1.25rem)] text-textPrimary leading-relaxed font-normal whitespace-pre-line">
-              {card.problemText}
+              <MathText>{card.problemText}</MathText>
             </p>
 
             {/* Extension point for future image rendering if imageRes is added */}
@@ -271,7 +272,7 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
                   />
                 )}
                 <span className="font-serif text-base sm:text-lg font-medium text-textPrimary group-hover:text-primaryTeal transition-colors">
-                  {answer.text}
+                  <MathText>{answer.text}</MathText>
                 </span>
               </button>
             ))}

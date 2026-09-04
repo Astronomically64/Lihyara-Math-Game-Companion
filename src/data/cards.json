@@ -18,11 +18,11 @@
           "isCorrect": false
         },
         {
-          "text": "(n+2)180°",
+          "text": "n-290°",
           "isCorrect": false
         },
         {
-          "text": "n-290°",
+          "text": "(n+2)180°",
           "isCorrect": false
         },
         {
@@ -44,7 +44,7 @@
       "acceptableAnswers": [
         "105°"
       ],
-      "problemText": "In the figure below, ∠ABD and  ∠CBD are supplementary angles. If m∠ABD=75, what is m∠CBD?\n[IMAGE: ∠ABD = 75° forming a straight line with ∠CBD]",
+      "problemText": "In [figure], ∠ABD and ∠CBD are supplementary angles. If m∠ABD=75, what is m∠CBD?",
       "answers": [],
       "solution": "Supplementary angles add up to 180°. Therefore, m∠CBD = 180° - 75° = 105°.",
       "imageRes": "/images/gr7e2fig.png"
@@ -67,12 +67,12 @@
           "isCorrect": false
         },
         {
-          "text": "I=Prt",
-          "isCorrect": true
-        },
-        {
           "text": "I=P1+rt",
           "isCorrect": false
+        },
+        {
+          "text": "I=Prt",
+          "isCorrect": true
         },
         {
           "text": "I=P/rt",
@@ -208,7 +208,7 @@
       "acceptableAnswers": [
         "b≠0"
       ],
-      "problemText": "Replace the underlined statement with correct mathematical statement: A rational number is a number that can be written as fraction ab, where a and b are integers and b=0.",
+      "problemText": "Replace the underlined statement with correct mathematical statement: A rational number is a number that can be written as fraction a/b, where a and b are integers and b=0.",
       "answers": [],
       "solution": "Because division by zero is undefined, the denominator b must be nonzero (b ≠ 0).",
       "imageRes": null
@@ -331,7 +331,7 @@
       "acceptableAnswers": [
         "0.375"
       ],
-      "problemText": "Manuel is making a recipe that requires 38 cup of sugar. To better measure the sugar with a digital scale, he wants to convert the fraction to decimal. What is the decimal equivalent of 38?",
+      "problemText": "Manuel is making a recipe that requires 3/8 cup of sugar. To better measure the sugar with a digital scale, he wants to convert the fraction to decimal. What is the decimal equivalent of 3/8?",
       "answers": [],
       "solution": "Dividing 3 by 8: 3 ÷ 8 = 0.375.",
       "imageRes": null
@@ -343,9 +343,9 @@
       "category": "fractions-rational",
       "title": "Percentage to Fraction",
       "questionType": "input",
-      "expectedAnswer": "12",
+      "expectedAnswer": "1/2",
       "acceptableAnswers": [
-        "12"
+        "1/2"
       ],
       "problemText": "What fraction represents 50%?",
       "answers": [],
@@ -375,9 +375,9 @@
       "category": "fractions-rational",
       "title": "Decimal to Fraction Simplification",
       "questionType": "input",
-      "expectedAnswer": "54",
+      "expectedAnswer": "5/4",
       "acceptableAnswers": [
-        "54"
+        "5/4"
       ],
       "problemText": "What is the equivalent fraction of 1.25 in simplest form?",
       "answers": [],
@@ -424,26 +424,26 @@
       "category": "fractions-rational",
       "title": "Comparing Unit Fractions",
       "questionType": "multiple_choice",
-      "expectedAnswer": "16",
+      "expectedAnswer": "1/6",
       "acceptableAnswers": [
-        "16"
+        "1/6"
       ],
       "problemText": "Which of the following fractions is the smallest?",
       "answers": [
         {
-          "text": "12",
+          "text": "1/2",
           "isCorrect": false
         },
         {
-          "text": "13",
+          "text": "1/3",
           "isCorrect": false
         },
         {
-          "text": "15",
+          "text": "1/5",
           "isCorrect": false
         },
         {
-          "text": "16",
+          "text": "1/6",
           "isCorrect": true
         }
       ],
@@ -461,7 +461,7 @@
       "acceptableAnswers": [
         "between -1 and 0, closer to -1"
       ],
-      "problemText": "On a standard number line, where is -34 located relative to -1 and 0?",
+      "problemText": "On a standard number line, where is -3/4 located relative to -1 and 0?",
       "answers": [],
       "solution": "-3/4 = -0.75, which lies between 0 and -1, closer to -1.",
       "imageRes": null
@@ -473,9 +473,9 @@
       "category": "polygons-angles",
       "title": "Fountain Regular Pentagon",
       "questionType": "input",
-      "expectedAnswer": "All five sides=4m\nAll interior angles=108",
+      "expectedAnswer": "All five sides=4m, All interior angles=108",
       "acceptableAnswers": [
-        "All five sides=4m\nAll interior angles=108"
+        "All five sides=4m, All interior angles=108"
       ],
       "problemText": "Fountain Design: A fountain is a regular pentagon. One of the sides is 4 meters long, and one of the interior angles measures 108°. What are the lengths of the other sides and the measures of the other angles?",
       "answers": [],
@@ -516,12 +516,12 @@
           "isCorrect": false
         },
         {
-          "text": "45°, 45°, 45°",
-          "isCorrect": false
-        },
-        {
           "text": "42°, 58°, 80°",
           "isCorrect": true
+        },
+        {
+          "text": "45°, 45°, 45°",
+          "isCorrect": false
         },
         {
           "text": "63°, 27°, 100°",
@@ -542,7 +542,7 @@
       "acceptableAnswers": [
         "irregular and non-convex polygons"
       ],
-      "problemText": "Which classification correctly describes the two polygons shown below?\n[IMAGE: Concave Polygons with Reflex Angles]",
+      "problemText": "Which classification correctly describes the two polygons shown in [figure]?",
       "answers": [
         {
           "text": "irregular and convex polygons",
@@ -575,7 +575,7 @@
       "acceptableAnswers": [
         "x = 104°, y = 76° and z = 104°"
       ],
-      "problemText": "Two straight lines intersect as shown. If one angle measures 76°, which statement is correct?\n[IMAGE: Intersecting lines with angles x, y, z, and 76°]",
+      "problemText": "Two straight lines intersect as shown in [figure]. If one angle measures 76°, which statement is correct?",
       "answers": [
         {
           "text": "x = 104°, y = 76° and z = 104°",
@@ -652,9 +652,9 @@
       "category": "fractions-rational",
       "title": "Repeating Decimal to Fraction",
       "questionType": "input",
-      "expectedAnswer": "23",
+      "expectedAnswer": "2/3",
       "acceptableAnswers": [
-        "23"
+        "2/3"
       ],
       "problemText": "What is the equivalent fraction of 0.666…?",
       "answers": [],
@@ -668,9 +668,9 @@
       "category": "fractions-rational",
       "title": "Mixed Number to Improper Fraction",
       "questionType": "input",
-      "expectedAnswer": "536",
+      "expectedAnswer": "53/6",
       "acceptableAnswers": [
-        "536"
+        "53/6"
       ],
       "problemText": "What is 8 5/6 expressed as an improper fraction?",
       "answers": [],
@@ -688,7 +688,7 @@
       "acceptableAnswers": [
         "A"
       ],
-      "problemText": "Which of the following number lines shows the correct plotting of rational numbers -3.0, 0 and 5.5?\n[IMAGE: Option A - Number line with points at -3, 0, 5.5]\n[IMAGE: Option B - Number line with points at -5.5, -3, 0]\n[IMAGE: Option C - Number line with points at 0, 3, 5.5]\n[IMAGE: Option D - Number line with points at -5.5, 0, 3]",
+      "problemText": "Which of the following number lines shown in [figure] shows the correct plotting of rational numbers -3.0, 0 and 5.5?",
       "answers": [
         {
           "text": "A",
@@ -725,7 +725,7 @@
       "acceptableAnswers": [
         "Point A"
       ],
-      "problemText": "Which of the points below best describes 74 ?\n[IMAGE: Number line with labeled points M, A, T, H]",
+      "problemText": "Which of the points in [figure] best describes 7/4 ?",
       "answers": [],
       "solution": "7/4 = 1.75, which lies between 1 and 2, closer to 2.",
       "imageRes": "/images/gr7d10fig.png"
@@ -737,11 +737,11 @@
       "category": "fractions-rational",
       "title": "Ascending Order of Real Numbers",
       "questionType": "input",
-      "expectedAnswer": "72,     5.6,   6",
+      "expectedAnswer": "7/2, 5.6, 6",
       "acceptableAnswers": [
-        "72,     5.6,   6"
+        "7/2, 5.6, 6"
       ],
-      "problemText": "Arrange the following numbers in ascending order.              6,   72,   5.6",
+      "problemText": "Arrange the following numbers in ascending order. 6, 7/2, 5.6",
       "answers": [],
       "solution": "Convert 7/2 to 3.5. Comparing 3.5 < 5.6 < 6 gives: 7/2, 5.6, 6.",
       "imageRes": null
@@ -801,11 +801,11 @@
       "category": "fractions-rational",
       "title": "Park Distance Signs Ordering",
       "questionType": "input",
-      "expectedAnswer": "0.1km, 14km, 12km, 0.75km",
+      "expectedAnswer": "0.1km, 1/4km, 1/2km, 0.75km",
       "acceptableAnswers": [
-        "0.1km, 14km, 12km, 0.75km"
+        "0.1km, 1/4km, 1/2km, 0.75km"
       ],
-      "problemText": "Distance Signs: The park entrance has signs showing the distances to four areas: 0.1 km, 14 km, 0.75 km, and 12 km. Arrange the distances from the nearest to the farthest from the entrance.",
+      "problemText": "Distance Signs: The park entrance has signs showing the distances to four areas: 0.1 km, 1/4 km, 0.75 km, and 1/2 km. Arrange the distances from the nearest to the farthest from the entrance.",
       "answers": [],
       "solution": "Convert all to decimals: 0.1 km, 0.25 km (1/4), 0.50 km (1/2), 0.75 km. Order: 0.1 km, 1/4 km, 1/2 km, 0.75 km.",
       "imageRes": null
@@ -837,7 +837,7 @@
       "acceptableAnswers": [
         "Factor all numerators and denominators completely."
       ],
-      "problemText": "What is the first step before multiplying rational algebraic expressions containing polynomials x2-9x+2⋅x+2x+3 ?",
+      "problemText": "What is the first step before multiplying rational algebraic expressions containing polynomials x2-9/x+2⋅x+2/x+3 ?",
       "answers": [],
       "solution": "Factoring all numerators and denominators completely allows you to simplify common factors before multiplying.",
       "imageRes": null
@@ -849,11 +849,11 @@
       "category": "rational-algebraic-expressions",
       "title": "Product of Monomial Fractions",
       "questionType": "input",
-      "expectedAnswer": "6xy",
+      "expectedAnswer": "6/xy",
       "acceptableAnswers": [
-        "6xy"
+        "6/xy"
       ],
-      "problemText": "What is the product of the expression 2x⋅3y?",
+      "problemText": "What is the product of the expression 2/x⋅3/y?",
       "answers": [],
       "solution": "Multiply numerators and denominators: (2 * 3) / (x * y) = 6 / (xy).",
       "imageRes": null
@@ -865,11 +865,11 @@
       "category": "rational-algebraic-expressions",
       "title": "Reciprocal of Rational Expression",
       "questionType": "input",
-      "expectedAnswer": "x+5x-3",
+      "expectedAnswer": "x+5/x-3",
       "acceptableAnswers": [
-        "x+5x-3"
+        "x+5/x-3"
       ],
-      "problemText": "What is the reciprocal (multiplicative inverse) of the rational expression x-3x+5 ?",
+      "problemText": "What is the reciprocal (multiplicative inverse) of the rational expression x-3/x+5 ?",
       "answers": [],
       "solution": "The reciprocal of A/B is B/A: the reciprocal of (x - 3)/(x + 5) is (x + 5)/(x - 3).",
       "imageRes": null
@@ -881,26 +881,26 @@
       "category": "rational-algebraic-expressions",
       "title": "Division Process for Rational Expressions",
       "questionType": "multiple_choice",
-      "expectedAnswer": "AB⋅DC",
+      "expectedAnswer": "A/B⋅D/C",
       "acceptableAnswers": [
-        "AB⋅DC"
+        "A/B⋅D/C"
       ],
-      "problemText": "Which of the following describes the correct process for dividing two rational algebraic expressions, AB÷CD?",
+      "problemText": "Which of the following describes the correct process for dividing two rational algebraic expressions, A/B÷C/D?",
       "answers": [
         {
-          "text": "AB⋅CD",
+          "text": "A/B⋅C/D",
           "isCorrect": false
         },
         {
-          "text": "AB⋅DC",
+          "text": "A/B⋅D/C",
           "isCorrect": true
         },
         {
-          "text": "BA⋅CD",
+          "text": "B/A⋅C/D",
           "isCorrect": false
         },
         {
-          "text": "BA⋅DC",
+          "text": "B/A⋅D/C",
           "isCorrect": false
         }
       ],
@@ -918,7 +918,7 @@
       "acceptableAnswers": [
         "4x"
       ],
-      "problemText": "To factor the polynomial 8x2-12x, the greatest common factor (GCF) of the terms is ______.",
+      "problemText": "To factor the polynomial 8x^2-12x, the greatest common factor (GCF) of the terms is ______.",
       "answers": [],
       "solution": "GCF of coefficients 8 and 12 is 4, and common variable factor is x: GCF = 4x.",
       "imageRes": null
@@ -966,7 +966,7 @@
       "acceptableAnswers": [
         "b, the coefficient of the middle term"
       ],
-      "problemText": "To factor general trinomial x2+bx+c, find two numbers whose product is c and whose sum is ___________.",
+      "problemText": "To factor general trinomial x^2+bx+c, find two numbers whose product is c and whose sum is ___________.",
       "answers": [],
       "solution": "(x + 4)(x - 4) = x² - 4² = x² - 16.",
       "imageRes": null
@@ -982,7 +982,7 @@
       "acceptableAnswers": [
         "Factor"
       ],
-      "problemText": "Before cancelling common factors in a rational algebraic expression, you must first  _______ both the numerator and denominator completely.",
+      "problemText": "Before cancelling common factors in a rational algebraic expression, you must first _______ both the numerator and denominator completely.",
       "answers": [],
       "solution": "(x + 5)² = x² + 2(5)(x) + 5² = x² + 10x + 25.",
       "imageRes": null
@@ -1030,7 +1030,7 @@
       "acceptableAnswers": [
         "Multiply by"
       ],
-      "problemText": "Replace the underlined phrase to make the statement right:\nThe operation ab÷cd is equivalent to ab divided by dc.",
+      "problemText": "Replace the underlined phrase to make the statement right: The operation a/b÷c/d is equivalent to a/b divided by d/c.",
       "answers": [],
       "solution": "Factor numerator: 3(x + 2) / 3 = x + 2.",
       "imageRes": null
@@ -1069,7 +1069,7 @@
           "isCorrect": false
         },
         {
-          "text": "3x+22",
+          "text": "(3x+2)^2",
           "isCorrect": false
         },
         {
@@ -1095,7 +1095,7 @@
       "acceptableAnswers": [
         "The middle term must always be positive."
       ],
-      "problemText": "Which condition is NOT required for a trinomial ax2+bx+c to be a Perfect Square Trinomial?",
+      "problemText": "Which condition is NOT required for a trinomial ax^2+bx+c to be a Perfect Square Trinomial?",
       "answers": [
         {
           "text": "The first and last terms must be perfect squares.",
@@ -1128,7 +1128,7 @@
       "acceptableAnswers": [
         "3 and 4"
       ],
-      "problemText": "Maria factored the polynomial x2+7x+12. What pair of numbers should she need to consider?",
+      "problemText": "Maria factored the polynomial x^2+7x+12. What pair of numbers should she need to consider?",
       "answers": [],
       "solution": "All terms in numerator and denominator cancel: ((x - 2)(x + 3)) / ((x + 3)(x - 2)) = 1.",
       "imageRes": null
@@ -1144,7 +1144,7 @@
       "acceptableAnswers": [
         "3x"
       ],
-      "problemText": "What expression is equivalent to 12x4?",
+      "problemText": "What expression is equivalent to 12x/4?",
       "answers": [],
       "solution": "(4x / 5) * (15 / 2x) = 60x / 10x = 6.",
       "imageRes": null
@@ -1156,11 +1156,11 @@
       "category": "special-products-factoring",
       "title": "Completing Perfect Square Trinomial",
       "questionType": "input",
-      "expectedAnswer": "xy10",
+      "expectedAnswer": "xy/10",
       "acceptableAnswers": [
-        "xy10"
+        "xy/10"
       ],
-      "problemText": "Write an expression equivalent to x5÷2y?",
+      "problemText": "Write an expression equivalent to x/5÷2/y?",
       "answers": [],
       "solution": "Take half the middle coefficient squared: (8 / 2)² = 4² = 16.",
       "imageRes": null
@@ -1176,7 +1176,7 @@
       "acceptableAnswers": [
         "True"
       ],
-      "problemText": "Is the statement true or false: The product of (x-4)(x+4) is equal to x2-16 because the product of the sum and difference of two terms always results in a difference of two squares.",
+      "problemText": "Is the statement true or false: The product of (x-4)(x+4) is equal to x^2-16 because the product of the sum and difference of two terms always results in a difference of two squares.",
       "answers": [],
       "solution": "Factor out GCF 2: 2(x² + 5x + 6) = 2(x + 2)(x + 3).",
       "imageRes": null
@@ -1192,7 +1192,7 @@
       "acceptableAnswers": [
         "The sum must be -2."
       ],
-      "problemText": "Find the error in the given statement: Finding the dimensions of a rectangular garden given its area expression x2-2x-15 requires finding two factors whose sum is 2 and whose product is -15.",
+      "problemText": "Find the error in the given statement: Finding the dimensions of a rectangular garden given its area expression x^2-2x-15 requires finding two factors whose sum is 2 and whose product is -15.",
       "answers": [],
       "solution": "Factor numerator as (x - 4)(x + 4). Cancel (x - 4): result is x + 4.",
       "imageRes": null
@@ -1204,9 +1204,9 @@
       "category": "special-products-factoring",
       "title": "Expanding Monomial by Binomial",
       "questionType": "input",
-      "expectedAnswer": "6x2+15x",
+      "expectedAnswer": "6x^2+15x",
       "acceptableAnswers": [
-        "6x2+15x"
+        "6x^2+15x"
       ],
       "problemText": "What is the product of 3x (2x+5)?",
       "answers": [],
@@ -1220,11 +1220,11 @@
       "category": "special-products-factoring",
       "title": "Rectangular Board Area Claim",
       "questionType": "input",
-      "expectedAnswer": "No, the correct area is x2-49.",
+      "expectedAnswer": "No, the correct area is x^2-49.",
       "acceptableAnswers": [
-        "No, the correct area is x2-49."
+        "No, the correct area is x^2-49."
       ],
-      "problemText": "A rectangular bulletin board has a length of (x+7) m and a width of (x-7) m. A student claims the area is x2+49m2. Is the student correct? Why?",
+      "problemText": "A rectangular bulletin board has a length of (x+7) m and a width of (x-7) m. A student claims the area is (x^2+49)m^2. Is the student correct? Why?",
       "answers": [],
       "solution": "Area = (x + 7)(x - 7) = x² - 49 (difference of two squares). The student's sign was incorrect.",
       "imageRes": null
@@ -1236,9 +1236,9 @@
       "category": "rational-algebraic-expressions",
       "title": "Multiplying Complex Rational Expressions",
       "questionType": "input",
-      "expectedAnswer": "x+22",
+      "expectedAnswer": "(x+2)^2",
       "acceptableAnswers": [
-        "x+22"
+        "(x+2)^2"
       ],
       "problemText": "The side of a square stage is increased by 2 meters. If the original side length is x meters, what expression represents the new area of the stage?",
       "answers": [],
@@ -1256,7 +1256,7 @@
       "acceptableAnswers": [
         "6x meters"
       ],
-      "problemText": "Each student uses 3x5 meter of string for a Science project. If 10 students join the activity, what is the total length of string needed?",
+      "problemText": "Each student uses 3x/5 meter of string for a Science project. If 10 students join the activity, what is the total length of string needed?",
       "answers": [],
       "solution": "Multiply by reciprocal: ((x - 2)(x + 2) / (x + 1)) * ((x + 1) / (x - 2)) = x + 2.",
       "imageRes": null
@@ -1272,7 +1272,7 @@
       "acceptableAnswers": [
         "Yes, the solution is completely correct."
       ],
-      "problemText": "Did the student evaluate and simplify this expression correctly?\nMultiply: 3x⋅x6       Step 1: 3⋅xx⋅6\nStep 2: 36=12",
+      "problemText": "Did the student evaluate and simplify this expression correctly?\nMultiply: 3/x⋅x/6 Step 1: 3⋅x/x⋅6\nStep 2: 3/6=1/2",
       "answers": [],
       "solution": "Factor out 3: 3(x² - 9) = 3(x - 3)(x + 3).",
       "imageRes": null
@@ -1284,11 +1284,11 @@
       "category": "special-products-factoring",
       "title": "FOIL Binomial Product",
       "questionType": "input",
-      "expectedAnswer": "3x-53x+5",
+      "expectedAnswer": "(3x-5)(3x+5)",
       "acceptableAnswers": [
-        "3x-53x+5"
+        "(3x-5)(3x+5)"
       ],
-      "problemText": "What is the factored form of 9x2-25?",
+      "problemText": "What is the factored form of 9x^2-25?",
       "answers": [],
       "solution": "FOIL: (2x)(3x) + (2x)(4) + (-3)(3x) + (-3)(4) = 6x² + 8x - 9x - 12 = 6x² - x - 12.",
       "imageRes": null
@@ -1300,11 +1300,11 @@
       "category": "rational-algebraic-expressions",
       "title": "Rational Expression Simplification",
       "questionType": "input",
-      "expectedAnswer": "x+32",
+      "expectedAnswer": "(x+3)^2",
       "acceptableAnswers": [
-        "x+32"
+        "(x+3)^2"
       ],
-      "problemText": "The factored form of x2+6x+9 is ______.",
+      "problemText": "The factored form of x^2+6x+9 is ______.",
       "answers": [],
       "solution": "Factor: ((x + 3)(x + 4)) / ((x - 4)(x + 4)) = (x + 3) / (x - 4).",
       "imageRes": null
@@ -1320,7 +1320,7 @@
       "acceptableAnswers": [
         "(x+3)(x+4)"
       ],
-      "problemText": "What are the factors of x2+7x+12?",
+      "problemText": "What are the factors of x^2+7x+12?",
       "answers": [],
       "solution": "Original = x²; New = (x + 3)(x - 3) = x² - 9. The new area is 9 m² less.",
       "imageRes": null
@@ -1336,7 +1336,7 @@
       "acceptableAnswers": [
         "x-3"
       ],
-      "problemText": "What is the simplest form of x29x+3 ?",
+      "problemText": "What is the simplest form of x^2 9/x+3 ?",
       "answers": [],
       "solution": "Combine numerators over the common denominator: (2 + 3) / (x - 1) = 5 / (x - 1).",
       "imageRes": null
@@ -1348,9 +1348,9 @@
       "category": "special-products-factoring",
       "title": "Finding Dimensions from Area",
       "questionType": "input",
-      "expectedAnswer": "x2-y2",
+      "expectedAnswer": "x^2-y^2",
       "acceptableAnswers": [
-        "x2-y2"
+        "x^2-y^2"
       ],
       "problemText": "You are designing a square picture frame. The outer edge of the frame is a square with side length x cm. The inner opening (where the photo goes) is a square with side length y cm. Write the expression for the surface area of the border (the frame around the photo).",
       "answers": [],
@@ -1368,7 +1368,7 @@
       "acceptableAnswers": [
         "No, it must be 5x-3"
       ],
-      "problemText": "An architecture student is finding the side length of a square room with a floor area given by: Area=25x2-30x+9.\nThe student claims the room’s side length is 5x+3 meters because 25x2=5x and 9=3. Did the student use the correct sign in their binomial factor (5x+3)? If not, why?",
+      "problemText": "An architecture student is finding the side length of a square room with a floor area given by: Area=25x^2-30x+9.\nThe student claims the room’s side length is (5x+3) meters because square root of 25x^2 equals 5x and square root of 9 equals 3. Did the student use the correct sign in their binomial factor (5x+3)? If not, why?",
       "answers": [],
       "solution": "Set denominator to zero: x - 7 = 0 => x = 7.",
       "imageRes": null
@@ -1384,7 +1384,7 @@
       "acceptableAnswers": [
         "Leo"
       ],
-      "problemText": "Two students, Leo and Maya, were asked to factor the simple trinomial x2-2x-24. Their final answers are shown below:\nLeo's Answer: (x-6)(x+4)\nMaya's Answer: (x+6)(x-4)\nWhich student has the correct factored form?",
+      "problemText": "Two students, Leo and Maya, were asked to factor the simple trinomial x^2-2x-24. Their final answers are shown below:\nLeo's Answer: (x-6)(x+4)\nMaya's Answer: (x+6)(x-4)\nWhich student has the correct factored form?",
       "answers": [],
       "solution": "Group: x²(x + 2) + 3(x + 2) = (x + 2)(x² + 3).",
       "imageRes": null
@@ -1432,7 +1432,7 @@
       "acceptableAnswers": [
         "NM=12"
       ],
-      "problemText": "In parallelogram KLMN, if KL=12cm, what is the length of NM?\n[IMAGE: Parallelogram KLMN]",
+      "problemText": "In parallelogram KLMN shown in [figure], if KL=12cm, what is the length of NM?",
       "answers": [],
       "solution": "Horizontal lines have a vertical change (rise) of 0, so slope m = 0.",
       "imageRes": "/images/gr9e3fig.png"
@@ -1572,9 +1572,9 @@
       "category": "linear-equations",
       "title": "Slope through Origin",
       "questionType": "input",
-      "expectedAnswer": "∠A and ∠B\n∠B and ∠C\n∠C and ∠D\n∠D and ∠A",
+      "expectedAnswer": "∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A",
       "acceptableAnswers": [
-        "∠A and ∠B\n∠B and ∠C\n∠C and ∠D\n∠D and ∠A"
+        "∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A"
       ],
       "problemText": "Name one pair of consecutive angles in parallelogram ABCD.",
       "answers": [],
@@ -1620,9 +1620,9 @@
       "category": "quadrilaterals-geometry",
       "title": "Bisecting Diagonals Quadrilateral",
       "questionType": "input",
-      "expectedAnswer": "Parallelogram\n(Rectangle, Rhombus, Square)",
+      "expectedAnswer": "Parallelogram (Rectangle, Rhombus, Square)",
       "acceptableAnswers": [
-        "Parallelogram\n(Rectangle, Rhombus, Square)"
+        "Parallelogram (Rectangle, Rhombus, Square)"
       ],
       "problemText": "If the diagonals of a quadrilateral bisect each other, what type of a quadrilateral must it be?",
       "answers": [],
@@ -1656,7 +1656,7 @@
       "acceptableAnswers": [
         "4"
       ],
-      "problemText": "In the linear function fx=2x-6, what is f(5)?",
+      "problemText": "In the linear function f(x)=2x-6, what is f(5)?",
       "answers": [],
       "solution": "f(5) = 2(5) - 6 = 10 - 6 = 4.",
       "imageRes": null
@@ -1684,9 +1684,9 @@
       "category": "linear-equations",
       "title": "Perpendicular Slope Calculation",
       "questionType": "input",
-      "expectedAnswer": "-12",
+      "expectedAnswer": "-1/2",
       "acceptableAnswers": [
-        "-12"
+        "-1/2"
       ],
       "problemText": "A line has slope 2. What must be the slope of the line perpendicular to it?",
       "answers": [],
@@ -1748,9 +1748,9 @@
       "category": "quadrilaterals-geometry",
       "title": "Rectangle Area Calculation",
       "questionType": "input",
-      "expectedAnswer": "35cm2",
+      "expectedAnswer": "35cm^2",
       "acceptableAnswers": [
-        "35cm2"
+        "35cm^2"
       ],
       "problemText": "What is the area of a rectangle which sides are 5cm and 7cm?",
       "answers": [],
@@ -1816,7 +1816,7 @@
       "acceptableAnswers": [
         "Perpendicular lines"
       ],
-      "problemText": "Two lines have slope 4 and -14 . What relationship do the two lines have?",
+      "problemText": "Two lines have slope 4 and -1/4 . What relationship do the two lines have?",
       "answers": [],
       "solution": "Product of slopes = 4 × (-1/4) = -1, which defines perpendicular lines.",
       "imageRes": null
@@ -1844,9 +1844,9 @@
       "category": "quadrilaterals-geometry",
       "title": "Square Flower Bed Area",
       "questionType": "input",
-      "expectedAnswer": "36m2",
+      "expectedAnswer": "36m^2",
       "acceptableAnswers": [
-        "36m2"
+        "36m^2"
       ],
       "problemText": "A rectangular school garden measures 18m by 10m. A square flower bed with side lengths of 6m is placed inside the garden. What is the area of the flower bed?",
       "answers": [],
@@ -1864,7 +1864,7 @@
       "acceptableAnswers": [
         "A quadrilateral is a parallelogram if both pairs of opposite sides are congruent."
       ],
-      "problemText": "Quadrilateral ABCD has the following side lengths. What property shows that it is a parallelogram?\n[IMAGE: Rectangle ABCD with sides AB=12cm, CD=12cm, AD=8cm, BC=8cm]",
+      "problemText": "Quadrilateral ABCD has the side lengths shown in [figure]. What property shows that it is a parallelogram?",
       "answers": [],
       "solution": "A quadrilateral is a parallelogram if and only if both pairs of opposite sides are congruent.",
       "imageRes": "/images/gr9a15fig.png"
@@ -1908,11 +1908,11 @@
       "category": "quadrilaterals-geometry",
       "title": "Vegetable Garden Dimensions",
       "questionType": "input",
-      "expectedAnswer": "Length—Width\n120m—1m\n60m—2m\n40m—3m\n30m—4m\n24m—5m\n20m—6m\n15m—8m\n12m—10m",
+      "expectedAnswer": "Length—Width: 120m—1m, 60m—2m, 40m—3m, 30m—4m, 24m—5m, 20m—6m, 15m—8m, 12m—10m",
       "acceptableAnswers": [
-        "Length—Width\n120m—1m\n60m—2m\n40m—3m\n30m—4m\n24m—5m\n20m—6m\n15m—8m\n12m—10m"
+        "Length—Width: 120m—1m, 60m—2m, 40m—3m, 30m—4m, 24m—5m, 20m—6m, 15m—8m, 12m—10m"
       ],
-      "problemText": "The Grade 9 students want to create a rectangular vegetable garden with an area of exactly 120m2. The garden must have a length greater than its width. Give two possible dimensions of the garden.",
+      "problemText": "The Grade 9 students want to create a rectangular vegetable garden with an area of exactly 120m^2. The garden must have a length greater than its width. Give two possible dimensions of the garden.",
       "answers": [],
       "solution": "Possible factor pairs where Length > Width: 15m × 8m, 12m × 10m, 20m × 6m, 24m × 5m, 30m × 4m, 40m × 3m, 60m × 2m, 120m × 1m.",
       "imageRes": null
@@ -1940,9 +1940,9 @@
       "category": "quadrilaterals-geometry",
       "title": "Picnic Platform Flooring Area",
       "questionType": "input",
-      "expectedAnswer": "114m2",
+      "expectedAnswer": "114m^2",
       "acceptableAnswers": [
-        "114m2"
+        "114m^2"
       ],
       "problemText": "A local community is preparing a picnic area in a public park. The main picnic platform is designed in the shape of a rectangle measuring 15m and 10m wide. Inside the platform is decorative stone area designed as a square. Each side of the square measures 6m. The organizer wants to cover the area outside the square with an outdoor flooring. What is its area?",
       "answers": [],
@@ -1976,7 +1976,7 @@
       "acceptableAnswers": [
         "45.50°"
       ],
-      "problemText": "Convert the angle measure 450330' into decimal degree.",
+      "problemText": "Convert the angle measure 45°330' into decimal degree.",
       "answers": [],
       "solution": "30' = 30 / 60 = 0.50°. Therefore 45° 30' = 45.50°.",
       "imageRes": null
@@ -1988,11 +1988,11 @@
       "category": "trigonometry",
       "title": "Decimal Degrees to DMS",
       "questionType": "input",
-      "expectedAnswer": "120 4'48.00''",
+      "expectedAnswer": "12°4'48.00''",
       "acceptableAnswers": [
-        "120 4'48.00''"
+        "12°4'48.00''"
       ],
-      "problemText": "Which of the following degree, minute, and seconds is equal to the angle measure 12.080?",
+      "problemText": "Which of the following degree, minute, and seconds is equal to the angle measure 12.08°?",
       "answers": [],
       "solution": "0.08° × 60 = 4.8' (4 minutes); 0.8' × 60 = 48''. Thus 12.08° = 12° 04' 48''.",
       "imageRes": null
@@ -2024,7 +2024,7 @@
       "acceptableAnswers": [
         "Obtuse triangle"
       ],
-      "problemText": "The largest angle of an oblique triangle measures 1100, the triangle is classified as:",
+      "problemText": "The largest angle of an oblique triangle measures 110°, the triangle is classified as:",
       "answers": [],
       "solution": "Any triangle with an interior angle greater than 90° is an obtuse triangle.",
       "imageRes": null
@@ -2040,7 +2040,7 @@
       "acceptableAnswers": [
         "Acute triangle"
       ],
-      "problemText": "If all three angles of a triangle are less than 900, the triangle is ____.",
+      "problemText": "If all three angles of a triangle are less than 90°, the triangle is ____.",
       "answers": [],
       "solution": "A triangle in which all three angles measure less than 90° is an acute triangle.",
       "imageRes": null
@@ -2068,9 +2068,9 @@
       "category": "law-of-sines-cosines",
       "title": "Law of Sines Equation",
       "questionType": "input",
-      "expectedAnswer": "asinA=bsinB=csinC",
+      "expectedAnswer": "a/sinA=b/sinB=c/sinC",
       "acceptableAnswers": [
-        "asinA=bsinB=csinC"
+        "a/sinA=b/sinB=c/sinC"
       ],
       "problemText": "What formula represents the Law of Sines?",
       "answers": [],
@@ -2084,9 +2084,9 @@
       "category": "law-of-sines-cosines",
       "title": "Law of Cosines Equation",
       "questionType": "input",
-      "expectedAnswer": "a2=b2+c2-2bccosA",
+      "expectedAnswer": "a2=b2+c2-2bc cosA",
       "acceptableAnswers": [
-        "a2=b2+c2-2bccosA"
+        "a2=b2+c2-2bc cosA"
       ],
       "problemText": "What formula represents the Law of Cosines?",
       "answers": [],
@@ -2104,7 +2104,7 @@
       "acceptableAnswers": [
         "Law of Cosines"
       ],
-      "problemText": "A triangular garden in Naga City has two sides measuring 12m and 15m with an included angle of 700. Which law should be used to find the third side?",
+      "problemText": "A triangular garden in Naga City has two sides measuring 12m and 15m with an included angle of 70°. Which law should be used to find the third side?",
       "answers": [],
       "solution": "When given two sides and the included angle (SAS), the Law of Cosines is used.",
       "imageRes": null
@@ -2152,7 +2152,7 @@
       "acceptableAnswers": [
         "15 meters"
       ],
-      "problemText": "An observer stands exactly 15 meters away from the base of a vertical flagpole. The angle of elevation from the observer’s feet to the top of the flagpole is 450. How tall is the flagpole?",
+      "problemText": "An observer stands exactly 15 meters away from the base of a vertical flagpole. The angle of elevation from the observer’s feet to the top of the flagpole is 45°. How tall is the flagpole?",
       "answers": [],
       "solution": "tan(45°) = height / distance => 1 = h / 15 => h = 15 meters.",
       "imageRes": null
@@ -2164,11 +2164,11 @@
       "category": "trigonometry",
       "title": "Third Angle in Triangle",
       "questionType": "input",
-      "expectedAnswer": "750",
+      "expectedAnswer": "75°",
       "acceptableAnswers": [
-        "750"
+        "75°"
       ],
-      "problemText": "In ∆ABC, ∠A=450 and ∠C=600. What is the measure of ∠B?",
+      "problemText": "In ∆ABC, ∠A=45° and ∠C=60°. What is the measure of ∠B?",
       "answers": [],
       "solution": "Sum of angles in a triangle is 180°: ∠B = 180° - 45° - 60° = 75°.",
       "imageRes": null
@@ -2184,7 +2184,7 @@
       "acceptableAnswers": [
         "At least one known side and its opposite angle."
       ],
-      "problemText": "A fisherman in the waters near Catanduanes observes two landmarks that are 20km apart. The angles formed by the two landmarks and the fishing boat are 450 and 650. What information is needed to solve for an unknown side using the Law of Sines.",
+      "problemText": "A fisherman in the waters near Catanduanes observes two landmarks that are 20km apart. The angles formed by the two landmarks and the fishing boat are 45° and 65°. What information is needed to solve for an unknown side using the Law of Sines.",
       "answers": [],
       "solution": "The Law of Sines requires at least one side and its corresponding opposite angle pair.",
       "imageRes": null
@@ -2200,7 +2200,7 @@
       "acceptableAnswers": [
         "4.24 cm"
       ],
-      "problemText": "In ∆ABC, ∠A=250, ∠B=850, and AC=10cm. What is the approximate length of BC? Formula: BC=10sin25sin85",
+      "problemText": "In ∆ABC, ∠A=25°, ∠B=85°, and AC=10cm. What is the approximate length of BC? Formula: BC=10sin25/sin85",
       "answers": [],
       "solution": "BC = 10 * sin(25°) / sin(85°) ≈ 10 * 0.4226 / 0.9962 ≈ 4.24 cm.",
       "imageRes": null
@@ -2212,11 +2212,11 @@
       "category": "trigonometry",
       "title": "Pasacao Boat Navigation Angle",
       "questionType": "input",
-      "expectedAnswer": "700",
+      "expectedAnswer": "70°",
       "acceptableAnswers": [
-        "700"
+        "70°"
       ],
-      "problemText": "A boat travels from Pasacao toward a point offshore. The distance between two observation points is 25km. If the observed angles are 400 and 700, what is the third angle of the triangle?",
+      "problemText": "A boat travels from Pasacao toward a point offshore. The distance between two observation points is 25km. If the observed angles are 40° and 70°, what is the third angle of the triangle?",
       "answers": [],
       "solution": "180° - 40° - 70° = 70°.",
       "imageRes": null
@@ -2228,9 +2228,9 @@
       "category": "law-of-sines-cosines",
       "title": "Law of Cosines Formulation",
       "questionType": "input",
-      "expectedAnswer": "e2=102+122-21012cos602",
+      "expectedAnswer": "e^2=10^2+12^2-2(10)(12)cos60^2",
       "acceptableAnswers": [
-        "e2=102+122-21012cos602"
+        "e^2=10^2+12^2-2(10)(12)cos60^2"
       ],
       "problemText": "In ∆DEF, side d=10cm, side f=12cm and ∠E=600. Which equation correctly determines side e?",
       "answers": [],
@@ -2244,11 +2244,11 @@
       "category": "law-of-sines-cosines",
       "title": "Triangle Angle via Law of Sines",
       "questionType": "input",
-      "expectedAnswer": "35022'08''",
+      "expectedAnswer": "35°22'08''",
       "acceptableAnswers": [
-        "35022'08''"
+        "35°22'08''"
       ],
-      "problemText": "Determine the measure of ∠C in ∆ABC if AB=0.77km, m∠A=1100, and BC=1.25 km.",
+      "problemText": "Determine the measure of ∠C in ∆ABC if AB=0.77km, m∠A=110°, and BC=1.25 km.",
       "answers": [],
       "solution": "sin(C) / 0.77 = sin(110°) / 1.25 => sin(C) = 0.77 * sin(110°) / 1.25 ≈ 0.5788 => ∠C ≈ 35.3688° ≈ 35° 22' 08''.",
       "imageRes": null
@@ -2264,7 +2264,7 @@
       "acceptableAnswers": [
         "12.49m"
       ],
-      "problemText": "A triangular lot has sides 10m and 14m with an included angle of 600. What is the approximate length of the third side?",
+      "problemText": "A triangular lot has sides 10m and 14m with an included angle of 60°. What is the approximate length of the third side?",
       "answers": [],
       "solution": "c² = 10² + 14² - 2(10)(14)cos(60°) = 100 + 196 - 140 = 156 => c = √156 ≈ 12.49 m.",
       "imageRes": null
@@ -2280,7 +2280,7 @@
       "acceptableAnswers": [
         "21.25m"
       ],
-      "problemText": "A surveyor measures two sides of a triangular area as 20m and 30m and the included angle as 450. What is the approximate third side?",
+      "problemText": "A surveyor measures two sides of a triangular area as 20m and 30m and the included angle as 45°. What is the approximate third side?",
       "answers": [],
       "solution": "c² = 20² + 30² - 2(20)(30)cos(45°) = 400 + 900 - 1200(0.7071) = 1300 - 848.53 = 451.47 => c = √451.47 ≈ 21.25 m.",
       "imageRes": null
@@ -2292,11 +2292,11 @@
       "category": "law-of-sines-cosines",
       "title": "Angle Measure from Law of Cosines",
       "questionType": "input",
-      "expectedAnswer": "55046'08''",
+      "expectedAnswer": "55°46'08''",
       "acceptableAnswers": [
-        "55046'08''"
+        "55°46'08''"
       ],
-      "problemText": "What is m∠E in the equation 102=82+122-2812cosE?",
+      "problemText": "What is m∠E in the equation 10^2=8^2+12^2-2(8)(12)cosE?",
       "answers": [],
       "solution": "100 = 64 + 144 - 192 cos(E) => 100 = 208 - 192 cos(E) => -108 = -192 cos(E) => cos(E) = 0.5625 => E ≈ 55.7711° ≈ 55° 46' 16''.",
       "imageRes": null
@@ -2312,7 +2312,7 @@
       "acceptableAnswers": [
         "13.66cm"
       ],
-      "problemText": "In ∆ABC, ∠A=450, ∠B=750, and side a=10cm. Using the law of sines, approximately how long is side b?",
+      "problemText": "In ∆ABC, ∠A=45°, ∠B=75°, and side a=10cm. Using the law of sines, approximately how long is side b?",
       "answers": [],
       "solution": "b = a * sin(B) / sin(A) = 10 * sin(75°) / sin(45°) ≈ 10 * 0.9659 / 0.7071 ≈ 13.66 cm.",
       "imageRes": null
@@ -2328,7 +2328,7 @@
       "acceptableAnswers": [
         "6.06cm"
       ],
-      "problemText": "In ∆PQR, ∠P=300, ∠Q=520, and side r=12 cm. What is the approximate length of side p?",
+      "problemText": "In ∆PQR, ∠P=30°, ∠Q=52°, and side r=12 cm. What is the approximate length of side p?",
       "answers": [],
       "solution": "∠R = 180° - 30° - 52° = 98°. p = r * sin(P) / sin(R) = 12 * sin(30°) / sin(98°) ≈ 12 * 0.5 / 0.9903 ≈ 6.06 cm.",
       "imageRes": null
@@ -2341,11 +2341,11 @@
       "category": "portal-challenge",
       "title": "The Water Tank Portal",
       "questionType": "input",
-      "expectedAnswer": "34-35=320\n320x=24\nx=160 liters",
+      "expectedAnswer": "3/4-3/5=3/20, 3/20x=24, x=160 liters",
       "acceptableAnswers": [
-        "34-35=320\n320x=24\nx=160 liters"
+        "3/4-3/5=3/20, 3/20x=24, x=160 liters"
       ],
-      "problemText": "The water tank is 35 full. After 24 liters of water are added, the tank becomes 34 full. What is the total capacity of the tank?",
+      "problemText": "The water tank is 3/5 full. After 24 liters of water are added, the tank becomes 3/4 full. What is the total capacity of the tank?",
       "answers": [],
       "solution": "The added water is 3/4 - 3/5 = 3/20 of the tank. Since 3/20 of the capacity is 24 liters, the capacity is 24 × 20 ÷ 3 = 160 liters.",
       "imageRes": null
@@ -2392,9 +2392,9 @@
       "category": "portal-challenge",
       "title": "The Rectangle Portal",
       "questionType": "input",
-      "expectedAnswer": "Length = 20cm\nWidth = 12 cm\nArea = 240cm2",
+      "expectedAnswer": "Length = 20cm, Width = 12 cm, Area = 240cm^2",
       "acceptableAnswers": [
-        "Length = 20cm\nWidth = 12 cm\nArea = 240cm2"
+        "Length = 20cm, Width = 12 cm, Area = 240cm^2"
       ],
       "problemText": "A rectangle has a perimeter of 64cm. Its length is 8cm more than twice its width. Find the area of the rectangle.",
       "answers": [],
@@ -2425,9 +2425,9 @@
       "category": "final-challenge",
       "title": "Simple Interest Relationship",
       "questionType": "input",
-      "expectedAnswer": "I=Prt\nWhere,I = simple interest\nP= principal amount\nr= annual interest rate\nt = time in years",
+      "expectedAnswer": "I=Prt (Where I = simple interest, P= principal amount, r= annual interest rate, t = time in years)",
       "acceptableAnswers": [
-        "I=Prt\nWhere,I = simple interest\nP= principal amount\nr= annual interest rate\nt = time in years"
+        "I=Prt (Where I = simple interest, P= principal amount, r= annual interest rate, t = time in years)"
       ],
       "problemText": "Ana invested ₱8,000 in a savings account that earns simple interest at a rate of 5% per year. The interest is earned based on the original amount invested, the interest rate, and the length of time the money remains invested. What mathematical equation correctly represents the relationship used to find the simple interest (I)?",
       "answers": [],
@@ -2522,11 +2522,11 @@
       "category": "final-challenge",
       "title": "Multiplicative Inverse",
       "questionType": "input",
-      "expectedAnswer": "x-7x+4",
+      "expectedAnswer": "x-7/x+4",
       "acceptableAnswers": [
-        "x-7x+4"
+        "x-7/x+4"
       ],
-      "problemText": "The expression x+4x-7 is an example of rational expression. What is its multiplicative inverse?",
+      "problemText": "The expression x+4/x-7 is an example of rational expression. What is its multiplicative inverse?",
       "answers": [],
       "solution": "The multiplicative inverse interchanges the numerator and denominator.",
       "imageRes": null
@@ -2538,9 +2538,9 @@
       "category": "final-challenge",
       "title": "Expanded Garden Area",
       "questionType": "input",
-      "expectedAnswer": "x+32\nx2+6x+9",
+      "expectedAnswer": "(x+3)^2, x2+6x+9",
       "acceptableAnswers": [
-        "x+32\nx2+6x+9"
+        "(x+3)^2, x2+6x+9"
       ],
       "problemText": "The side of a square garden is increased by 3 meters. If the original side length is x meters, what expression represents the new area of the garden?",
       "answers": [],
@@ -2574,7 +2574,7 @@
       "acceptableAnswers": [
         "Student A"
       ],
-      "problemText": "Two students simplified the expression 12x3y-18x2y2+24xy3. Student says the GCF is 6xy while student B says the GCF is 6xy(x-y+2y). Who is correct?",
+      "problemText": "Two students simplified the expression 12x^3 y-18x^2 y^2+24xy^3. Student says the GCF is 6xy while student B says the GCF is 6xy(x-y+2y). Who is correct?",
       "answers": [],
       "solution": "The numerical GCF is 6 and the common variables are x and y, so the GCF is 6xy.",
       "imageRes": null
@@ -2590,7 +2590,7 @@
       "acceptableAnswers": [
         "Yes"
       ],
-      "problemText": "A student said that the simplified form of the rational expression x2-9x2+5x+6 is x-3x+2. Is the student correct?",
+      "problemText": "A student said that the simplified form of the rational expression x^2-9/x^2+5x+6 is x-3/x+2. Is the student correct?",
       "answers": [],
       "solution": "Factoring gives (x - 3)(x + 3) / [(x + 2)(x + 3)] = (x - 3)/(x + 2).",
       "imageRes": null
@@ -2654,7 +2654,7 @@
       "acceptableAnswers": [
         "x=8"
       ],
-      "problemText": "What is the value of x in the given figure?\n[IMAGE: Parallel lines cut by a transversal with angles 60° and 8x - 4]",
+      "problemText": "What is the value of x in [figure]?",
       "answers": [],
       "solution": "Using the equal-side or angle relationship shown in the supplied figure gives x = 8.",
       "imageRes": "/images/gr9fc4fig.png"
@@ -2670,7 +2670,7 @@
       "acceptableAnswers": [
         "Court A"
       ],
-      "problemText": "Which court is designed in the shape of a square?",
+      "problemText": "Choosing the Right Court Design: San Felipe plans to build three recreational courts. The engineer presents the following designs:\nCourt A: Has four equal sides and four right angles.\nCourt B: Has opposite sides equal and parallel, with four right angles.\nCourt C: Has four equal sides, but its angles are not all right angles.\nWhich court is designed in the shape of a square?",
       "answers": [],
       "solution": "A square has four equal sides and four right angles, matching Court A.",
       "imageRes": null
@@ -2702,7 +2702,7 @@
       "acceptableAnswers": [
         "∠C"
       ],
-      "problemText": "The included angle of sides AC and BC in ∆ABC is\n[IMAGE: Triangle ABC]",
+      "problemText": "The included angle of sides AC and BC in ∆ABC in [figure] is",
       "answers": [],
       "solution": "Sides AC and BC share endpoint C, so their included angle is ∠C.",
       "imageRes": "/images/gr10fc2fig.png"
@@ -2718,7 +2718,7 @@
       "acceptableAnswers": [
         "103°"
       ],
-      "problemText": "Given the figure, what is the measure of ∠BCD?\n[IMAGE: Triangle ABD with segment BC, showing angles and side lengths]",
+      "problemText": "Given [figure], what is the measure of ∠BCD?",
       "answers": [],
       "solution": "Applying the angle relationships shown in the supplied figure gives 103°.",
       "imageRes": "/images/gr10fc3fig.png"
@@ -2734,7 +2734,7 @@
       "acceptableAnswers": [
         "e² = 8² + 11² - 2(8)(11) cos(60°)"
       ],
-      "problemText": "In △DEF, side d = 8 cm, side f = 11 cm, and angle E = 60°. Which formula correctly calculates the length of side e?\n[IMAGE: Figure 3 showing △DEF with side d=8cm, f=11cm, ∠D=60°]",
+      "problemText": "In △DEF, side d = 8 cm, side f = 11 cm, and angle E = 60°. Which formula correctly calculates the length of side e in [figure]?",
       "answers": [
         {
           "text": "e² = 8² + 11² - 2(8)(11) cos(60°)",
@@ -2767,7 +2767,7 @@
       "acceptableAnswers": [
         "105°"
       ],
-      "problemText": "In △PQR, angle P = 30°, angle Q = 45°, and side r = 12 cm. What is the measure of angle R?\n[IMAGE: Figure 2 showing △PQR with ∠P=30°, ∠Q=45°, r=12cm]",
+      "problemText": "In △PQR, angle P = 30°, angle Q = 45°, and side r = 12 cm. What is the measure of angle R in [figure]?",
       "answers": [],
       "solution": "The angles of a triangle total 180°, so R = 180° - 30° - 45° = 105°.",
       "imageRes": "/images/gr10fc5fig.png"
