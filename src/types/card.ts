@@ -3,6 +3,7 @@ export type QuestionType = 'multiple_choice' | 'input' | 'true_false';
 export interface AnswerOption {
   text: string;
   isCorrect: boolean;
+  imageRes?: string;
 }
 
 export interface Card {
@@ -16,7 +17,7 @@ export interface Card {
   expectedAnswer: string;
   acceptableAnswers: string[];
   problemText: string;
-  imageRes: string | null;
+  imageRes: string | string[] | null;
   answers: AnswerOption[];
   solution: string;
 }

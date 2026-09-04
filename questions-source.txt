@@ -1,629 +1,577 @@
 GRADE 7 QUESTIONS
 EASY
-| ANSWER
 
 Which formula gives the sum of interior angles of a polygon with n sides?
-A. n×180°		C. (n+2)180°	
-B. n-290°	D. n-2180°
-| D. n-2180°
+A. n×180°
+B. n-290°
+C. (n+2)180°
+D. n-2180°
+Answer: D. n-2180°
 
-In the figure below, ∠ABD and  ∠CBD are supplementary angles. If m∠ABD=75, what is m∠CBD?
-[IMAGE: ∠ABD = 75° forming a straight line with ∠CBD]
-| 105°
+In [figure], ∠ABD and ∠CBD are supplementary angles. If m∠ABD=75, what is m∠CBD?
+Answer: 105°
 
 Maria invested ₱10,000 in a savings account that earns simple interest at a rate of 5% per year for 2 years. Which formula should Maria use to calculate the simple interest I?
-A. I=P+r+t	C. I=Prt
-B. I=P1+rt	D.  I=P/rt
-| C. I=Prt
+A. I=P+r+t
+B. I=P1+rt
+C. I=Prt
+D. I=P/rt
+Answer: C. I=Prt
 
 Which of the following is a rational number?
-A. π	            B. 100/0	     C. 0.121212…  D. √5
-| C. 0.121212…
+A. π
+B. 100/0
+C. 0.121212…
+D. √5
+Answer: C. 0.121212…
 
 A polygon with six equal sides and six equal interior angles is a regular pentagon.
-| Regular Hexagon
+Answer: Regular Hexagon
 
 The sum of two complementary angles.
-| 90°
+Answer: 90°
 
 Is the statement true or false: Discount is the amount deducted from the original price.
-| True
+Answer: True
 
 Is the statement true or false: A unit rate is a rate that has 1 as its denominator.
-| True
+Answer: True
 
 Replace the underlined statement with correct mathematical statement: A rational number is a number that can be written as fraction ab, where a and b are integers and b=0.
-| b≠0
+Answer: b≠0
 
 On a number line, negative rational numbers are location to the _________ of zero. (direction)
-| Left of zero
+Answer: Left of zero
 
 Is the statement true: Zero is neither positive nor negative.
-| True
+Answer: True
 
 AVERAGE
-| ANSWER
 
 Which of the following statements DOES NOT correctly describe vertical angles?
 A. They are complementary.
 B. They are congruent.
 C. They are non-adjacent angles.
 D. They formed from two intersecting lines.
-| They are complementary.
+Answer: They are complementary.
 
 Which of the following is expressed as a unit rate?
 A. Buying 4 apples for ₱100.
 B. Running at a speed of 24 kilometers per hour.
 C. Paying ₱349 for 2 meals.
 D. Traveling 3 kilometers in 10 minutes.
-| B. Running at a speed of 24 kilometers per hour.
+Answer: B. Running at a speed of 24 kilometers per hour.
 
 Manuel is making a recipe that requires 38 cup of sugar. To better measure the sugar with a digital scale, he wants to convert the fraction to decimal. What is the decimal equivalent of 38?
-| 0.375
+Answer: 0.375
 
 What fraction represents 50%?
-| 12
+Answer: 12
 
 The ocean holds 97% of the Earth’s water. What is 97% in decimal?
-| 0.97
+Answer: 0.97
 
 What is the equivalent fraction of 1.25 in simplest form?
-| 54
+Answer: 54
 
 What does it mean when a fraction is in simplest form?
 A. The numerator is always smaller than the denominator.
 B. The number is a decimal.
 C. The GCF of the numerator and denominator is 1.
 D. The number is an integer.
-| C. The GCF of the numerator and denominator is 1.
+Answer: C. The GCF of the numerator and denominator is 1.
 
 Which of the following fractions is the smallest?
-A. 12 		B. 13	     C. 15 	       D. 16
-| 16
+A. 12
+B. 13
+C. 15
+D. 16
+Answer: 16
 
 On a standard number line, where is -34 located relative to -1 and 0?
-| between -1 and 0, closer to -1
+Answer: between -1 and 0, closer to -1
 
 Fountain Design: A fountain is a regular pentagon. One of the sides is 4 meters long, and one of the interior angles measures 108°. What are the lengths of the other sides and the measures of the other angles?
-| All five sides=4m
-All interior angles=108
+Answer: All five sides=4m, All interior angles=108
 
 Park Entrance: Two paths meet at the park entrance and form a pair of supplementary angles. If one angle measures 110°, what is the measure of the other angle?
-| 70°
+Answer: 70°
 
 DIFFICULT
-| ANSWER
 
 Jose will draw a triangle using a protractor. Which set of angle measures can form a triangle?
-A. 35°, 65°, 75°		C. 45°, 45°, 45°
-B. 42°, 58°, 80°		D. 63°, 27°, 100°
-| B. 42°, 58°, 80°
+A. 35°, 65°, 75°
+B. 42°, 58°, 80°
+C. 45°, 45°, 45°
+D. 63°, 27°, 100°
+Answer: B. 42°, 58°, 80°
 
-Which classification correctly describes the two polygons shown below?
-[IMAGE: Concave Polygons with Reflex Angles]
+Which classification correctly describes the two polygons shown in [figure]?
 A. irregular and convex polygons
 B. irregular and non-convex polygons
 C. regular and convex polygons
 D. regular and non-convex polygons
-| B. irregular and non-convex polygons
+Answer: B. irregular and non-convex polygons
 
-Two straight lines intersect as shown. If one angle measures 76°, which statement is correct?
-[IMAGE: Intersecting lines with angles x, y, z, and 76°]
+Two straight lines intersect as shown in [figure]. If one angle measures 76°, which statement is correct?
 A. x = 104°, y = 76° and z = 104°
 B. x = 104°, y = 104° and z = 76°
 C. x = 76°, y = 76° and z = 104°
 D. x = 76°, y = 104° and z = 76°
-| A. x = 104°, y = 76° and z = 104°
+Answer: A. x = 104°, y = 76° and z = 104°
 
 A runner completes a 200-meter race in 20 seconds. What is the average speed?
-| 10 m/s
+Answer: 10 m/s
 
 If a RISO machine can produce 120 photocopy papers in 3 hours, how many papers will be produced in 5 hours?
-| 200 papers
+Answer: 200 papers
 
 Car A travels 200 kilometers 5 hours, while Car B travels 240 kilometers in 4 hours. Which vehicle is faster, and what is its speed?
-| Car B, at 60 km/h
+Answer: Car B, at 60 km/h
 
 What is the equivalent fraction of 0.666…?
-| 23
+Answer: 23
 
 What is 8 5/6 expressed as an improper fraction?
-| 536
+Answer: 536
 
-Which of the following number lines shows the correct plotting of rational numbers -3.0, 0 and 5.5?
-[IMAGE: Option A - Number line with points at -3, 0, 5.5]
-[IMAGE: Option B - Number line with points at -5.5, -3, 0]
-[IMAGE: Option C - Number line with points at 0, 3, 5.5]
-[IMAGE: Option D - Number line with points at -5.5, 0, 3]
-| A
+Which of the following number lines shown in [figure] shows the correct plotting of rational numbers -3.0, 0 and 5.5?
+Answer: A
 
-Which of the points below best describes 74 ?
-[IMAGE: Number line with labeled points M, A, T, H]
-| Point A
+Which of the points in [figure] best describes 74 ?
+Answer: Point A
 
-Arrange the following numbers in ascending order.              6,   72,   5.6
-| 72,     5.6,   6
+Arrange the following numbers in ascending order. 6, 72, 5.6
+Answer: 72, 5.6, 6
 
 Gregorio works at an electronics store where he earns a 5% commission on his sales. Customers who pay in full receive a 10% discount, and a 12% sales tax is added after the discount. Gregorio sold a tablet originally priced at ₱18,000. How much will Gregorio earn from the sale?
-| ₱900
+Answer: ₱900
 
 Gregorio works at an electronics store where he earns a 5% commission on his sales. Customers who pay in full receive a 10% discount, and a 12% sales tax is added after the discount. Gregorio sold a tablet originally priced at ₱18,000. How much is the 10% discount?
-| ₱1800
+Answer: ₱1800
 
 Running Trail: The park has a 400-meter running trail. A runner moves at a constant speed of 2 meters per second. How many seconds does the runner need to complete one lap (400 meters)?
-| 200 seconds
+Answer: 200 seconds
 
 Distance Signs: The park entrance has signs showing the distances to four areas: 0.1 km, 14 km, 0.75 km, and 12 km. Arrange the distances from the nearest to the farthest from the entrance.
-| 0.1km, 14km, 12km, 0.75km
+Answer: 0.1km, 14km, 12km, 0.75km
 
 GRADE 8 QUESTIONS
 EASY Remembering
-| ANSWER
 
 When is a rational algebraic expression considered to be in its simplest form?
-| When the numerator and denominator have no common factors other than 1.
+Answer: When the numerator and denominator have no common factors other than 1.
 
 What is the first step before multiplying rational algebraic expressions containing polynomials x2-9x+2⋅x+2x+3 ?
-| Factor all numerators and denominators completely.
+Answer: Factor all numerators and denominators completely.
 
 What is the product of the expression 2x⋅3y?
-| 6xy
+Answer: 6xy
 
 What is the reciprocal (multiplicative inverse) of the rational expression x-3x+5 ?
-| x+5x-3
+Answer: x+5x-3
 
 Which of the following describes the correct process for dividing two rational algebraic expressions, AB÷CD?
-A. AB⋅CD			B. AB⋅DC
-C. BA⋅CD			D. BA⋅DC
-| AB⋅DC
+A. AB⋅CD
+B. AB⋅DC
+C. BA⋅CD
+D. BA⋅DC
+Answer: AB⋅DC
 
 To factor the polynomial 8x2-12x, the greatest common factor (GCF) of the terms is ______.
-| 4x
+Answer: 4x
 
 The factors of the difference of two squares are always a pair of __________.
-| Conjugate (sum and difference)
+Answer: Conjugate (sum and difference)
 
 A perfect square trinomial always factors into the ______ of a binomial.
-| Square
+Answer: Square
 
 To factor general trinomial x2+bx+c, find two numbers whose product is c and whose sum is ___________.
-| b, the coefficient of the middle term
+Answer: b, the coefficient of the middle term
 
-Before cancelling common factors in a rational algebraic expression, you must first  _______ both the numerator and denominator completely.
-| Factor
+Before cancelling common factors in a rational algebraic expression, you must first _______ both the numerator and denominator completely.
+Answer: Factor
 
 Is the statement true or false: When multiplying simple monomials with the same base, you subtract their exponents.
-| False
+Answer: False
 
 Make the statement true: To multiply rational algebraic expressions, you multiply the numerators together and multiply the (numerators/denominators) together.
-| Denominators
+Answer: Denominators
 
-Replace the underlined phrase to make the statement right:
-The operation ab÷cd is equivalent to ab divided by dc.
-| Multiply by
+Replace the underlined phrase to make the statement right: The operation ab÷cd is equivalent to ab divided by dc.
+Answer: Multiply by
 
 AVERAGE Understanding
-| ANSWER
 
 What property will you use in multiplying 3x (2x+5)?
-| Distributive Property
+Answer: Distributive Property
 
 Which of the following expression pairs is NOT an example of a special product?
-A. (x+6)(x-6)     	            B. 3x+22
-C. (x+4)(x-3)	  	D. (2x-5)(2x+5)
-| C. (x+4)(x-3)
+A. (x+6)(x-6)
+B. 3x+22
+C. (x+4)(x-3)
+D. (2x-5)(2x+5)
+Answer: C. (x+4)(x-3)
 
 Which condition is NOT required for a trinomial ax2+bx+c to be a Perfect Square Trinomial?
 A. The first and last terms must be perfect squares.
 B. The middle term must be twice the product of square roots of the first and last terms.
 C. The last term must always be positive.
 D. The middle term must always be positive.
-| The middle term must always be positive.
+Answer: The middle term must always be positive.
 
 Maria factored the polynomial x2+7x+12. What pair of numbers should she need to consider?
-| 3 and 4
+Answer: 3 and 4
 
 What expression is equivalent to 12x4?
-| 3x
+Answer: 3x
 
 Write an expression equivalent to x5÷2y?
-| xy10
+Answer: xy10
 
 Is the statement true or false: The product of (x-4)(x+4) is equal to x2-16 because the product of the sum and difference of two terms always results in a difference of two squares.
-| True
+Answer: True
 
 Find the error in the given statement: Finding the dimensions of a rectangular garden given its area expression x2-2x-15 requires finding two factors whose sum is 2 and whose product is -15.
-| The sum must be -2.
+Answer: The sum must be -2.
 
 DIFFICULT Applying/Analyzing
-| ANSWER
 
 What is the product of 3x (2x+5)?
-| 6x2+15x
+Answer: 6x2+15x
 
 A rectangular bulletin board has a length of (x+7) m and a width of (x-7) m. A student claims the area is x2+49m2. Is the student correct? Why?
-| No, the correct area is x2-49.
+Answer: No, the correct area is x2-49.
 
 The side of a square stage is increased by 2 meters. If the original side length is x meters, what expression represents the new area of the stage?
-| x+22
+Answer: x+22
 
 Each student uses 3x5 meter of string for a Science project. If 10 students join the activity, what is the total length of string needed?
-| 6x meters
+Answer: 6x meters
 
 Did the student evaluate and simplify this expression correctly?
-Multiply: 3x⋅x6       Step 1: 3⋅xx⋅6
+Multiply: 3x⋅x6 Step 1: 3⋅xx⋅6
 Step 2: 36=12
-| Yes, the solution is completely correct.
+Answer: Yes, the solution is completely correct.
 
 What is the factored form of 9x2-25?
-| 3x-53x+5
+Answer: 3x-53x+5
 
 The factored form of x2+6x+9 is ______.
-| x+32
+Answer: x+32
 
 What are the factors of x2+7x+12?
-| (x+3)(x+4)
+Answer: (x+3)(x+4)
 
 What is the simplest form of x29x+3 ?
-| x-3
+Answer: x-3
 
 You are designing a square picture frame. The outer edge of the frame is a square with side length x cm. The inner opening (where the photo goes) is a square with side length y cm. Write the expression for the surface area of the border (the frame around the photo).
-| x2-y2
+Answer: x2-y2
 
 An architecture student is finding the side length of a square room with a floor area given by: Area=25x2-30x+9.
 The student claims the room’s side length is 5x+3 meters because 25x2=5x and 9=3. Did the student use the correct sign in their binomial factor (5x+3)? If not, why?
-| No, it must be 5x-3
+Answer: No, it must be 5x-3
 
 Two students, Leo and Maya, were asked to factor the simple trinomial x2-2x-24. Their final answers are shown below:
 Leo's Answer: (x-6)(x+4)
 Maya's Answer: (x+6)(x-4)
 Which student has the correct factored form?
-| Leo
+Answer: Leo
 
 GRADE 9 QUESTIONS
 EASY
-| ANSWER
 
 What is the slope of the line represented by the equation y=3x-5?
-| m=3
+Answer: m=3
 
 What ordered pair represents the y-intercept of the line y=2x+7?
-| (0,7)
+Answer: (0,7)
 
-In parallelogram KLMN, if KL=12cm, what is the length of NM?
-[IMAGE: Parallelogram KLMN]
-| NM=12
+In parallelogram KLMN shown in [figure], if KL=12cm, what is the length of NM?
+Answer: NM=12
 
 If m∠KLM=70°, what is the measure of its adjacent angle?
-| 110°
+Answer: 110°
 
 Opposite angles of a parallelogram are ______________.
-| congruent
+Answer: congruent
 
 If the perimeter of a parallelogram is 36 cm and one pair of side is 10cm, what is the length of the other side?
-| 8cm
+Answer: 8cm
 
 If the diagonals of parallelogram ABCD intersect at E and AE=8cm, what is AC?
-| 16 cm
+Answer: 16 cm
 
 This refers to a quadrilateral with four right angles and four equal sides.
-| Square
+Answer: Square
 
 The graph of y=-2x+4 crosses the y-axis at (0,4), what does the point (0,4) represent?
-| y-intercept
+Answer: y-intercept
 
 What condition guarantees that two lines are parallel?
-| Slopes are equal
+Answer: Slopes are equal
 
 In parallelogram ABCD, AB∥CD. If ∠A=65°, what is ∠C?
-| 65°
+Answer: 65°
 
 Name one pair of consecutive angles in parallelogram ABCD.
-| ∠A and ∠B
-∠B and ∠C
-∠C and ∠D
-∠D and ∠A
+Answer: ∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A
 
 In a square, all angles measure______.
-| 90°
+Answer: 90°
 
 A rectangle has dimensions of 15 cm in length and 8 cm in width, which equation represents its perimeter?
 2(15)(8) or 215+2(8)
-| 215+28
+Answer: 215+28
 
 If the diagonals of a quadrilateral bisect each other, what type of a quadrilateral must it be?
-| Parallelogram
-(Rectangle, Rhombus, Square)
+Answer: Parallelogram (Rectangle, Rhombus, Square)
 
 AVERAGE
-| ANSWER
 
 A line passes through (2,3) and (6,11). What is its slope?
-| 2
+Answer: 2
 
 In the linear function fx=2x-6, what is f(5)?
-| 4
+Answer: 4
 
 A tricycle charges a ₱20 starting fare plus ₱5 for every additional kilometer. What is the equation that represents the total fare F for x additional kilometers?
-| F=5x+20
+Answer: F=5x+20
 
 A line has slope 2. What must be the slope of the line perpendicular to it?
-| -12
+Answer: -12
 
 A line passes through (0,3) and has slope -2. What equation represents the line?
-| y=-2x+3
+Answer: y=-2x+3
 
 What kind of a parallelogram has congruent diagonals?
-| Rectangle or Square
+Answer: Rectangle or Square
 
 In parallelogram ABCD, AB=14cm. What is CD?
-| 14cm
+Answer: 14cm
 
 What is the area of a rectangle which sides are 5cm and 7cm?
-| 35cm2
+Answer: 35cm2
 
 Two lines have slopes 4 and m. If they are parallel, what is m?
-| 4
+Answer: 4
 
 In the equation y=3x-2, what is the slope?
-| 3
+Answer: 3
 
 A taxi fare is modeled by F=10d+50, where d is the number of kilometers traveled. What does the number 50 represent?
-| Fixed starting fare
+Answer: Fixed starting fare
 
 Two lines have slope 4 and -14 . What relationship do the two lines have?
-| Perpendicular lines
+Answer: Perpendicular lines
 
 Two lines have the same slopes equal to 2. What relationship do the two lines have?
-| Parallel lines
+Answer: Parallel lines
 
 A rectangular school garden measures 18m by 10m. A square flower bed with side lengths of 6m is placed inside the garden. What is the area of the flower bed?
-| 36m2
+Answer: 36m2
 
-Quadrilateral ABCD has the following side lengths. What property shows that it is a parallelogram?
-[IMAGE: Rectangle ABCD with sides AB=12cm, CD=12cm, AD=8cm, BC=8cm]
-| A quadrilateral is a parallelogram if both pairs of opposite sides are congruent.
+Quadrilateral ABCD has the side lengths shown in [figure]. What property shows that it is a parallelogram?
+Answer: A quadrilateral is a parallelogram if both pairs of opposite sides are congruent.
 
 DIFFICULT
-| ANSWER
 
 Students claim that:
 Student A: Two lines are parallel because they both have a slope of 3.
 Student B: Two lines are perpendicular because they both have a slope of 3.
 Which student is correct?
-| Student A
+Answer: Student A
 
 A rectangular fence has measurements of 10m and 8m on the sides. What is its perimeter?
-| 36 m
+Answer: 36 m
 
 The Grade 9 students want to create a rectangular vegetable garden with an area of exactly 120m2. The garden must have a length greater than its width. Give two possible dimensions of the garden.
-| Length—Width
-120m—1m
-60m—2m
-40m—3m
-30m—4m
-24m—5m
-20m—6m
-15m—8m
-12m—10m
+Answer: Length—Width: 120m—1m, 60m—2m, 40m—3m, 30m—4m, 24m—5m, 20m—6m, 15m—8m, 12m—10m
 
 CSNHS is improving its walkway system to make it easier to move between buildings. They constructed rectangular bridges between buildings. Two bridge boundaries are represented by the lines:
 Boundary A: y=2x+3
 Boundary B: y-2x=10
 What is the slope of Boundary A and Boundary B?
-| The slopes of boundaries A and B are both 2.
+Answer: The slopes of boundaries A and B are both 2.
 
 A local community is preparing a picnic area in a public park. The main picnic platform is designed in the shape of a rectangle measuring 15m and 10m wide. Inside the platform is decorative stone area designed as a square. Each side of the square measures 6m. The organizer wants to cover the area outside the square with an outdoor flooring. What is its area?
-| 114m2
+Answer: 114m2
 
 A local community is preparing a picnic area in a public park. The main picnic platform is designed in the shape of a rectangle measuring 15m and 10m wide. Inside the platform is decorative stone area designed as a square. Each side of the square measures 6m. The organizers will place the border around the square-shape stone area. They have 25 meters of border material. Is this enough? Why?
-| Yes, because the perimeter of the square is only 24m.
+Answer: Yes, because the perimeter of the square is only 24m.
 
 GRADE 10 QUESTIONS
 EASY
-| ANSWER
 
 Convert the angle measure 450330' into decimal degree.
-| 45.50°
+Answer: 45.50°
 
 Which of the following degree, minute, and seconds is equal to the angle measure 12.080?
-| 120 4'48.00''
+Answer: 120 4'48.00''
 
 A triangular field near Mt. Isarog has sides 30m, 40m, and 50m. What type of triangle is it?
-| Right triangle
+Answer: Right triangle
 
 The largest angle of an oblique triangle measures 1100, the triangle is classified as:
-| Obtuse triangle
+Answer: Obtuse triangle
 
 If all three angles of a triangle are less than 900, the triangle is ____.
-| Acute triangle
+Answer: Acute triangle
 
 An oblique triangle can be classified according to its angles as ____.
-| Acute and obtuse
+Answer: Acute and obtuse
 
 What formula represents the Law of Sines?
-| asinA=bsinB=csinC
+Answer: asinA=bsinB=csinC
 
 What formula represents the Law of Cosines?
-| a2=b2+c2-2bccosA
+Answer: a2=b2+c2-2bccosA
 
 A triangular garden in Naga City has two sides measuring 12m and 15m with an included angle of 700. Which law should be used to find the third side?
-| Law of Cosines
+Answer: Law of Cosines
 
 In ∆ABC, the sides AC and BC meet at C. What is the included angle between AC and BC?
-| ∠C
+Answer: ∠C
 
 A rescue team in Naga City needs to determine the distance between two locations that cannot be directly measured. The team knows two sides of a triangular route and the angle between them. Which method is most appropriate, Law of Sines or Law of Cosines?
-| Law of Cosines
+Answer: Law of Cosines
 
 AVERAGE
-| ANSWER
 
 An observer stands exactly 15 meters away from the base of a vertical flagpole. The angle of elevation from the observer’s feet to the top of the flagpole is 450. How tall is the flagpole?
-| 15 meters
+Answer: 15 meters
 
 In ∆ABC, ∠A=450 and ∠C=600. What is the measure of ∠B?
-| 750
+Answer: 750
 
 A fisherman in the waters near Catanduanes observes two landmarks that are 20km apart. The angles formed by the two landmarks and the fishing boat are 450 and 650. What information is needed to solve for an unknown side using the Law of Sines.
-| At least one known side and its opposite angle.
+Answer: At least one known side and its opposite angle.
 
 In ∆ABC, ∠A=250, ∠B=850, and AC=10cm. What is the approximate length of BC? Formula: BC=10sin25sin85
-| 4.24 cm
+Answer: 4.24 cm
 
 A boat travels from Pasacao toward a point offshore. The distance between two observation points is 25km. If the observed angles are 400 and 700, what is the third angle of the triangle?
-| 700
+Answer: 700
 
 In ∆DEF, side d=10cm, side f=12cm and ∠E=600. Which equation correctly determines side e?
-| e2=102+122-21012cos602
+Answer: e2=102+122-21012cos602
 
 DIFFICULT
-| ANSWER
 
 Determine the measure of ∠C in ∆ABC if AB=0.77km, m∠A=1100, and BC=1.25 km.
-| 35022'08''
+Answer: 35022'08''
 
 A triangular lot has sides 10m and 14m with an included angle of 600. What is the approximate length of the third side?
-| 12.49m
+Answer: 12.49m
 
 A surveyor measures two sides of a triangular area as 20m and 30m and the included angle as 450. What is the approximate third side?
-| 21.25m
+Answer: 21.25m
 
 What is m∠E in the equation 102=82+122-2812cosE?
-| 55046'08''
+Answer: 55046'08''
 
 In ∆ABC, ∠A=450, ∠B=750, and side a=10cm. Using the law of sines, approximately how long is side b?
-| 13.66cm
+Answer: 13.66cm
 
 In ∆PQR, ∠P=300, ∠Q=520, and side r=12 cm. What is the approximate length of side p?
-| 6.06cm
+Answer: 6.06cm
 
 PORTAL CHALLENGES
-| ANSWER
 
 The water tank is 35 full. After 24 liters of water are added, the tank becomes 34 full. What is the total capacity of the tank?
-| 34-35=320
-320x=24
-x=160 liters
+Answer: 34-35=320, 320x=24, x=160 liters
 
 Pedro traveled for two consecutive days. On day 1, he drove his van at an average speed of 50 km/hr for 4 hours. On day 2, he drove at an average speed of 60 km/hr for 3 hours. What is the total distance, in kilometers, that Pedro drove over the two days?
-| 380 km
+Answer: 380 km
 
 The sum of three consecutive odd integers is 147. What are the smallest and largest integers?
-| 47 and 51
+Answer: 47 and 51
 
 A rectangle has a perimeter of 64cm. Its length is 8cm more than twice its width. Find the area of the rectangle.
-| Length = 20cm
-Width = 12 cm
-Area = 240cm2
+Answer: Length = 20cm, Width = 12 cm, Area = 240cm2
 
 A surveyor wants to determine the distance between two points, A and B, located on opposite sides of a river. From a point C on the same side of the river as A, the surveyor measures CA = 80 m, CB = 120 m, and ∠ACB=65° .
 Using the law of cosines, what is the distance from point A to point B?
-| 112.7 meters
+Answer: 112.7 meters
 
-Grade 7
-FINAL CHALLENGES
-| ANSWER
+Grade 7 FINAL CHALLENGES
 
 Ana invested ₱8,000 in a savings account that earns simple interest at a rate of 5% per year. The interest is earned based on the original amount invested, the interest rate, and the length of time the money remains invested. What mathematical equation correctly represents the relationship used to find the simple interest (I)?
-| I=Prt
-Where,I = simple interest
-P= principal amount
-r= annual interest rate
-t = time in years
+Answer: I=Prt (Where I = simple interest, P= principal amount, r= annual interest rate, t = time in years)
 
 Liza buys a bag with a marked price of ₱1,200 at a 15% discount. How much discount does she get?
-| ₱180
+Answer: ₱180
 
 Marco bought a desk lamp priced at ₱850.00. If the store charges a 12% sales tax, how much is the sales tax on the item?
-| ₱102.00
+Answer: ₱102.00
 
 Juan earns ₱500 a week in allowance. He plans to save 20% for emergency funds, spend 50% on food, and save the rest for a school project. How much will he spend on food each week?
-| ₱250
+Answer: ₱250
 
 What does it mean when a fraction is in simplest form?
 A. The numerator is always smaller than the denominator.
 B. The number is a decimal.
 C. The GCF of the numerator and denominator is 1.
 D. The number is an integer.
-| The GCF of the numerator and denominator is 1.
+Answer: The GCF of the numerator and denominator is 1.
 
-GRADE 8
-FINAL CHALLENGES
-| ANSWER
+GRADE 8 FINAL CHALLENGES
 
 The expression x+4x-7 is an example of rational expression. What is its multiplicative inverse?
-| x-7x+4
+Answer: x-7x+4
 
 The side of a square garden is increased by 3 meters. If the original side length is x meters, what expression represents the new area of the garden?
-| x+32
-x2+6x+9
+Answer: x+32, x2+6x+9
 
 If one student uses x meters of string for a Science project, how much string will be needed for 12 students? Express your answer algebraically.
-| 12x meters
+Answer: 12x meters
 
 Two students simplified the expression 12x3y-18x2y2+24xy3. Student says the GCF is 6xy while student B says the GCF is 6xy(x-y+2y). Who is correct?
-| Student A
+Answer: Student A
 
 A student said that the simplified form of the rational expression x2-9x2+5x+6 is x-3x+2. Is the student correct?
-| Yes
+Answer: Yes
 
-GRADE 9
-FINAL CHALLENGES
-| ANSWER
+GRADE 9 FINAL CHALLENGES
 
 What is the relationship between two lines that intersect to form a 90-degree angle?
-| Perpendicular lines
+Answer: Perpendicular lines
 
 Why is every square considered a rectangle?
-| Because square have four right angles like a rectangle
+Answer: Because square have four right angles like a rectangle
 
 If ABCD is a parallelogram and AB=3x+5 and CD=x+15, what does this imply about the value of x?
-| x=5
+Answer: x=5
 
-What is the value of x in the given figure?
-[IMAGE: Parallel lines cut by a transversal with angles 60° and 8x - 4]
-| x=8
+What is the value of x in [figure]?
+Answer: x=8
 
 Choosing the Right Court Design: San Felipe plans to build three recreational courts. The engineer presents the following designs:
-Court
-| Description
-
-Court A
-| Has four equal sides and four right angles.
-
-Court B
-| Has opposite sides equal and parallel, with four right angles.
-
-Court C
-| Has four equal sides, but its angles are not all right angles.
-
+Court A: Has four equal sides and four right angles.
+Court B: Has opposite sides equal and parallel, with four right angles.
+Court C: Has four equal sides, but its angles are not all right angles.
 Which court is designed in the shape of a square?
-Court A
+Answer: Court A
 
-Grade 10
-FINAL CHALLENGES
-| ANSWER
+Grade 10 FINAL CHALLENGES
 
 Which trigonometric law should be used first when given two sides and the included angle (SAS) of an oblique triangle?
-| Law of Sines
+Answer: Law of Sines
 
-The included angle of sides AC and BC in ∆ABC is
-[IMAGE: Triangle ABC]
-| ∠C
+The included angle of sides AC and BC in ∆ABC in [figure] is
+Answer: ∠C
 
-Given the figure, what is the measure of ∠BCD?
-[IMAGE: Triangle ABD with segment BC, showing angles and side lengths]
-| 103°
+Given [figure], what is the measure of ∠BCD?
+Answer: 103°
 
-In △DEF, side d = 8 cm, side f = 11 cm, and angle E = 60°. Which formula correctly calculates the length of side e?
-[IMAGE: Figure 3 showing △DEF with side d=8cm, f=11cm, ∠D=60°]
+In △DEF, side d = 8 cm, side f = 11 cm, and angle E = 60°. Which formula correctly calculates the length of side e in [figure]?
 A. e² = 8² + 11² - 2(8)(11) cos(60°)
 B. e² = 8² + 11² + 2(8)(11) cos(60°)
 C. [e / sin(60°)] = [8 / sin(11°)]
 D. e² = 8² + 11²
-| A. e² = 8² + 11² - 2(8)(11) cos(60°)
+Answer: A. e² = 8² + 11² - 2(8)(11) cos(60°)
 
-In △PQR, angle P = 30°, angle Q = 45°, and side r = 12 cm. What is the measure of angle R?
-[IMAGE: Figure 2 showing △PQR with ∠P=30°, ∠Q=45°, r=12cm]
-| 105°
+In △PQR, angle P = 30°, angle Q = 45°, and side r = 12 cm. What is the measure of angle R in [figure]?
+Answer: 105°

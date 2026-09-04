@@ -148,7 +148,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
           </button>
           {[
             { level: 1, label: 'Easy' },
-            { level: 3, label: 'Medium' },
+            { level: 3, label: 'Average' },
             { level: 5, label: 'Difficult' },
           ].map((d) => (
             <button

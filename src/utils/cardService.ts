@@ -138,6 +138,7 @@ export function getCategoryLabel(category: string): string {
   const labels: Record<string, string> = {
     'polygons-angles': 'POLYGONS & ANGLES',
     'fractions-rational': 'FRACTIONS & RATIONALS',
+    'portal-challenge': 'PORTAL CHALLENGES',
     'rational-algebraic-expressions': 'RATIONAL EXPRESSIONS',
     'special-products-factoring': 'SPECIAL PRODUCTS & FACTORING',
     'linear-equations': 'LINEAR EQUATIONS',
@@ -153,7 +154,7 @@ export function getCategoryLabel(category: string): string {
  */
 export function getDifficultyLabel(diff: number): string {
   if (diff === 1) return 'Easy';
-  if (diff === 3) return 'Medium';
+  if (diff === 3) return 'Average';
   if (diff === 5) return 'Difficult';
   return 'Standard';
 }

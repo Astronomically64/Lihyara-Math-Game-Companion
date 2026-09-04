@@ -200,11 +200,14 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
             {/* Extension point for future image rendering if imageRes is added */}
             {card.imageRes && (
               <div className="mt-4 rounded-2xl overflow-hidden border border-textMuted/20">
-                <img
-                  src={card.imageRes}
-                  alt="Problem diagram"
-                  className="w-full h-auto object-contain max-h-56"
-                />
+                {(Array.isArray(card.imageRes) ? card.imageRes : [card.imageRes]).map((image, index) => (
+                  <img
+                    key={image}
+                    src={image}
+                    alt={`Problem figure${index + 1}`}
+                    className="w-full h-auto object-contain max-h-56"
+                  />
+                ))}
               </div>
             )}
           </div>
@@ -260,6 +263,13 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
                 onClick={() => onSelectAnswer(answer)}
                 className="bg-surfaceCard rounded-2xl p-[clamp(1rem,2.5vw,1.5rem)] min-h-[clamp(5.5rem,10vw,8rem)] flex items-center justify-center text-center shadow-soft border border-black/5 hover:border-primaryTeal/40 active:scale-[0.97] transition-all group"
               >
+                {answer.imageRes && (
+                  <img
+                    src={answer.imageRes}
+                    alt="Answer choice figure"
+                    className="mb-3 max-h-32 w-full object-contain"
+                  />
+                )}
                 <span className="font-serif text-base sm:text-lg font-medium text-textPrimary group-hover:text-primaryTeal transition-colors">
                   {answer.text}
                 </span>
