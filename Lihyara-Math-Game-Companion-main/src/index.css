@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    font-size: clamp(15px, 0.35vw + 14px, 18px);
+  }
+  
+  body {
+    background-color: #F1ECE0;
+    color: #2A2420;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom pulsing animation for scan brackets */
+@keyframes scan-pulse {
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.98);
+  }
+}
+
+.animate-scan-pulse {
+  animation: scan-pulse 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 133, 121, 0.5);
+  border-radius: 9999px;
+}
+html {
+  scrollbar-color: rgba(140, 133, 121, 0.5) transparent;
+}
+
+/* Smooth color transition cycling between Gr7 (Forest Green), Gr8 (Magical Gold), Gr9 (Fiery Red), Gr10 (Oceanic Blue) */
+@keyframes grade-colors-shift {
+  0%, 100% {
+    background-color: #143d2b; /* Gr7 Forest Green */
+  }
+  25% {
+    background-color: #6e4e08; /* Gr8 Magical Gold */
+  }
+  50% {
+    background-color: #661414; /* Gr9 Fiery Red */
+  }
+  75% {
+    background-color: #0d3259; /* Gr10 Oceanic Blue */
+  }
+}
+
+.animate-grade-bg {
+  animation: grade-colors-shift 16s ease-in-out infinite;
+}
+
+@keyframes portal-colors-shift {
+  0%, 100% { background-color: #143d2b; }
+  25% { background-color: #6e4e08; }
+  50% { background-color: #661414; }
+  75% { background-color: #0d3259; }
+}
+
+.portal-card-page {
+  background: linear-gradient(135deg, #d7eadf, #f1e5bd, #f0d1c5, #cfe5ef);
+}
+
+.portal-card-header {
+  animation: portal-colors-shift 16s ease-in-out infinite;
+}
+
+@keyframes grade-ambient-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate3d(3rem, 2rem, 0) scale(1.12);
+    opacity: 0.95;
+  }
+}
+
+.grade-ambient-orb {
+  animation: grade-ambient-drift 18s ease-in-out infinite;
+}
+
+.grade-ambient-orb-delayed {
+  animation-delay: -9s;
+  animation-duration: 22s;
+}
+
+/* Radial Spectral Cloud Gradients */
+.bg-radial-spectral-1 {
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.7) 0%, rgba(16, 185, 129, 0.3) 50%, transparent 80%);
+}
+.bg-radial-spectral-2 {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.7) 0%, rgba(217, 119, 6, 0.3) 50%, transparent 80%);
+}
+.bg-radial-spectral-3 {
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.7) 0%, rgba(185, 28, 28, 0.3) 50%, transparent 80%);
+}
+.bg-radial-spectral-4 {
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.7) 0%, rgba(3, 105, 161, 0.3) 50%, transparent 80%);
+}
+
+/* Cloud Volumetric Drifting Keyframes */
+@keyframes cloud-drift-1 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(40px, 30px, 0) scale(1.15); }
+}
+@keyframes cloud-drift-2 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-35px, -25px, 0) scale(1.1); }
+}
+@keyframes cloud-drift-3 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(30px, -35px, 0) scale(1.2); }
+}
+@keyframes cloud-drift-4 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-40px, 20px, 0) scale(1.08); }
+}
+
+.animate-cloud-drift-1 { animation: cloud-drift-1 12s ease-in-out infinite; }
+.animate-cloud-drift-2 { animation: cloud-drift-2 15s ease-in-out infinite; }
+.animate-cloud-drift-3 { animation: cloud-drift-3 14s ease-in-out infinite; }
+.animate-cloud-drift-4 { animation: cloud-drift-4 16s ease-in-out infinite; }
