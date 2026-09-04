@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Card } from '../types/card';
 import { getAllCards, getCategoryLabel, getDifficultyLabel } from '../utils/cardService';
+import { MathText } from './MathText';
 import { ArrowLeft, Search, QrCode, Sparkles } from 'lucide-react';
 
 interface CatalogViewProps {
@@ -205,7 +206,7 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onSelectCard, onBack }
                   </h3>
 
                   <p className="text-xs text-textPrimary/80 line-clamp-2 leading-relaxed">
-                    {card.problemText}
+                    <MathText>{card.problemText}</MathText>
                   </p>
                 </div>
 

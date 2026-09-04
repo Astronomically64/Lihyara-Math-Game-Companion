@@ -37,7 +37,7 @@ Answer: True
 Is the statement true or false: A unit rate is a rate that has 1 as its denominator.
 Answer: True
 
-Replace the underlined statement with correct mathematical statement: A rational number is a number that can be written as fraction ab, where a and b are integers and b=0.
+Replace the underlined statement with correct mathematical statement: A rational number is a number that can be written as fraction a/b, where a and b are integers and b=0.
 Answer: b≠0
 
 On a number line, negative rational numbers are location to the _________ of zero. (direction)
@@ -62,17 +62,17 @@ C. Paying ₱349 for 2 meals.
 D. Traveling 3 kilometers in 10 minutes.
 Answer: B. Running at a speed of 24 kilometers per hour.
 
-Manuel is making a recipe that requires 38 cup of sugar. To better measure the sugar with a digital scale, he wants to convert the fraction to decimal. What is the decimal equivalent of 38?
+Manuel is making a recipe that requires 3/8 cup of sugar. To better measure the sugar with a digital scale, he wants to convert the fraction to decimal. What is the decimal equivalent of 3/8?
 Answer: 0.375
 
 What fraction represents 50%?
-Answer: 12
+Answer: 1/2
 
 The ocean holds 97% of the Earth’s water. What is 97% in decimal?
 Answer: 0.97
 
 What is the equivalent fraction of 1.25 in simplest form?
-Answer: 54
+Answer: 5/4
 
 What does it mean when a fraction is in simplest form?
 A. The numerator is always smaller than the denominator.
@@ -82,13 +82,13 @@ D. The number is an integer.
 Answer: C. The GCF of the numerator and denominator is 1.
 
 Which of the following fractions is the smallest?
-A. 12
-B. 13
-C. 15
-D. 16
-Answer: 16
+A. 1/2
+B. 1/3
+C. 1/5
+D. 1/6
+Answer: 1/6
 
-On a standard number line, where is -34 located relative to -1 and 0?
+On a standard number line, where is -3/4 located relative to -1 and 0?
 Answer: between -1 and 0, closer to -1
 
 Fountain Design: A fountain is a regular pentagon. One of the sides is 4 meters long, and one of the interior angles measures 108°. What are the lengths of the other sides and the measures of the other angles?
@@ -130,19 +130,19 @@ Car A travels 200 kilometers 5 hours, while Car B travels 240 kilometers in 4 ho
 Answer: Car B, at 60 km/h
 
 What is the equivalent fraction of 0.666…?
-Answer: 23
+Answer: 2/3
 
 What is 8 5/6 expressed as an improper fraction?
-Answer: 536
+Answer: 53/6
 
 Which of the following number lines shown in [figure] shows the correct plotting of rational numbers -3.0, 0 and 5.5?
 Answer: A
 
-Which of the points in [figure] best describes 74 ?
+Which of the points in [figure] best describes 7/4 ?
 Answer: Point A
 
-Arrange the following numbers in ascending order. 6, 72, 5.6
-Answer: 72, 5.6, 6
+Arrange the following numbers in ascending order. 6, 7/2, 5.6
+Answer: 7/2, 5.6, 6
 
 Gregorio works at an electronics store where he earns a 5% commission on his sales. Customers who pay in full receive a 10% discount, and a 12% sales tax is added after the discount. Gregorio sold a tablet originally priced at ₱18,000. How much will Gregorio earn from the sale?
 Answer: ₱900
@@ -153,8 +153,8 @@ Answer: ₱1800
 Running Trail: The park has a 400-meter running trail. A runner moves at a constant speed of 2 meters per second. How many seconds does the runner need to complete one lap (400 meters)?
 Answer: 200 seconds
 
-Distance Signs: The park entrance has signs showing the distances to four areas: 0.1 km, 14 km, 0.75 km, and 12 km. Arrange the distances from the nearest to the farthest from the entrance.
-Answer: 0.1km, 14km, 12km, 0.75km
+Distance Signs: The park entrance has signs showing the distances to four areas: 0.1 km, 1/4 km, 0.75 km, and 1/2 km. Arrange the distances from the nearest to the farthest from the entrance.
+Answer: 0.1km, 1/4km, 1/2km, 0.75km
 
 GRADE 8 QUESTIONS
 EASY Remembering
@@ -162,23 +162,23 @@ EASY Remembering
 When is a rational algebraic expression considered to be in its simplest form?
 Answer: When the numerator and denominator have no common factors other than 1.
 
-What is the first step before multiplying rational algebraic expressions containing polynomials x2-9x+2⋅x+2x+3 ?
+What is the first step before multiplying rational algebraic expressions containing polynomials x2-9/x+2⋅x+2/x+3 ?
 Answer: Factor all numerators and denominators completely.
 
-What is the product of the expression 2x⋅3y?
-Answer: 6xy
+What is the product of the expression 2/x⋅3/y?
+Answer: 6/xy
 
-What is the reciprocal (multiplicative inverse) of the rational expression x-3x+5 ?
-Answer: x+5x-3
+What is the reciprocal (multiplicative inverse) of the rational expression x-3/x+5 ?
+Answer: x+5/x-3
 
-Which of the following describes the correct process for dividing two rational algebraic expressions, AB÷CD?
-A. AB⋅CD
-B. AB⋅DC
-C. BA⋅CD
-D. BA⋅DC
-Answer: AB⋅DC
+Which of the following describes the correct process for dividing two rational algebraic expressions, A/B÷C/D?
+A. A/B⋅C/D
+B. A/B⋅D/C
+C. B/A⋅C/D
+D. B/A⋅D/C
+Answer: A/B⋅D/C
 
-To factor the polynomial 8x2-12x, the greatest common factor (GCF) of the terms is ______.
+To factor the polynomial 8x^2-12x, the greatest common factor (GCF) of the terms is ______.
 Answer: 4x
 
 The factors of the difference of two squares are always a pair of __________.
@@ -187,7 +187,7 @@ Answer: Conjugate (sum and difference)
 A perfect square trinomial always factors into the ______ of a binomial.
 Answer: Square
 
-To factor general trinomial x2+bx+c, find two numbers whose product is c and whose sum is ___________.
+To factor general trinomial x^2+bx+c, find two numbers whose product is c and whose sum is ___________.
 Answer: b, the coefficient of the middle term
 
 Before cancelling common factors in a rational algebraic expression, you must first _______ both the numerator and denominator completely.
@@ -199,7 +199,7 @@ Answer: False
 Make the statement true: To multiply rational algebraic expressions, you multiply the numerators together and multiply the (numerators/denominators) together.
 Answer: Denominators
 
-Replace the underlined phrase to make the statement right: The operation ab÷cd is equivalent to ab divided by dc.
+Replace the underlined phrase to make the statement right: The operation a/b÷c/d is equivalent to a/b divided by d/c.
 Answer: Multiply by
 
 AVERAGE Understanding
@@ -209,72 +209,72 @@ Answer: Distributive Property
 
 Which of the following expression pairs is NOT an example of a special product?
 A. (x+6)(x-6)
-B. 3x+22
+B. (3x+2)^2
 C. (x+4)(x-3)
 D. (2x-5)(2x+5)
 Answer: C. (x+4)(x-3)
 
-Which condition is NOT required for a trinomial ax2+bx+c to be a Perfect Square Trinomial?
+Which condition is NOT required for a trinomial ax^2+bx+c to be a Perfect Square Trinomial?
 A. The first and last terms must be perfect squares.
 B. The middle term must be twice the product of square roots of the first and last terms.
 C. The last term must always be positive.
 D. The middle term must always be positive.
 Answer: The middle term must always be positive.
 
-Maria factored the polynomial x2+7x+12. What pair of numbers should she need to consider?
+Maria factored the polynomial x^2+7x+12. What pair of numbers should she need to consider?
 Answer: 3 and 4
 
-What expression is equivalent to 12x4?
+What expression is equivalent to 12x/4?
 Answer: 3x
 
-Write an expression equivalent to x5÷2y?
-Answer: xy10
+Write an expression equivalent to x/5÷2/y?
+Answer: xy/10
 
-Is the statement true or false: The product of (x-4)(x+4) is equal to x2-16 because the product of the sum and difference of two terms always results in a difference of two squares.
+Is the statement true or false: The product of (x-4)(x+4) is equal to x^2-16 because the product of the sum and difference of two terms always results in a difference of two squares.
 Answer: True
 
-Find the error in the given statement: Finding the dimensions of a rectangular garden given its area expression x2-2x-15 requires finding two factors whose sum is 2 and whose product is -15.
+Find the error in the given statement: Finding the dimensions of a rectangular garden given its area expression x^2-2x-15 requires finding two factors whose sum is 2 and whose product is -15.
 Answer: The sum must be -2.
 
 DIFFICULT Applying/Analyzing
 
 What is the product of 3x (2x+5)?
-Answer: 6x2+15x
+Answer: 6x^2+15x
 
-A rectangular bulletin board has a length of (x+7) m and a width of (x-7) m. A student claims the area is x2+49m2. Is the student correct? Why?
-Answer: No, the correct area is x2-49.
+A rectangular bulletin board has a length of (x+7) m and a width of (x-7) m. A student claims the area is (x^2+49)m^2. Is the student correct? Why?
+Answer: No, the correct area is x^2-49.
 
 The side of a square stage is increased by 2 meters. If the original side length is x meters, what expression represents the new area of the stage?
-Answer: x+22
+Answer: (x+2)^2
 
-Each student uses 3x5 meter of string for a Science project. If 10 students join the activity, what is the total length of string needed?
+Each student uses 3x/5 meter of string for a Science project. If 10 students join the activity, what is the total length of string needed?
 Answer: 6x meters
 
 Did the student evaluate and simplify this expression correctly?
-Multiply: 3x⋅x6 Step 1: 3⋅xx⋅6
-Step 2: 36=12
+Multiply: 3/x⋅x/6 Step 1: 3⋅x/x⋅6
+Step 2: 3/6=1/2
 Answer: Yes, the solution is completely correct.
 
-What is the factored form of 9x2-25?
-Answer: 3x-53x+5
+What is the factored form of 9x^2-25?
+Answer: (3x-5)(3x+5)
 
-The factored form of x2+6x+9 is ______.
-Answer: x+32
+The factored form of x^2+6x+9 is ______.
+Answer: (x+3)^2
 
-What are the factors of x2+7x+12?
+What are the factors of x^2+7x+12?
 Answer: (x+3)(x+4)
 
-What is the simplest form of x29x+3 ?
+What is the simplest form of x^2 9/x+3 ?
 Answer: x-3
 
 You are designing a square picture frame. The outer edge of the frame is a square with side length x cm. The inner opening (where the photo goes) is a square with side length y cm. Write the expression for the surface area of the border (the frame around the photo).
-Answer: x2-y2
+Answer: x^2-y^2
 
-An architecture student is finding the side length of a square room with a floor area given by: Area=25x2-30x+9.
-The student claims the room’s side length is 5x+3 meters because 25x2=5x and 9=3. Did the student use the correct sign in their binomial factor (5x+3)? If not, why?
+An architecture student is finding the side length of a square room with a floor area given by: Area=25x^2-30x+9.
+The student claims the room’s side length is (5x+3) meters because square root of 25x^2 equals 5x and square root of 9 equals 3. Did the student use the correct sign in their binomial factor (5x+3)? If not, why?
 Answer: No, it must be 5x-3
 
-Two students, Leo and Maya, were asked to factor the simple trinomial x2-2x-24. Their final answers are shown below:
+Two students, Leo and Maya, were asked to factor the simple trinomial x^2-2x-24. Their final answers are shown below:
 Leo's Answer: (x-6)(x+4)
 Maya's Answer: (x+6)(x-4)
 Which student has the correct factored form?
@@ -334,14 +334,14 @@ AVERAGE
 A line passes through (2,3) and (6,11). What is its slope?
 Answer: 2
 
-In the linear function fx=2x-6, what is f(5)?
+In the linear function f(x)=2x-6, what is f(5)?
 Answer: 4
 
 A tricycle charges a ₱20 starting fare plus ₱5 for every additional kilometer. What is the equation that represents the total fare F for x additional kilometers?
 Answer: F=5x+20
 
 A line has slope 2. What must be the slope of the line perpendicular to it?
-Answer: -12
+Answer: -1/2
 
 A line passes through (0,3) and has slope -2. What equation represents the line?
 Answer: y=-2x+3
@@ -353,7 +353,7 @@ In parallelogram ABCD, AB=14cm. What is CD?
 Answer: 14cm
 
 What is the area of a rectangle which sides are 5cm and 7cm?
-Answer: 35cm2
+Answer: 35cm^2
 
 Two lines have slopes 4 and m. If they are parallel, what is m?
 Answer: 4
@@ -364,14 +364,14 @@ Answer: 3
 A taxi fare is modeled by F=10d+50, where d is the number of kilometers traveled. What does the number 50 represent?
 Answer: Fixed starting fare
 
-Two lines have slope 4 and -14 . What relationship do the two lines have?
+Two lines have slope 4 and -1/4 . What relationship do the two lines have?
 Answer: Perpendicular lines
 
 Two lines have the same slopes equal to 2. What relationship do the two lines have?
 Answer: Parallel lines
 
 A rectangular school garden measures 18m by 10m. A square flower bed with side lengths of 6m is placed inside the garden. What is the area of the flower bed?
-Answer: 36m2
+Answer: 36m^2
 
 Quadrilateral ABCD has the side lengths shown in [figure]. What property shows that it is a parallelogram?
 Answer: A quadrilateral is a parallelogram if both pairs of opposite sides are congruent.
@@ -387,7 +387,7 @@ Answer: Student A
 A rectangular fence has measurements of 10m and 8m on the sides. What is its perimeter?
 Answer: 36 m
 
-The Grade 9 students want to create a rectangular vegetable garden with an area of exactly 120m2. The garden must have a length greater than its width. Give two possible dimensions of the garden.
+The Grade 9 students want to create a rectangular vegetable garden with an area of exactly 120m^2. The garden must have a length greater than its width. Give two possible dimensions of the garden.
 Answer: Length—Width: 120m—1m, 60m—2m, 40m—3m, 30m—4m, 24m—5m, 20m—6m, 15m—8m, 12m—10m
 
 CSNHS is improving its walkway system to make it easier to move between buildings. They constructed rectangular bridges between buildings. Two bridge boundaries are represented by the lines:
@@ -397,7 +397,7 @@ What is the slope of Boundary A and Boundary B?
 Answer: The slopes of boundaries A and B are both 2.
 
 A local community is preparing a picnic area in a public park. The main picnic platform is designed in the shape of a rectangle measuring 15m and 10m wide. Inside the platform is decorative stone area designed as a square. Each side of the square measures 6m. The organizer wants to cover the area outside the square with an outdoor flooring. What is its area?
-Answer: 114m2
+Answer: 114m^2
 
 A local community is preparing a picnic area in a public park. The main picnic platform is designed in the shape of a rectangle measuring 15m and 10m wide. Inside the platform is decorative stone area designed as a square. Each side of the square measures 6m. The organizers will place the border around the square-shape stone area. They have 25 meters of border material. Is this enough? Why?
 Answer: Yes, because the perimeter of the square is only 24m.
@@ -405,31 +405,31 @@ Answer: Yes, because the perimeter of the square is only 24m.
 GRADE 10 QUESTIONS
 EASY
 
-Convert the angle measure 450330' into decimal degree.
+Convert the angle measure 45°330' into decimal degree.
 Answer: 45.50°
 
-Which of the following degree, minute, and seconds is equal to the angle measure 12.080?
-Answer: 120 4'48.00''
+Which of the following degree, minute, and seconds is equal to the angle measure 12.08°?
+Answer: 12°4'48.00''
 
 A triangular field near Mt. Isarog has sides 30m, 40m, and 50m. What type of triangle is it?
 Answer: Right triangle
 
-The largest angle of an oblique triangle measures 1100, the triangle is classified as:
+The largest angle of an oblique triangle measures 110°, the triangle is classified as:
 Answer: Obtuse triangle
 
-If all three angles of a triangle are less than 900, the triangle is ____.
+If all three angles of a triangle are less than 90°, the triangle is ____.
 Answer: Acute triangle
 
 An oblique triangle can be classified according to its angles as ____.
 Answer: Acute and obtuse
 
 What formula represents the Law of Sines?
-Answer: asinA=bsinB=csinC
+Answer: a/sinA=b/sinB=c/sinC
 
 What formula represents the Law of Cosines?
-Answer: a2=b2+c2-2bccosA
+Answer: a2=b2+c2-2bc cosA
 
-A triangular garden in Naga City has two sides measuring 12m and 15m with an included angle of 700. Which law should be used to find the third side?
+A triangular garden in Naga City has two sides measuring 12m and 15m with an included angle of 70°. Which law should be used to find the third side?
 Answer: Law of Cosines
 
 In ∆ABC, the sides AC and BC meet at C. What is the included angle between AC and BC?
@@ -440,48 +440,48 @@ Answer: Law of Cosines
 
 AVERAGE
 
-An observer stands exactly 15 meters away from the base of a vertical flagpole. The angle of elevation from the observer’s feet to the top of the flagpole is 450. How tall is the flagpole?
+An observer stands exactly 15 meters away from the base of a vertical flagpole. The angle of elevation from the observer’s feet to the top of the flagpole is 45°. How tall is the flagpole?
 Answer: 15 meters
 
-In ∆ABC, ∠A=450 and ∠C=600. What is the measure of ∠B?
-Answer: 750
+In ∆ABC, ∠A=45° and ∠C=60°. What is the measure of ∠B?
+Answer: 75°
 
-A fisherman in the waters near Catanduanes observes two landmarks that are 20km apart. The angles formed by the two landmarks and the fishing boat are 450 and 650. What information is needed to solve for an unknown side using the Law of Sines.
+A fisherman in the waters near Catanduanes observes two landmarks that are 20km apart. The angles formed by the two landmarks and the fishing boat are 45° and 65°. What information is needed to solve for an unknown side using the Law of Sines.
 Answer: At least one known side and its opposite angle.
 
-In ∆ABC, ∠A=250, ∠B=850, and AC=10cm. What is the approximate length of BC? Formula: BC=10sin25sin85
+In ∆ABC, ∠A=25°, ∠B=85°, and AC=10cm. What is the approximate length of BC? Formula: BC=10sin25/sin85
 Answer: 4.24 cm
 
-A boat travels from Pasacao toward a point offshore. The distance between two observation points is 25km. If the observed angles are 400 and 700, what is the third angle of the triangle?
-Answer: 700
+A boat travels from Pasacao toward a point offshore. The distance between two observation points is 25km. If the observed angles are 40° and 70°, what is the third angle of the triangle?
+Answer: 70°
 
 In ∆DEF, side d=10cm, side f=12cm and ∠E=600. Which equation correctly determines side e?
-Answer: e2=102+122-21012cos602
+Answer: e^2=10^2+12^2-2(10)(12)cos60^2
 
 DIFFICULT
 
-Determine the measure of ∠C in ∆ABC if AB=0.77km, m∠A=1100, and BC=1.25 km.
-Answer: 35022'08''
+Determine the measure of ∠C in ∆ABC if AB=0.77km, m∠A=110°, and BC=1.25 km.
+Answer: 35°22'08''
 
-A triangular lot has sides 10m and 14m with an included angle of 600. What is the approximate length of the third side?
+A triangular lot has sides 10m and 14m with an included angle of 60°. What is the approximate length of the third side?
 Answer: 12.49m
 
-A surveyor measures two sides of a triangular area as 20m and 30m and the included angle as 450. What is the approximate third side?
+A surveyor measures two sides of a triangular area as 20m and 30m and the included angle as 45°. What is the approximate third side?
 Answer: 21.25m
 
-What is m∠E in the equation 102=82+122-2812cosE?
-Answer: 55046'08''
+What is m∠E in the equation 10^2=8^2+12^2-2(8)(12)cosE?
+Answer: 55°46'08''
 
-In ∆ABC, ∠A=450, ∠B=750, and side a=10cm. Using the law of sines, approximately how long is side b?
+In ∆ABC, ∠A=45°, ∠B=75°, and side a=10cm. Using the law of sines, approximately how long is side b?
 Answer: 13.66cm
 
-In ∆PQR, ∠P=300, ∠Q=520, and side r=12 cm. What is the approximate length of side p?
+In ∆PQR, ∠P=30°, ∠Q=52°, and side r=12 cm. What is the approximate length of side p?
 Answer: 6.06cm
 
 PORTAL CHALLENGES
 
-The water tank is 35 full. After 24 liters of water are added, the tank becomes 34 full. What is the total capacity of the tank?
-Answer: 34-35=320, 320x=24, x=160 liters
+The water tank is 3/5 full. After 24 liters of water are added, the tank becomes 3/4 full. What is the total capacity of the tank?
+Answer: 3/4-3/5=3/20, 3/20x=24, x=160 liters
 
 Pedro traveled for two consecutive days. On day 1, he drove his van at an average speed of 50 km/hr for 4 hours. On day 2, he drove at an average speed of 60 km/hr for 3 hours. What is the total distance, in kilometers, that Pedro drove over the two days?
 Answer: 380 km
@@ -490,7 +490,7 @@ The sum of three consecutive odd integers is 147. What are the smallest and larg
 Answer: 47 and 51
 
 A rectangle has a perimeter of 64cm. Its length is 8cm more than twice its width. Find the area of the rectangle.
-Answer: Length = 20cm, Width = 12 cm, Area = 240cm2
+Answer: Length = 20cm, Width = 12 cm, Area = 240cm^2
 
 A surveyor wants to determine the distance between two points, A and B, located on opposite sides of a river. From a point C on the same side of the river as A, the surveyor measures CA = 80 m, CB = 120 m, and ∠ACB=65° .
 Using the law of cosines, what is the distance from point A to point B?
@@ -519,19 +519,19 @@ Answer: The GCF of the numerator and denominator is 1.
 
 GRADE 8 FINAL CHALLENGES
 
-The expression x+4x-7 is an example of rational expression. What is its multiplicative inverse?
-Answer: x-7x+4
+The expression x+4/x-7 is an example of rational expression. What is its multiplicative inverse?
+Answer: x-7/x+4
 
 The side of a square garden is increased by 3 meters. If the original side length is x meters, what expression represents the new area of the garden?
-Answer: x+32, x2+6x+9
+Answer: (x+3)^2, x2+6x+9
 
 If one student uses x meters of string for a Science project, how much string will be needed for 12 students? Express your answer algebraically.
 Answer: 12x meters
 
-Two students simplified the expression 12x3y-18x2y2+24xy3. Student says the GCF is 6xy while student B says the GCF is 6xy(x-y+2y). Who is correct?
+Two students simplified the expression 12x^3 y-18x^2 y^2+24xy^3. Student says the GCF is 6xy while student B says the GCF is 6xy(x-y+2y). Who is correct?
 Answer: Student A
 
-A student said that the simplified form of the rational expression x2-9x2+5x+6 is x-3x+2. Is the student correct?
+A student said that the simplified form of the rational expression x^2-9/x^2+5x+6 is x-3/x+2. Is the student correct?
 Answer: Yes
 
 GRADE 9 FINAL CHALLENGES

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { Card, AnswerOption } from '../types/card';
 import { Check, X, BookOpen, ChevronRight } from 'lucide-react';
+import { MathText } from './MathText';
 
 interface FeedbackViewProps {
   card: Card;
@@ -85,7 +86,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
                     Your Submitted Answer
                   </span>
                   <span className="font-serif text-base sm:text-lg font-bold text-textPrimary">
-                    {selectedAnswer.text}
+                    <MathText>{selectedAnswer.text}</MathText>
                   </span>
                 </div>
                 <div className={`w-8 h-8 rounded-full flex items-center justify-center ${isCorrect ? 'bg-primaryTeal text-white' : 'bg-accentTerracotta text-white'}`}>
@@ -101,7 +102,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
                       Official Expected Answer
                     </span>
                     <span className="font-serif text-base sm:text-lg font-bold text-primaryTeal">
-                      {card.expectedAnswer}
+                      <MathText>{card.expectedAnswer}</MathText>
                     </span>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-primaryTeal text-white flex items-center justify-center">
@@ -121,7 +122,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
               </span>
             </div>
             <p className="text-sm text-textPrimary leading-relaxed font-sans">
-              {card.solution}
+              <MathText>{card.solution}</MathText>
             </p>
           </div>
         </div>
