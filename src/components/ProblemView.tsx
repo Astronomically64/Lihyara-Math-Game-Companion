@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Card, AnswerOption } from '../types/card';
 import { getCategoryLabel, getDifficultyLabel, validateInputAnswer } from '../utils/cardService';
+import { playUiSound } from '../utils/uiSound';
 import { MathText } from './MathText';
 import { ArrowLeft, Target, Send, HelpCircle, Timer } from 'lucide-react';
 
@@ -100,6 +101,12 @@ export const ProblemView: React.FC<ProblemViewProps> = ({ card, onSelectAnswer, 
 
     return () => clearInterval(interval);
   }, [timeLeft, onSelectAnswer]);
+
+  useEffect(() => {
+    if (timeLeft > 0 && timeLeft <= 5) {
+      playUiSound('countdown');
+    }
+  }, [timeLeft]);
 
   const formatTime = (sec: number): string => {
     const m = Math.floor(sec / 60);
