@@ -1,4 +1,4 @@
-type UiSound = 'tap' | 'success' | 'error';
+type UiSound = 'tap' | 'success' | 'error' | 'countdown';
 
 let audioContext: AudioContext | null = null;
 
@@ -27,6 +27,7 @@ export const playUiSound = (sound: UiSound): void => {
     tap: { frequency: 520, duration: 0.055, volume: 0.035, type: 'sine' as OscillatorType },
     success: { frequency: 660, duration: 0.12, volume: 0.05, type: 'sine' as OscillatorType },
     error: { frequency: 180, duration: 0.14, volume: 0.04, type: 'triangle' as OscillatorType },
+    countdown: { frequency: 740, duration: 0.08, volume: 0.04, type: 'square' as OscillatorType },
   }[sound];
 
   oscillator.type = settings.type;
