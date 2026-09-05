@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { Card, AnswerOption } from '../types/card';
 import { Check, X, BookOpen, ChevronRight } from 'lucide-react';
 import { MathText } from './MathText';
+import { playUiSound } from '../utils/uiSound';
 
 interface FeedbackViewProps {
   card: Card;
@@ -28,6 +29,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
 
   // Fire celebratory confetti on correct answer
   useEffect(() => {
+    playUiSound(isCorrect ? 'success' : 'error');
     if (isCorrect) {
       try {
         confetti({

@@ -11,6 +11,7 @@ import {
   getCardById,
   parseQrPayload,
 } from './utils/cardService';
+import { playUiSound } from './utils/uiSound';
 
 type ScreenState = 'home' | 'scanner' | 'problem' | 'feedback' | 'catalog' | 'not-found';
 
@@ -65,6 +66,12 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('popstate', checkUrlRoute);
   }, [openCardPage]);
 
+  const handleButtonSound = (event: React.MouseEvent<HTMLElement>) => {
+    if (event.target instanceof Element && event.target.closest('button')) {
+      playUiSound('tap');
+    }
+  };
+
   // Handle successful QR scan
   const handleScanSuccess = (rawPayload: string) => {
     openCardPage(rawPayload);
@@ -94,7 +101,7 @@ export const App: React.FC = () => {
   };
 
   return (
-    <main className={`relative w-full min-h-[100dvh] ${currentScreen === 'problem' || currentScreen === 'feedback' ? 'bg-background' : 'animate-grade-bg'}`}>
+    <main onClickCapture={handleButtonSound} className={`relative w-full min-h-[100dvh] ${currentScreen === 'problem' || currentScreen === 'feedback' ? 'bg-background' : 'animate-grade-bg'}`}>
       {currentScreen !== 'problem' && currentScreen !== 'feedback' && currentScreen !== 'scanner' && (
         <>
           <SpectralClouds />
