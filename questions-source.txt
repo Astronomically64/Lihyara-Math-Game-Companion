@@ -162,7 +162,7 @@ EASY Remembering
 When is a rational algebraic expression considered to be in its simplest form?
 Answer: When the numerator and denominator have no common factors other than 1.
 
-What is the first step before multiplying rational algebraic expressions containing polynomials x2-9/x+2⋅x+2/x+3 ?
+What is the first step before multiplying rational algebraic expressions containing polynomials (x^2 - 9)/(x + 2) × (x + 2)/(x + 3)?
 Answer: Factor all numerators and denominators completely.
 
 What is the product of the expression 2/x⋅3/y?

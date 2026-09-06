@@ -837,7 +837,7 @@
       "acceptableAnswers": [
         "Factor all numerators and denominators completely."
       ],
-      "problemText": "What is the first step before multiplying rational algebraic expressions containing polynomials x2-9/x+2⋅x+2/x+3 ?",
+      "problemText": "What is the first step before multiplying rational algebraic expressions containing polynomials (x^2 - 9)/(x + 2) × (x + 2)/(x + 3)?",
       "answers": [],
       "solution": "Factoring all numerators and denominators completely allows you to simplify common factors before multiplying.",
       "imageRes": null
