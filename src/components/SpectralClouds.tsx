@@ -1,7 +1,13 @@
 import React, { useEffect, useRef } from 'react';
-
 import { RisingMathParticles } from './RisingMathParticles';
 
+/**
+ * SpectralClouds — full-viewport animated background layer.
+ * Renders: animated CSS blob clouds + floating dust canvas + rising math particles.
+ * Designed to sit as a fixed/absolute child of a full-screen container.
+ * Deviation: clouds now use Lihyara grade-themed colors (forest/gold/terracotta/ocean)
+ * instead of generic teal/cyan, matching the board game's visual identity.
+ */
 export const SpectralClouds: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -13,51 +19,58 @@ export const SpectralClouds: React.FC = () => {
     if (!ctx) return;
 
     let animationFrameId: number;
-    let width = (canvas.width = window.innerWidth);
-    let height = (canvas.height = window.innerHeight);
+    let width = 0;
+    let height = 0;
 
-    const handleResize = () => {
-      if (!canvas) return;
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
+    const setSize = () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
     };
 
+    setSize();
+
+    const handleResize = () => setSize();
     window.addEventListener('resize', handleResize);
 
-    // Generate floating spectral light dust particles
-    const particleCount = 24;
+    // Lihyara-themed dust: forest green, gold, teal, terracotta
+    const DUST_HUES = [140, 44, 175, 16];
+
+    const particleCount = 30;
     const particles = Array.from({ length: particleCount }).map(() => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      radius: Math.random() * 2 + 1,
-      speedX: (Math.random() - 0.5) * 0.3,
-      speedY: -Math.random() * 0.3 - 0.1,
+      fx: Math.random(),
+      fy: Math.random(),
+      radius: Math.random() * 2.5 + 0.8,
+      speedX: (Math.random() - 0.5) * 0.0002,
+      speedY: -(Math.random() * 0.0003 + 0.0001),
       alpha: Math.random() * 0.5 + 0.2,
       pulseSpeed: Math.random() * 0.02 + 0.005,
-      hue: Math.random() > 0.5 ? 45 : 170, // Warm Gold or Spectral Cyan
+      hue: DUST_HUES[Math.floor(Math.random() * DUST_HUES.length)],
     }));
 
     const render = () => {
       ctx.clearRect(0, 0, width, height);
 
       particles.forEach((p) => {
-        p.x += p.speedX;
-        p.y += p.speedY;
-        p.alpha += Math.sin(Date.now() * p.pulseSpeed) * 0.005;
+        p.fx += p.speedX;
+        p.fy += p.speedY;
+        p.alpha += Math.sin(Date.now() * p.pulseSpeed) * 0.003;
 
-        // Wrap around screens
-        if (p.y < -10) p.y = height + 10;
-        if (p.x < -10) p.x = width + 10;
-        if (p.x > width + 10) p.x = -10;
+        if (p.fy < -10 / height) p.fy = 1 + 10 / height;
+        if (p.fx < -10 / width) p.fx = 1 + 10 / width;
+        if (p.fx > 1 + 10 / width) p.fx = -10 / width;
 
-        const currentAlpha = Math.max(0.1, Math.min(0.7, p.alpha));
+        const currentAlpha = Math.max(0.1, Math.min(0.65, p.alpha));
+        const px = p.fx * width;
+        const py = p.fy * height;
 
         ctx.save();
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${p.hue}, 85%, 70%, ${currentAlpha})`;
-        ctx.shadowBlur = 10;
-        ctx.shadowColor = `hsla(${p.hue}, 100%, 75%, 0.7)`;
+        ctx.arc(px, py, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${p.hue}, 80%, 65%, ${currentAlpha})`;
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = `hsla(${p.hue}, 100%, 70%, 0.6)`;
         ctx.fill();
         ctx.restore();
       });
@@ -75,22 +88,25 @@ export const SpectralClouds: React.FC = () => {
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-      {/* Cloud Blob 1: Top-Left Drifting Emerald / Cyan Spectral Light */}
-      <div className="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-radial-spectral-1 opacity-60 blur-3xl animate-cloud-drift-1" />
+      {/* Grade-7 Forest Green cloud — top-left */}
+      <div className="absolute -top-24 -left-24 w-[clamp(18rem,40vw,36rem)] h-[clamp(18rem,40vw,36rem)] rounded-full bg-radial-spectral-1 opacity-55 blur-3xl animate-cloud-drift-1" />
 
-      {/* Cloud Blob 2: Center-Right Glowing Golden Amber Aura */}
-      <div className="absolute top-1/4 -right-16 w-96 h-96 rounded-full bg-radial-spectral-2 opacity-50 blur-3xl animate-cloud-drift-2" />
+      {/* Grade-8 Magical Gold cloud — center-right */}
+      <div className="absolute top-1/4 -right-20 w-[clamp(20rem,45vw,40rem)] h-[clamp(20rem,45vw,40rem)] rounded-full bg-radial-spectral-2 opacity-45 blur-3xl animate-cloud-drift-2" />
 
-      {/* Cloud Blob 3: Bottom-Left Crimson / Magenta Ethereal Cloud */}
-      <div className="absolute -bottom-24 -left-16 w-88 h-88 rounded-full bg-radial-spectral-3 opacity-55 blur-3xl animate-cloud-drift-3" />
+      {/* Grade-9 Terracotta/Crimson cloud — bottom-left */}
+      <div className="absolute -bottom-28 -left-20 w-[clamp(16rem,38vw,34rem)] h-[clamp(16rem,38vw,34rem)] rounded-full bg-radial-spectral-3 opacity-50 blur-3xl animate-cloud-drift-3" />
 
-      {/* Cloud Blob 4: Bottom-Right Deep Oceanic Azure Cloud */}
-      <div className="absolute bottom-10 right-0 w-80 h-80 rounded-full bg-radial-spectral-4 opacity-50 blur-3xl animate-cloud-drift-4" />
+      {/* Grade-10 Oceanic Blue cloud — bottom-right */}
+      <div className="absolute bottom-8 -right-16 w-[clamp(18rem,40vw,36rem)] h-[clamp(18rem,40vw,36rem)] rounded-full bg-radial-spectral-4 opacity-45 blur-3xl animate-cloud-drift-4" />
 
-      {/* Floating Spectral Light Dust Canvas */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {/* Extra mid-screen subtle emerald glow for depth */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[clamp(24rem,55vw,56rem)] h-[clamp(16rem,35vw,32rem)] rounded-full bg-radial-spectral-mid opacity-20 blur-3xl animate-cloud-drift-1" />
 
-      {/* Subtle Rising Math Symbol Particles */}
+      {/* Floating dust canvas */}
+      <canvas ref={canvasRef} style={{ display: 'block', position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
+
+      {/* Rising math symbols */}
       <RisingMathParticles />
     </div>
   );

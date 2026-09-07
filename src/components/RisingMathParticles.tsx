@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 
 interface MathParticle {
-  x: number;
-  y: number;
+  // Stored as 0-1 fractions so resize recomputes px coords without distortion
+  fx: number;
+  fy: number;
   symbol: string;
   size: number;
   speedY: number;
@@ -16,7 +17,10 @@ interface MathParticle {
   rotSpeed: number;
 }
 
-const MATH_SYMBOLS = ['π', '∑', '∞', '√x', '+', '×', 'θ', 'Δ', '∫', 'α', 'β', '÷', '='];
+const MATH_SYMBOLS = ['π', '∑', '∞', '√', '+', '×', 'θ', 'Δ', '∫', 'α', 'β', '÷', '=', '%', '≈', '∠'];
+
+// Lihyara-themed hues: Forest Green (120), Gold (45), Teal (175), Terracotta (15)
+const PARTICLE_HUES = [120, 45, 175, 15, 200];
 
 export const RisingMathParticles: React.FC<{ className?: string }> = ({ className = '' }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -29,68 +33,90 @@ export const RisingMathParticles: React.FC<{ className?: string }> = ({ classNam
     if (!ctx) return;
 
     let animationFrameId: number;
-    let width = (canvas.width = window.innerWidth);
-    let height = (canvas.height = window.innerHeight);
+    let width = 0;
+    let height = 0;
+    let dpr = window.devicePixelRatio || 1;
+
+    const setSize = () => {
+      const el = canvas.parentElement ?? document.documentElement;
+      width = el.clientWidth || window.innerWidth;
+      height = el.clientHeight || window.innerHeight;
+      dpr = window.devicePixelRatio || 1;
+      // Physical pixel size — prevents blurry text on HiDPI screens
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      // CSS size stays at logical pixels
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.scale(dpr, dpr);
+    };
+
+    setSize();
 
     const handleResize = () => {
-      if (!canvas) return;
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
+      setSize();
+      // Re-scale context after resize resets it
+      ctx.scale(dpr, dpr);
     };
 
     window.addEventListener('resize', handleResize);
 
-    // Create particle array
-    const particleCount = 36;
+    const particleCount = 40;
+    // Particles store fractional positions (0-1) so they stay proportional on resize
     const particles: MathParticle[] = Array.from({ length: particleCount }).map(() => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
+      fx: Math.random(),
+      fy: Math.random(),
       symbol: MATH_SYMBOLS[Math.floor(Math.random() * MATH_SYMBOLS.length)],
-      size: Math.floor(Math.random() * 7) + 10, // 10px - 16px (tiny & elegant)
-      speedY: Math.random() * 0.4 + 0.25, // Gentle upward rise
+      size: Math.floor(Math.random() * 8) + 10, // 10–17px – fixed point size, not scaled by canvas
+      speedY: Math.random() * 0.00045 + 0.00025, // fraction of height per frame
       swaySpeed: Math.random() * 0.015 + 0.005,
-      swayAmount: Math.random() * 1.2 + 0.4,
+      swayAmount: Math.random() * 1.5 + 0.5,
       swayOffset: Math.random() * Math.PI * 2,
-      baseAlpha: Math.random() * 0.35 + 0.15, // Subtle, soft opacity
+      baseAlpha: Math.random() * 0.35 + 0.15,
       alpha: 0.2,
-      hue: Math.random() > 0.4 ? 45 : 180, // Soft Gold / Cyan aura
+      hue: PARTICLE_HUES[Math.floor(Math.random() * PARTICLE_HUES.length)],
       rotation: (Math.random() - 0.5) * 0.4,
       rotSpeed: (Math.random() - 0.5) * 0.005,
     }));
 
     const render = () => {
+      // Clear at logical pixel size
       ctx.clearRect(0, 0, width, height);
 
       const time = Date.now();
 
       particles.forEach((p) => {
-        // Move upward & sway horizontally
-        p.y -= p.speedY;
-        p.x += Math.sin(time * p.swaySpeed + p.swayOffset) * p.swayAmount * 0.3;
+        // Move upward & sway — using fraction-of-screen units
+        p.fy -= p.speedY;
+        p.fx += (Math.sin(time * p.swaySpeed + p.swayOffset) * p.swayAmount * 0.3) / width;
         p.rotation += p.rotSpeed;
 
-        // Subtle pulsing glow opacity
+        // Pulse opacity
         p.alpha = p.baseAlpha + Math.sin(time * 0.002 + p.swayOffset) * 0.1;
         const currentAlpha = Math.max(0.08, Math.min(0.55, p.alpha));
 
-        // Reset to bottom when rising past top boundary
-        if (p.y < -30) {
-          p.y = height + 20;
-          p.x = Math.random() * width;
+        // Wrap boundaries
+        if (p.fy < -30 / height) {
+          p.fy = 1 + 20 / height;
+          p.fx = Math.random();
           p.symbol = MATH_SYMBOLS[Math.floor(Math.random() * MATH_SYMBOLS.length)];
         }
-        if (p.x < -30) p.x = width + 20;
-        if (p.x > width + 30) p.x = -30;
+        if (p.fx < -30 / width) p.fx = 1 + 20 / width;
+        if (p.fx > 1 + 30 / width) p.fx = -20 / width;
+
+        // Convert to logical-pixel coords for drawing
+        const px = p.fx * width;
+        const py = p.fy * height;
 
         ctx.save();
-        ctx.translate(p.x, p.y);
+        ctx.translate(px, py);
         ctx.rotate(p.rotation);
 
-        // Soft ambient glow
-        ctx.shadowBlur = 10;
+        ctx.shadowBlur = 12;
         ctx.shadowColor = `hsla(${p.hue}, 90%, 70%, ${currentAlpha * 0.8})`;
 
-        ctx.font = `600 ${p.size}px "Inter", "Lora", serif`;
+        // p.size is always the same pt size regardless of canvas resolution
+        ctx.font = `600 ${p.size}px "Inter", serif`;
         ctx.fillStyle = `hsla(${p.hue}, 85%, 85%, ${currentAlpha})`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -112,7 +138,8 @@ export const RisingMathParticles: React.FC<{ className?: string }> = ({ classNam
 
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none z-0 ${className}`}>
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      {/* Canvas fills parent; CSS sets logical size; JS sets physical HiDPI size */}
+      <canvas ref={canvasRef} style={{ display: 'block', position: 'absolute', inset: 0 }} />
     </div>
   );
 };
