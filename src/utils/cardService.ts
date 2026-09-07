@@ -1,5 +1,5 @@
 import cardsJson from '../data/cards.json';
-import { Card, CardsData, GameStats } from '../types/card';
+import { Card, CardsData } from '../types/card';
 
 const data = cardsJson as CardsData;
 const cardMap = new Map<string, Card>();
@@ -62,48 +62,6 @@ export function getAllCards(): Card[] {
  */
 export function getTotalCardsCount(): number {
   return data.cards.length;
-}
-
-const STATS_STORAGE_KEY = 'lihyara_game_stats';
-
-export function getStoredStats(): GameStats {
-  try {
-    const raw = localStorage.getItem(STATS_STORAGE_KEY);
-    if (raw) {
-      const parsed = JSON.parse(raw) as Partial<GameStats>;
-      return {
-        correct: Number(parsed.correct) || 0,
-        incorrect: Number(parsed.incorrect) || 0,
-      };
-    }
-  } catch (error) {
-    console.warn('Failed to read stats from localStorage', error);
-  }
-  return { correct: 0, incorrect: 0 };
-}
-
-export function recordAnswer(isCorrect: boolean): GameStats {
-  const current = getStoredStats();
-  const updated: GameStats = {
-    correct: current.correct + (isCorrect ? 1 : 0),
-    incorrect: current.incorrect + (isCorrect ? 0 : 1),
-  };
-  try {
-    localStorage.setItem(STATS_STORAGE_KEY, JSON.stringify(updated));
-  } catch (error) {
-    console.warn('Failed to save stats to localStorage', error);
-  }
-  return updated;
-}
-
-export function resetStoredStats(): GameStats {
-  const zeroStats: GameStats = { correct: 0, incorrect: 0 };
-  try {
-    localStorage.setItem(STATS_STORAGE_KEY, JSON.stringify(zeroStats));
-  } catch (error) {
-    console.warn('Failed to reset stats in localStorage', error);
-  }
-  return zeroStats;
 }
 
 // ----------------------------------------------------
