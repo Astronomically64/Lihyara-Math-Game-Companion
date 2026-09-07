@@ -290,7 +290,7 @@ What ordered pair represents the y-intercept of the line y=2x+7?
 Answer: (0,7)
 
 In parallelogram KLMN shown in [figure], if KL=12cm, what is the length of NM?
-Answer: NM=12
+Answer: 12cm or NM=12cm or NM=12
 
 If m∠KLM=70°, what is the measure of its adjacent angle?
 Answer: 110°
@@ -313,11 +313,11 @@ Answer: y-intercept
 What condition guarantees that two lines are parallel?
 Answer: Slopes are equal
 
-In parallelogram ABCD, AB∥CD. If ∠A=65°, what is ∠C?
+In parallelogram ABCD, AB∥CD. If Angle A=65°, what is Angle C? - Wrong Solution, do understand the problem and give a proper solution
 Answer: 65°
 
 Name one pair of consecutive angles in parallelogram ABCD.
-Answer: ∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A
+Answer: Angle A and Angle B, Angle B and Angle C, Angle C and Angle D, Angle D and Angle A
 
 In a square, all angles measure______.
 Answer: 90°
@@ -427,13 +427,13 @@ What formula represents the Law of Sines?
 Answer: a/sinA=b/sinB=c/sinC
 
 What formula represents the Law of Cosines?
-Answer: a2=b2+c2-2bc cosA
+Answer: a²=b²+c²-2bc cosA
 
 A triangular garden in Naga City has two sides measuring 12m and 15m with an included angle of 70°. Which law should be used to find the third side?
 Answer: Law of Cosines
 
-In ∆ABC, the sides AC and BC meet at C. What is the included angle between AC and BC?
-Answer: ∠C
+In triangle ABC, the sides AC and BC meet at C. What is the included angle between AC and BC?
+Answer: Angle C
 
 A rescue team in Naga City needs to determine the distance between two locations that cannot be directly measured. The team knows two sides of a triangular route and the angle between them. Which method is most appropriate, Law of Sines or Law of Cosines?
 Answer: Law of Cosines

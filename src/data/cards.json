@@ -1425,32 +1425,38 @@
       "qrId": "g9e03",
       "grade": 9,
       "difficulty": 1,
-      "category": "linear-equations",
-      "title": "Slope of Horizontal Line",
+      "category": "quadrilaterals-geometry",
+      "title": "Opposite Side Length in Parallelogram",
       "questionType": "input",
-      "expectedAnswer": "NM=12",
+      "expectedAnswer": "12 cm",
       "acceptableAnswers": [
-        "NM=12"
+        "12 cm",
+        "12cm",
+        "NM = 12 cm",
+        "NM=12cm",
+        "NM = 12"
       ],
       "problemText": "In parallelogram KLMN shown in [figure], if KL=12cm, what is the length of NM?",
       "answers": [],
-      "solution": "Horizontal lines have a vertical change (rise) of 0, so slope m = 0.",
+      "solution": "Opposite sides of a parallelogram are equal in length. Since KL = 12 cm, the opposite side NM = 12 cm.",
       "imageRes": "/images/gr9e3fig.png"
     },
     {
       "qrId": "g9e04",
       "grade": 9,
       "difficulty": 1,
-      "category": "linear-equations",
-      "title": "Slope of Vertical Line",
+      "category": "quadrilaterals-geometry",
+      "title": "Adjacent Angle in Parallelogram",
       "questionType": "input",
       "expectedAnswer": "110°",
       "acceptableAnswers": [
-        "110°"
+        "110",
+        "110°",
+        "110 degrees"
       ],
       "problemText": "If m∠KLM=70°, what is the measure of its adjacent angle?",
       "answers": [],
-      "solution": "Vertical lines have a horizontal change (run) of 0; dividing by 0 makes the slope undefined.",
+      "solution": "Adjacent angles in a parallelogram are supplementary, so their measures add to 180°. The adjacent angle is 180° - 70° = 110°.",
       "imageRes": null
     },
     {
@@ -1458,7 +1464,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "linear-equations",
-      "title": "Slope-Intercept Form Form",
+      "title": "Opposite Angles in a Parallelogram",
       "questionType": "input",
       "expectedAnswer": "congruent",
       "acceptableAnswers": [
@@ -1466,7 +1472,7 @@
       ],
       "problemText": "Opposite angles of a parallelogram are ______________.",
       "answers": [],
-      "solution": "y = mx + b is the standard slope-intercept form.",
+      "solution": "Opposite angles of a parallelogram are congruent. They have equal measures.",
       "imageRes": null
     },
     {
@@ -1474,7 +1480,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Definition of Parallelogram",
+      "title": "Other Side of a Parallelogram",
       "questionType": "input",
       "expectedAnswer": "8cm",
       "acceptableAnswers": [
@@ -1482,7 +1488,7 @@
       ],
       "problemText": "If the perimeter of a parallelogram is 36 cm and one pair of side is 10cm, what is the length of the other side?",
       "answers": [],
-      "solution": "A parallelogram is defined by having two pairs of parallel opposite sides.",
+      "solution": "The perimeter is 2(10 + x) = 36. Therefore, 10 + x = 18 and x = 8 cm.",
       "imageRes": null
     },
     {
@@ -1490,7 +1496,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Consecutive Angles in Parallelogram",
+      "title": "Parallelogram Diagonal Length",
       "questionType": "input",
       "expectedAnswer": "16 cm",
       "acceptableAnswers": [
@@ -1498,7 +1504,7 @@
       ],
       "problemText": "If the diagonals of parallelogram ABCD intersect at E and AE=8cm, what is AC?",
       "answers": [],
-      "solution": "Consecutive angles lie between parallel lines and are supplementary (sum = 180°).",
+      "solution": "The diagonals of a parallelogram bisect each other. Since AE = 8 cm, EC = 8 cm and AC = 8 + 8 = 16 cm.",
       "imageRes": null
     },
     {
@@ -1506,7 +1512,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Opposite Angles in Parallelogram",
+      "title": "Square Definition",
       "questionType": "input",
       "expectedAnswer": "Square",
       "acceptableAnswers": [
@@ -1514,7 +1520,7 @@
       ],
       "problemText": "This refers to a quadrilateral with four right angles and four equal sides.",
       "answers": [],
-      "solution": "Opposite angles in every parallelogram are congruent (equal in measure).",
+      "solution": "A quadrilateral with four right angles and four equal sides is a square.",
       "imageRes": null
     },
     {
@@ -1522,7 +1528,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Equiangular Parallelogram",
+      "title": "Y-Intercept Meaning",
       "questionType": "input",
       "expectedAnswer": "y-intercept",
       "acceptableAnswers": [
@@ -1530,7 +1536,7 @@
       ],
       "problemText": "The graph of y=-2x+4 crosses the y-axis at (0,4), what does the point (0,4) represent?",
       "answers": [],
-      "solution": "An equiangular parallelogram has four 90° angles and is called a rectangle.",
+      "solution": "The point (0, 4) is where the graph crosses the y-axis, so it is the y-intercept.",
       "imageRes": null
     },
     {
@@ -1538,7 +1544,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Equilateral Parallelogram",
+      "title": "Parallel Lines Condition",
       "questionType": "input",
       "expectedAnswer": "Slopes are equal",
       "acceptableAnswers": [
@@ -1546,7 +1552,7 @@
       ],
       "problemText": "What condition guarantees that two lines are parallel?",
       "answers": [],
-      "solution": "An equilateral parallelogram is called a rhombus.",
+      "solution": "Two non-identical lines are parallel when they have equal slopes.",
       "imageRes": null
     },
     {
@@ -1554,15 +1560,15 @@
       "grade": 9,
       "difficulty": 1,
       "category": "linear-equations",
-      "title": "Y-Intercept of Line",
+      "title": "Opposite Angle Measure",
       "questionType": "input",
       "expectedAnswer": "65°",
       "acceptableAnswers": [
         "65°"
       ],
-      "problemText": "In parallelogram ABCD, AB∥CD. If ∠A=65°, what is ∠C?",
+      "problemText": "In parallelogram ABCD, AB∥CD. If Angle A = 65°, what is Angle C?",
       "answers": [],
-      "solution": "At x = 0, y = -9, so the y-intercept is (0, -9).",
+      "solution": "Opposite angles of a parallelogram are congruent. Since Angle A = 65°, Angle C = 65°.",
       "imageRes": null
     },
     {
@@ -1570,15 +1576,22 @@
       "grade": 9,
       "difficulty": 1,
       "category": "linear-equations",
-      "title": "Slope through Origin",
+      "title": "Consecutive Angles in a Parallelogram",
       "questionType": "input",
-      "expectedAnswer": "∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A",
+      "expectedAnswer": "Angle A and Angle B",
       "acceptableAnswers": [
-        "∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A"
+        "Angle A and Angle B",
+        "Angle B and Angle C",
+        "Angle C and Angle D",
+        "Angle D and Angle A",
+        "A and B",
+        "B and C",
+        "C and D",
+        "D and A"
       ],
       "problemText": "Name one pair of consecutive angles in parallelogram ABCD.",
       "answers": [],
-      "solution": "m = (8 - 0) / (4 - 0) = 8 / 4 = 2.",
+      "solution": "Any adjacent pair is consecutive. For example, Angle A and Angle B are consecutive angles.",
       "imageRes": null
     },
     {
@@ -1586,7 +1599,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Quadrilateral Interior Angles Sum",
+      "title": "Square Angle Measure",
       "questionType": "input",
       "expectedAnswer": "90°",
       "acceptableAnswers": [
@@ -1594,7 +1607,7 @@
       ],
       "problemText": "In a square, all angles measure______.",
       "answers": [],
-      "solution": "(4 - 2) × 180° = 2 × 180° = 360°.",
+      "solution": "A square has four right angles, and each angle measures 90°.",
       "imageRes": null
     },
     {
@@ -1606,11 +1619,14 @@
       "questionType": "input",
       "expectedAnswer": "215+28",
       "acceptableAnswers": [
-        "215+28"
+        "215+28",
+        "2(15)+2(8)",
+        "2(15) + 2(8)",
+        "46"
       ],
       "problemText": "A rectangle has dimensions of 15 cm in length and 8 cm in width, which equation represents its perimeter?\n2(15)(8) or 215+2(8)",
       "answers": [],
-      "solution": "y = 5x + 0, so the line passes through the origin (0, 0).",
+      "solution": "The perimeter of a rectangle is 2(length) + 2(width). Therefore, P = 2(15) + 2(8) = 30 + 16 = 46 cm.",
       "imageRes": null
     },
     {
@@ -1622,7 +1638,11 @@
       "questionType": "input",
       "expectedAnswer": "Parallelogram (Rectangle, Rhombus, Square)",
       "acceptableAnswers": [
-        "Parallelogram (Rectangle, Rhombus, Square)"
+        "Parallelogram (Rectangle, Rhombus, Square)",
+        "Parallelogram",
+        "Rectangle",
+        "Rhombus",
+        "Square"
       ],
       "problemText": "If the diagonals of a quadrilateral bisect each other, what type of a quadrilateral must it be?",
       "answers": [],

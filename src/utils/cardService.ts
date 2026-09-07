@@ -71,7 +71,9 @@ function normalizeText(text: string): string {
   return text
     .toLowerCase()
     .trim()
+    .replace(/∠/g, 'angle ')
     .replace(/[₱$°'"`]/g, '')
+    .replace(/\s*=\s*/g, '=')
     .replace(/\s+/g, ' ')
     .replace(/,\s*/g, ' ')
     .trim();

@@ -8,6 +8,7 @@ interface MathTextProps {
 const mathToken = /([A-Za-z0-9.]+)\/([A-Za-z0-9.]+)|\^([A-Za-z0-9]+)/g;
 
 function renderLine(line: string): React.ReactNode[] {
+  line = line.replace(/∠/g, 'Angle ');
   const content: React.ReactNode[] = [];
   let lastIndex = 0;
   let match: RegExpExecArray | null;
