@@ -6,6 +6,7 @@ import { FeedbackView } from './components/FeedbackView';
 import { CatalogView } from './components/CatalogView';
 import { CardNotFoundView } from './components/CardNotFoundView';
 import { SpectralClouds } from './components/SpectralClouds';
+import { QuestionMusic } from './components/QuestionMusic';
 import { Card, AnswerOption } from './types/card';
 import {
   getCardById,
@@ -109,6 +110,10 @@ export const App: React.FC = () => {
         </>
       )}
       <div className="relative z-10 min-h-[100dvh]">
+      {activeCard && (currentScreen === 'problem' || currentScreen === 'feedback') && (
+        <QuestionMusic card={activeCard} />
+      )}
+
       {currentScreen === 'home' && (
         <HomeView
           onStartScan={() => setCurrentScreen('scanner')}

@@ -125,9 +125,12 @@
       "category": "polygons-angles",
       "title": "Regular Polygon Naming",
       "questionType": "input",
-      "expectedAnswer": "Regular Hexagon",
+      "expectedAnswer": "False",
       "acceptableAnswers": [
-        "Regular Hexagon"
+        "False",
+        "No",
+        "Incorrect",
+        "Not true"
       ],
       "problemText": "A polygon with six equal sides and six equal interior angles is a regular pentagon.",
       "answers": [],
