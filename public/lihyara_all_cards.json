@@ -7,27 +7,30 @@
       "category": "polygons-angles",
       "title": "Interior Angle Formula",
       "questionType": "multiple_choice",
-      "expectedAnswer": "n-2180°",
+      "expectedAnswer": "(n - 2) * 180°",
       "acceptableAnswers": [
-        "n-2180°"
+        "(n - 2) * 180°",
+        "(n-2)*180",
+        "(n-2)180",
+        "n minus 2 times 180"
       ],
       "problemText": "Which formula gives the sum of interior angles of a polygon with n sides?",
       "answers": [
         {
-          "text": "n×180°",
-          "isCorrect": false
-        },
-        {
-          "text": "n-290°",
-          "isCorrect": false
-        },
-        {
-          "text": "(n+2)180°",
-          "isCorrect": false
-        },
-        {
-          "text": "n-2180°",
+          "text": "(n - 2) × 180°",
           "isCorrect": true
+        },
+        {
+          "text": "(n - 2) × 90°",
+          "isCorrect": false
+        },
+        {
+          "text": "(n + 2) × 180°",
+          "isCorrect": false
+        },
+        {
+          "text": "n - 2 × 180°",
+          "isCorrect": false
         }
       ],
       "solution": "The sum of the interior angles of an n-sided polygon is given by S = (n - 2) × 180°.",
@@ -968,7 +971,7 @@
       ],
       "problemText": "To factor general trinomial x^2+bx+c, find two numbers whose product is c and whose sum is ___________.",
       "answers": [],
-      "solution": "(x + 4)(x - 4) = x² - 4² = x² - 16.",
+      "solution": "For x² + bx + c, choose two numbers whose product is c and whose sum is b, the coefficient of the middle term.",
       "imageRes": null
     },
     {
@@ -984,7 +987,7 @@
       ],
       "problemText": "Before cancelling common factors in a rational algebraic expression, you must first _______ both the numerator and denominator completely.",
       "answers": [],
-      "solution": "(x + 5)² = x² + 2(5)(x) + 5² = x² + 10x + 25.",
+      "solution": "Factor the numerator and denominator completely before cancelling common factors. Cancelling individual terms instead of factors can change the expression.",
       "imageRes": null
     },
     {
@@ -1000,7 +1003,7 @@
       ],
       "problemText": "Is the statement true or false: When multiplying simple monomials with the same base, you subtract their exponents.",
       "answers": [],
-      "solution": "Find numbers that multiply to 6 and add to 5: 2 and 3 => (x + 2)(x + 3).",
+      "solution": "When multiplying powers with the same base, add the exponents: x^m × x^n = x^(m+n). Subtracting exponents is used when dividing powers, not multiplying them.",
       "imageRes": null
     },
     {
@@ -1016,7 +1019,7 @@
       ],
       "problemText": "Make the statement true: To multiply rational algebraic expressions, you multiply the numerators together and multiply the (numerators/denominators) together.",
       "answers": [],
-      "solution": "x² - 49 = x² - 7² = (x - 7)(x + 7).",
+      "solution": "Multiply the numerators together and multiply the denominators together: (a/b)(c/d) = ac/bd.",
       "imageRes": null
     },
     {
@@ -1032,7 +1035,7 @@
       ],
       "problemText": "Replace the underlined phrase to make the statement right: The operation a/b÷c/d is equivalent to a/b divided by d/c.",
       "answers": [],
-      "solution": "Factor numerator: 3(x + 2) / 3 = x + 2.",
+      "solution": "Dividing by a fraction means multiplying by its reciprocal: a/b ÷ c/d = a/b × d/c.",
       "imageRes": null
     },
     {
@@ -1114,7 +1117,7 @@
           "isCorrect": true
         }
       ],
-      "solution": "Area = (2x + 3)² = (2x)² + 2(2x)(3) + 3² = 4x² + 12x + 9.",
+      "solution": "The middle term of a perfect-square trinomial may be positive or negative. It is ±2 times the product of the square roots of the first and last terms.",
       "imageRes": null
     },
     {
@@ -1130,7 +1133,7 @@
       ],
       "problemText": "Maria factored the polynomial x^2+7x+12. What pair of numbers should she need to consider?",
       "answers": [],
-      "solution": "All terms in numerator and denominator cancel: ((x - 2)(x + 3)) / ((x + 3)(x - 2)) = 1.",
+      "solution": "The factors of x² + 7x + 12 must multiply to 12 and add to 7. Those numbers are 3 and 4.",
       "imageRes": null
     },
     {
@@ -1146,7 +1149,7 @@
       ],
       "problemText": "What expression is equivalent to 12x/4?",
       "answers": [],
-      "solution": "(4x / 5) * (15 / 2x) = 60x / 10x = 6.",
+      "solution": "Simplify 12x ÷ 4 by dividing the coefficient 12 by 4: 12x/4 = 3x.",
       "imageRes": null
     },
     {
@@ -1162,7 +1165,7 @@
       ],
       "problemText": "Write an expression equivalent to x/5÷2/y?",
       "answers": [],
-      "solution": "Take half the middle coefficient squared: (8 / 2)² = 4² = 16.",
+      "solution": "Divide by a fraction by multiplying by its reciprocal: x/5 ÷ 2/y = x/5 × y/2 = xy/10.",
       "imageRes": null
     },
     {
@@ -1178,7 +1181,7 @@
       ],
       "problemText": "Is the statement true or false: The product of (x-4)(x+4) is equal to x^2-16 because the product of the sum and difference of two terms always results in a difference of two squares.",
       "answers": [],
-      "solution": "Factor out GCF 2: 2(x² + 5x + 6) = 2(x + 2)(x + 3).",
+      "solution": "(x - 4)(x + 4) is a difference of squares: x² - 4² = x² - 16, so the statement is true.",
       "imageRes": null
     },
     {
@@ -1194,7 +1197,7 @@
       ],
       "problemText": "Find the error in the given statement: Finding the dimensions of a rectangular garden given its area expression x^2-2x-15 requires finding two factors whose sum is 2 and whose product is -15.",
       "answers": [],
-      "solution": "Factor numerator as (x - 4)(x + 4). Cancel (x - 4): result is x + 4.",
+      "solution": "For x² - 2x - 15, the two factors must have product -15 and sum -2. The original statement used +2, so the sum should be -2.",
       "imageRes": null
     },
     {
@@ -1242,7 +1245,7 @@
       ],
       "problemText": "The side of a square stage is increased by 2 meters. If the original side length is x meters, what expression represents the new area of the stage?",
       "answers": [],
-      "solution": "Factor x² - 9 = (x - 3)(x + 3). Cancel common factors (x + 2) and (x + 3) to get x - 3.",
+      "solution": "The new side length is x + 2 meters. The area of the square is (x + 2)² square meters.",
       "imageRes": null
     },
     {
@@ -1258,7 +1261,7 @@
       ],
       "problemText": "Each student uses 3x/5 meter of string for a Science project. If 10 students join the activity, what is the total length of string needed?",
       "answers": [],
-      "solution": "Multiply by reciprocal: ((x - 2)(x + 2) / (x + 1)) * ((x + 1) / (x - 2)) = x + 2.",
+      "solution": "Ten students each use 3x/5 meters, so the total is 10 × 3x/5 = 6x meters.",
       "imageRes": null
     },
     {
@@ -1270,11 +1273,17 @@
       "questionType": "input",
       "expectedAnswer": "Yes, the solution is completely correct.",
       "acceptableAnswers": [
+        "Yes",
+        "yes",
+        "True",
+        "Correct",
+        "Yes, the solution is correct",
+        "Yes, the solution is completely correct",
         "Yes, the solution is completely correct."
       ],
       "problemText": "Did the student evaluate and simplify this expression correctly?\nMultiply: 3/x⋅x/6 Step 1: 3⋅x/x⋅6\nStep 2: 3/6=1/2",
       "answers": [],
-      "solution": "Factor out 3: 3(x² - 9) = 3(x - 3)(x + 3).",
+      "solution": "Yes, the solution is correct. Multiply 3/x by x/6: (3 × x) / (x × 6) = 3/6 = 1/2, assuming x is nonzero.",
       "imageRes": null
     },
     {
@@ -1290,7 +1299,7 @@
       ],
       "problemText": "What is the factored form of 9x^2-25?",
       "answers": [],
-      "solution": "FOIL: (2x)(3x) + (2x)(4) + (-3)(3x) + (-3)(4) = 6x² + 8x - 9x - 12 = 6x² - x - 12.",
+      "solution": "9x² - 25 is a difference of squares: (3x)² - 5² = (3x - 5)(3x + 5).",
       "imageRes": null
     },
     {
@@ -1306,7 +1315,7 @@
       ],
       "problemText": "The factored form of x^2+6x+9 is ______.",
       "answers": [],
-      "solution": "Factor: ((x + 3)(x + 4)) / ((x - 4)(x + 4)) = (x + 3) / (x - 4).",
+      "solution": "x² + 6x + 9 is a perfect-square trinomial: x² + 2(x)(3) + 3² = (x + 3)².",
       "imageRes": null
     },
     {
@@ -1322,7 +1331,7 @@
       ],
       "problemText": "What are the factors of x^2+7x+12?",
       "answers": [],
-      "solution": "Original = x²; New = (x + 3)(x - 3) = x² - 9. The new area is 9 m² less.",
+      "solution": "Find two numbers whose product is 12 and whose sum is 7: 3 and 4. Therefore x² + 7x + 12 = (x + 3)(x + 4).",
       "imageRes": null
     },
     {
@@ -1336,9 +1345,9 @@
       "acceptableAnswers": [
         "x-3"
       ],
-      "problemText": "What is the simplest form of x^2 9/x+3 ?",
+      "problemText": "What is the simplest form of (x^2 - 9)/(x + 3)?",
       "answers": [],
-      "solution": "Combine numerators over the common denominator: (2 + 3) / (x - 1) = 5 / (x - 1).",
+      "solution": "Factor x² - 9 as (x - 3)(x + 3). Cancelling x + 3 gives x - 3, with x ≠ -3.",
       "imageRes": null
     },
     {
@@ -1354,7 +1363,7 @@
       ],
       "problemText": "You are designing a square picture frame. The outer edge of the frame is a square with side length x cm. The inner opening (where the photo goes) is a square with side length y cm. Write the expression for the surface area of the border (the frame around the photo).",
       "answers": [],
-      "solution": "Factor x² + 9x + 20 into (x + 4)(x + 5).",
+      "solution": "The frame area is the outer square area minus the inner square area: x² - y² square centimeters.",
       "imageRes": null
     },
     {
@@ -1370,7 +1379,7 @@
       ],
       "problemText": "An architecture student is finding the side length of a square room with a floor area given by: Area=25x^2-30x+9.\nThe student claims the room’s side length is (5x+3) meters because square root of 25x^2 equals 5x and square root of 9 equals 3. Did the student use the correct sign in their binomial factor (5x+3)? If not, why?",
       "answers": [],
-      "solution": "Set denominator to zero: x - 7 = 0 => x = 7.",
+      "solution": "25x² - 30x + 9 = (5x - 3)². The negative middle term requires the minus sign, so (5x + 3) is incorrect.",
       "imageRes": null
     },
     {
@@ -1386,7 +1395,7 @@
       ],
       "problemText": "Two students, Leo and Maya, were asked to factor the simple trinomial x^2-2x-24. Their final answers are shown below:\nLeo's Answer: (x-6)(x+4)\nMaya's Answer: (x+6)(x-4)\nWhich student has the correct factored form?",
       "answers": [],
-      "solution": "Group: x²(x + 2) + 3(x + 2) = (x + 2)(x² + 3).",
+      "solution": "(x - 6)(x + 4) = x² - 2x - 24, so Leo's factorization is correct.",
       "imageRes": null
     },
     {
@@ -1425,8 +1434,8 @@
       "qrId": "g9e03",
       "grade": 9,
       "difficulty": 1,
-      "category": "linear-equations",
-      "title": "Slope of Horizontal Line",
+      "category": "quadrilaterals-geometry",
+      "title": "Opposite Side Length in Parallelogram",
       "questionType": "input",
       "expectedAnswer": "12 cm",
       "acceptableAnswers": [
@@ -1445,16 +1454,18 @@
       "qrId": "g9e04",
       "grade": 9,
       "difficulty": 1,
-      "category": "linear-equations",
-      "title": "Slope of Vertical Line",
+      "category": "quadrilaterals-geometry",
+      "title": "Adjacent Angle in Parallelogram",
       "questionType": "input",
       "expectedAnswer": "110°",
       "acceptableAnswers": [
-        "110°"
+        "110",
+        "110°",
+        "110 degrees"
       ],
       "problemText": "If m∠KLM=70°, what is the measure of its adjacent angle?",
       "answers": [],
-      "solution": "Vertical lines have a horizontal change (run) of 0; dividing by 0 makes the slope undefined.",
+      "solution": "Adjacent angles in a parallelogram are supplementary, so their measures add to 180°. The adjacent angle is 180° - 70° = 110°.",
       "imageRes": null
     },
     {
@@ -1462,7 +1473,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "linear-equations",
-      "title": "Slope-Intercept Form Form",
+      "title": "Opposite Angles in a Parallelogram",
       "questionType": "input",
       "expectedAnswer": "congruent",
       "acceptableAnswers": [
@@ -1470,7 +1481,7 @@
       ],
       "problemText": "Opposite angles of a parallelogram are ______________.",
       "answers": [],
-      "solution": "y = mx + b is the standard slope-intercept form.",
+      "solution": "Opposite angles of a parallelogram are congruent. They have equal measures.",
       "imageRes": null
     },
     {
@@ -1478,7 +1489,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Definition of Parallelogram",
+      "title": "Other Side of a Parallelogram",
       "questionType": "input",
       "expectedAnswer": "8cm",
       "acceptableAnswers": [
@@ -1486,7 +1497,7 @@
       ],
       "problemText": "If the perimeter of a parallelogram is 36 cm and one pair of side is 10cm, what is the length of the other side?",
       "answers": [],
-      "solution": "A parallelogram is defined by having two pairs of parallel opposite sides.",
+      "solution": "The perimeter is 2(10 + x) = 36. Therefore, 10 + x = 18 and x = 8 cm.",
       "imageRes": null
     },
     {
@@ -1494,7 +1505,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Consecutive Angles in Parallelogram",
+      "title": "Parallelogram Diagonal Length",
       "questionType": "input",
       "expectedAnswer": "16 cm",
       "acceptableAnswers": [
@@ -1502,7 +1513,7 @@
       ],
       "problemText": "If the diagonals of parallelogram ABCD intersect at E and AE=8cm, what is AC?",
       "answers": [],
-      "solution": "Consecutive angles lie between parallel lines and are supplementary (sum = 180°).",
+      "solution": "The diagonals of a parallelogram bisect each other. Since AE = 8 cm, EC = 8 cm and AC = 8 + 8 = 16 cm.",
       "imageRes": null
     },
     {
@@ -1510,7 +1521,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Opposite Angles in Parallelogram",
+      "title": "Square Definition",
       "questionType": "input",
       "expectedAnswer": "Square",
       "acceptableAnswers": [
@@ -1518,7 +1529,7 @@
       ],
       "problemText": "This refers to a quadrilateral with four right angles and four equal sides.",
       "answers": [],
-      "solution": "Opposite angles in every parallelogram are congruent (equal in measure).",
+      "solution": "A quadrilateral with four right angles and four equal sides is a square.",
       "imageRes": null
     },
     {
@@ -1526,7 +1537,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Equiangular Parallelogram",
+      "title": "Y-Intercept Meaning",
       "questionType": "input",
       "expectedAnswer": "y-intercept",
       "acceptableAnswers": [
@@ -1534,7 +1545,7 @@
       ],
       "problemText": "The graph of y=-2x+4 crosses the y-axis at (0,4), what does the point (0,4) represent?",
       "answers": [],
-      "solution": "An equiangular parallelogram has four 90° angles and is called a rectangle.",
+      "solution": "The point (0, 4) is where the graph crosses the y-axis, so it is the y-intercept.",
       "imageRes": null
     },
     {
@@ -1542,7 +1553,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Equilateral Parallelogram",
+      "title": "Parallel Lines Condition",
       "questionType": "input",
       "expectedAnswer": "Slopes are equal",
       "acceptableAnswers": [
@@ -1550,7 +1561,7 @@
       ],
       "problemText": "What condition guarantees that two lines are parallel?",
       "answers": [],
-      "solution": "An equilateral parallelogram is called a rhombus.",
+      "solution": "Two non-identical lines are parallel when they have equal slopes.",
       "imageRes": null
     },
     {
@@ -1558,7 +1569,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "linear-equations",
-      "title": "Y-Intercept of Line",
+      "title": "Opposite Angle Measure",
       "questionType": "input",
       "expectedAnswer": "65°",
       "acceptableAnswers": [
@@ -1574,18 +1585,22 @@
       "grade": 9,
       "difficulty": 1,
       "category": "linear-equations",
-      "title": "Slope through Origin",
+      "title": "Consecutive Angles in a Parallelogram",
       "questionType": "input",
       "expectedAnswer": "Angle A and Angle B",
       "acceptableAnswers": [
         "Angle A and Angle B",
         "Angle B and Angle C",
         "Angle C and Angle D",
-        "Angle D and Angle A"
+        "Angle D and Angle A",
+        "A and B",
+        "B and C",
+        "C and D",
+        "D and A"
       ],
       "problemText": "Name one pair of consecutive angles in parallelogram ABCD.",
       "answers": [],
-      "solution": "m = (8 - 0) / (4 - 0) = 8 / 4 = 2.",
+      "solution": "Any adjacent pair is consecutive. For example, Angle A and Angle B are consecutive angles.",
       "imageRes": null
     },
     {
@@ -1593,7 +1608,7 @@
       "grade": 9,
       "difficulty": 1,
       "category": "quadrilaterals-geometry",
-      "title": "Quadrilateral Interior Angles Sum",
+      "title": "Square Angle Measure",
       "questionType": "input",
       "expectedAnswer": "90°",
       "acceptableAnswers": [
@@ -1601,7 +1616,7 @@
       ],
       "problemText": "In a square, all angles measure______.",
       "answers": [],
-      "solution": "(4 - 2) × 180° = 2 × 180° = 360°.",
+      "solution": "A square has four right angles, and each angle measures 90°.",
       "imageRes": null
     },
     {
@@ -1613,11 +1628,14 @@
       "questionType": "input",
       "expectedAnswer": "215+28",
       "acceptableAnswers": [
-        "215+28"
+        "215+28",
+        "2(15)+2(8)",
+        "2(15) + 2(8)",
+        "46"
       ],
       "problemText": "A rectangle has dimensions of 15 cm in length and 8 cm in width, which equation represents its perimeter?\n2(15)(8) or 215+2(8)",
       "answers": [],
-      "solution": "y = 5x + 0, so the line passes through the origin (0, 0).",
+      "solution": "The perimeter of a rectangle is 2(length) + 2(width). Therefore, P = 2(15) + 2(8) = 30 + 16 = 46 cm.",
       "imageRes": null
     },
     {
@@ -1629,7 +1647,11 @@
       "questionType": "input",
       "expectedAnswer": "Parallelogram (Rectangle, Rhombus, Square)",
       "acceptableAnswers": [
-        "Parallelogram (Rectangle, Rhombus, Square)"
+        "Parallelogram (Rectangle, Rhombus, Square)",
+        "Parallelogram",
+        "Rectangle",
+        "Rhombus",
+        "Square"
       ],
       "problemText": "If the diagonals of a quadrilateral bisect each other, what type of a quadrilateral must it be?",
       "answers": [],
@@ -1983,7 +2005,7 @@
       "acceptableAnswers": [
         "45.50°"
       ],
-      "problemText": "Convert the angle measure 45°330' into decimal degree.",
+      "problemText": "Convert the angle measure 45°30' into decimal degree.",
       "answers": [],
       "solution": "30' = 30 / 60 = 0.50°. Therefore 45° 30' = 45.50°.",
       "imageRes": null
@@ -2123,13 +2145,16 @@
       "category": "trigonometry",
       "title": "Included Angle Identification",
       "questionType": "input",
-      "expectedAnswer": "∠C",
+      "expectedAnswer": "Angle C",
       "acceptableAnswers": [
+        "Angle C",
+        "angle c",
+        "C",
         "∠C"
       ],
-      "problemText": "",
+      "problemText": "In triangle ABC, the sides AC and BC meet at C. What is the included angle between AC and BC?",
       "answers": [],
-      "solution": "The angle formed between sides AC and BC sharing vertex C is ∠C.",
+      "solution": "The sides AC and BC share vertex C, so the included angle between them is Angle C.",
       "imageRes": null
     },
     {
@@ -2235,11 +2260,13 @@
       "category": "law-of-sines-cosines",
       "title": "Law of Cosines Formulation",
       "questionType": "input",
-      "expectedAnswer": "e^2=10^2+12^2-2(10)(12)cos60^2",
+      "expectedAnswer": "e^2=10^2+12^2-2(10)(12)cos(60°)",
       "acceptableAnswers": [
-        "e^2=10^2+12^2-2(10)(12)cos60^2"
+        "e^2=10^2+12^2-2(10)(12)cos(60°)",
+        "e² = 10² + 12² - 2(10)(12) cos(60°)",
+        "e^2 = 10^2 + 12^2 - 2(10)(12) cos 60"
       ],
-      "problemText": "In ∆DEF, side d=10cm, side f=12cm and ∠E=600. Which equation correctly determines side e?",
+      "problemText": "In triangle DEF, side d = 10 cm, side f = 12 cm, and Angle E = 60°. Which equation correctly determines side e?",
       "answers": [],
       "solution": "By Law of Cosines for side e opposite ∠E: e² = d² + f² - 2df cos(E) = 10² + 12² - 2(10)(12)cos(60°).",
       "imageRes": null
@@ -2299,9 +2326,11 @@
       "category": "law-of-sines-cosines",
       "title": "Angle Measure from Law of Cosines",
       "questionType": "input",
-      "expectedAnswer": "55°46'08''",
+      "expectedAnswer": "55°46'16''",
       "acceptableAnswers": [
-        "55°46'08''"
+        "55°46'16''",
+        "55° 46' 16''",
+        "55.7711°"
       ],
       "problemText": "What is m∠E in the equation 10^2=8^2+12^2-2(8)(12)cosE?",
       "answers": [],
@@ -2689,9 +2718,11 @@
       "category": "final-challenge",
       "title": "SAS Triangle Law",
       "questionType": "input",
-      "expectedAnswer": "Law of Sines",
+      "expectedAnswer": "Law of Cosines",
       "acceptableAnswers": [
-        "Law of Sines"
+        "Law of Cosines",
+        "cosines",
+        "the law of cosines"
       ],
       "problemText": "Which trigonometric law should be used first when given two sides and the included angle (SAS) of an oblique triangle?",
       "answers": [],

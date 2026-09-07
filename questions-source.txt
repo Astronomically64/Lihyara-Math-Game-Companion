@@ -2,11 +2,11 @@ GRADE 7 QUESTIONS
 EASY
 
 Which formula gives the sum of interior angles of a polygon with n sides?
-A. n×180°
-B. n-290°
-C. (n+2)180°
-D. n-2180°
-Answer: D. n-2180°
+A. (n - 2) × 180°
+B. (n - 2) × 90°
+C. (n + 2) × 180°
+D. n - 2 × 180°
+Answer: A. (n - 2) × 180°
 
 In [figure], ∠ABD and ∠CBD are supplementary angles. If m∠ABD=75, what is m∠CBD?
 Answer: 105°
@@ -264,7 +264,7 @@ Answer: (x+3)^2
 What are the factors of x^2+7x+12?
 Answer: (x+3)(x+4)
 
-What is the simplest form of x^2 9/x+3 ?
+What is the simplest form of (x^2 - 9)/(x + 3)?
 Answer: x-3
 
 You are designing a square picture frame. The outer edge of the frame is a square with side length x cm. The inner opening (where the photo goes) is a square with side length y cm. Write the expression for the surface area of the border (the frame around the photo).
@@ -405,7 +405,7 @@ Answer: Yes, because the perimeter of the square is only 24m.
 GRADE 10 QUESTIONS
 EASY
 
-Convert the angle measure 45°330' into decimal degree.
+Convert the angle measure 45°30' into decimal degree.
 Answer: 45.50°
 
 Which of the following degree, minute, and seconds is equal to the angle measure 12.08°?
@@ -455,8 +455,8 @@ Answer: 4.24 cm
 A boat travels from Pasacao toward a point offshore. The distance between two observation points is 25km. If the observed angles are 40° and 70°, what is the third angle of the triangle?
 Answer: 70°
 
-In ∆DEF, side d=10cm, side f=12cm and ∠E=600. Which equation correctly determines side e?
-Answer: e^2=10^2+12^2-2(10)(12)cos60^2
+In triangle DEF, side d=10cm, side f=12cm and Angle E=60°. Which equation correctly determines side e?
+Answer: e^2=10^2+12^2-2(10)(12)cos(60°)
 
 DIFFICULT
 
@@ -469,8 +469,8 @@ Answer: 12.49m
 A surveyor measures two sides of a triangular area as 20m and 30m and the included angle as 45°. What is the approximate third side?
 Answer: 21.25m
 
-What is m∠E in the equation 10^2=8^2+12^2-2(8)(12)cosE?
-Answer: 55°46'08''
+What is m Angle E in the equation 10^2=8^2+12^2-2(8)(12)cosE?
+Answer: 55°46'16''
 
 In ∆ABC, ∠A=45°, ∠B=75°, and side a=10cm. Using the law of sines, approximately how long is side b?
 Answer: 13.66cm
@@ -558,7 +558,7 @@ Answer: Court A
 Grade 10 FINAL CHALLENGES
 
 Which trigonometric law should be used first when given two sides and the included angle (SAS) of an oblique triangle?
-Answer: Law of Sines
+Answer: Law of Cosines
 
 The included angle of sides AC and BC in ∆ABC in [figure] is
 Answer: ∠C

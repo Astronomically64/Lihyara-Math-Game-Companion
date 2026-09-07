@@ -67,16 +67,80 @@ export function getTotalCardsCount(): number {
 // ----------------------------------------------------
 // Smart Input Answer Validation
 // ----------------------------------------------------
+const numberWords: Record<string, string> = {
+  zero: '0', one: '1', two: '2', three: '3', four: '4', five: '5',
+  six: '6', seven: '7', eight: '8', nine: '9', ten: '10',
+  eleven: '11', twelve: '12', thirteen: '13', fourteen: '14', fifteen: '15',
+  sixteen: '16', seventeen: '17', eighteen: '18', nineteen: '19', twenty: '20',
+  thirty: '30', forty: '40', fifty: '50', sixty: '60', seventy: '70',
+  eighty: '80', ninety: '90',
+};
+
 function normalizeText(text: string): string {
-  return text
+  let normalized = text
+    .normalize('NFKC')
     .toLowerCase()
-    .trim()
-    .replace(/∠/g, 'angle ')
-    .replace(/[₱$°'"`]/g, '')
+    .replace(/∠/g, ' angle ')
+    .replace(/[×✕]/g, '*')
+    .replace(/[÷]/g, '/')
+    .replace(/[−–—]/g, '-')
+    .replace(/[²]/g, '^2')
+    .replace(/[³]/g, '^3')
+    .replace(/[₱$€£]/g, '')
+    .replace(/[°'"`]/g, '')
+    .replace(/\b(answers?|response|the answer is|the correct answer is|it is)\s*:?/g, '')
     .replace(/\s*=\s*/g, '=')
+    .replace(/[^a-z0-9.+\-*/^=(),/ ]/g, ' ')
     .replace(/\s+/g, ' ')
-    .replace(/,\s*/g, ' ')
     .trim();
+
+  for (const [word, value] of Object.entries(numberWords)) {
+    normalized = normalized.replace(new RegExp(`\\b${word}\\b`, 'g'), value);
+  }
+
+  return normalized
+    .replace(/\b(an?|the)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function compactText(text: string): string {
+  return normalizeText(text).replace(/[\s,()]/g, '');
+}
+
+function answerCandidates(text: string): string[] {
+  const normalized = normalizeText(text);
+  const candidates = new Set([normalized, compactText(text)]);
+  const alternatives = normalized.split(/\s+or\s+/).map((part) => part.trim()).filter(Boolean);
+
+  alternatives.forEach((alternative) => {
+    candidates.add(alternative);
+    candidates.add(compactText(alternative));
+  });
+
+  if (/^(yes|true)\b/.test(normalized)) candidates.add('yes');
+  if (/^(no|false)\b/.test(normalized)) candidates.add('no');
+
+  const labeledChoice = normalized.match(/^(?:student|point|court|option|choice)\s+([a-d])\b/);
+  if (labeledChoice) candidates.add(labeledChoice[1]);
+
+  return [...candidates];
+}
+
+function parseNumericAnswer(text: string): number | null {
+  const normalized = normalizeText(text)
+    .replace(/\b(point|points|degrees?|degree|meters?|metres?|meter|m|cm|km|kg|g|hours?|hour|minutes?|minute|seconds?|second|papers?|pages?|liters?|litres?|liter|l| pesos?|php|ph)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (!/^-?(?:\d+(?:\.\d+)?|\.\d+)(?:\s*\/\s*-?\d+(?:\.\d+)?)?$/.test(normalized)) return null;
+  if (normalized.includes('/')) {
+    const [numerator, denominator] = normalized.split('/').map(Number);
+    return denominator ? numerator / denominator : null;
+  }
+
+  const value = Number(normalized);
+  return Number.isFinite(value) ? value : null;
 }
 
 /**
@@ -85,52 +149,19 @@ function normalizeText(text: string): string {
 export function validateInputAnswer(card: Card, userInput: string): boolean {
   if (!userInput || !userInput.trim()) return false;
 
-  const rawUser = userInput.trim().toLowerCase();
-  const normUser = normalizeText(userInput);
+  const expectedAnswers = [card.expectedAnswer, ...(card.acceptableAnswers || [])];
+  const userCandidates = answerCandidates(userInput);
+  const expectedCandidates = expectedAnswers.flatMap(answerCandidates);
 
-  // 1. Direct match on expectedAnswer
-  if (rawUser === card.expectedAnswer.toLowerCase().trim() || normUser === normalizeText(card.expectedAnswer)) {
-    return true;
-  }
+  if (userCandidates.some((candidate) => expectedCandidates.includes(candidate))) return true;
 
-  // 2. Check acceptableAnswers list
-  if (card.acceptableAnswers && card.acceptableAnswers.length > 0) {
-    for (const acceptable of card.acceptableAnswers) {
-      if (
-        rawUser === acceptable.toLowerCase().trim() ||
-        normUser === normalizeText(acceptable)
-      ) {
-        return true;
-      }
-    }
-  }
+  const expectedNumericValues = expectedAnswers
+    .map(parseNumericAnswer)
+    .filter((value): value is number => value !== null);
+  const userNumericValue = parseNumericAnswer(userInput);
 
-  // 3. Numeric & Fraction Equivalence (e.g. 1/2 vs 0.5 or 0.375 vs 3/8)
-  try {
-    const parseNumOrFrac = (str: string): number | null => {
-      const s = normalizeText(str).replace(/[a-z]/g, '').trim();
-      if (!s) return null;
-      if (s.includes('/')) {
-        const [n, d] = s.split('/').map(Number);
-        if (d && !isNaN(n) && !isNaN(d)) return n / d;
-      }
-      const val = parseFloat(s);
-      return isNaN(val) ? null : val;
-    };
-
-    const userVal = parseNumOrFrac(userInput);
-    const expectedVal = parseNumOrFrac(card.expectedAnswer);
-
-    if (userVal !== null && expectedVal !== null) {
-      if (Math.abs(userVal - expectedVal) < 0.001) {
-        return true;
-      }
-    }
-  } catch (e) {
-    // Ignore parse errors
-  }
-
-  return false;
+  return userNumericValue !== null
+    && expectedNumericValues.some((value) => Math.abs(userNumericValue - value) < 0.001);
 }
 
 /**
