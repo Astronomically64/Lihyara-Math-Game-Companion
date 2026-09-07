@@ -1428,13 +1428,17 @@
       "category": "linear-equations",
       "title": "Slope of Horizontal Line",
       "questionType": "input",
-      "expectedAnswer": "NM=12",
+      "expectedAnswer": "12 cm",
       "acceptableAnswers": [
-        "NM=12"
+        "12 cm",
+        "12cm",
+        "NM = 12 cm",
+        "NM=12cm",
+        "NM = 12"
       ],
       "problemText": "In parallelogram KLMN shown in [figure], if KL=12cm, what is the length of NM?",
       "answers": [],
-      "solution": "Horizontal lines have a vertical change (rise) of 0, so slope m = 0.",
+      "solution": "Opposite sides of a parallelogram are equal in length. Since KL = 12 cm, the opposite side NM = 12 cm.",
       "imageRes": "/images/gr9e3fig.png"
     },
     {
@@ -1560,9 +1564,9 @@
       "acceptableAnswers": [
         "65°"
       ],
-      "problemText": "In parallelogram ABCD, AB∥CD. If ∠A=65°, what is ∠C?",
+      "problemText": "In parallelogram ABCD, AB∥CD. If Angle A = 65°, what is Angle C?",
       "answers": [],
-      "solution": "At x = 0, y = -9, so the y-intercept is (0, -9).",
+      "solution": "Opposite angles of a parallelogram are congruent. Since Angle A = 65°, Angle C = 65°.",
       "imageRes": null
     },
     {
@@ -1572,9 +1576,12 @@
       "category": "linear-equations",
       "title": "Slope through Origin",
       "questionType": "input",
-      "expectedAnswer": "∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A",
+      "expectedAnswer": "Angle A and Angle B",
       "acceptableAnswers": [
-        "∠A and ∠B, ∠B and ∠C, ∠C and ∠D, ∠D and ∠A"
+        "Angle A and Angle B",
+        "Angle B and Angle C",
+        "Angle C and Angle D",
+        "Angle D and Angle A"
       ],
       "problemText": "Name one pair of consecutive angles in parallelogram ABCD.",
       "answers": [],
