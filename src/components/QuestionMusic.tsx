@@ -1,21 +1,47 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Volume2, VolumeX } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
 import { Card } from '../types/card';
-import { getQuestionMusic } from '../utils/questionMusic';
 
-const MUSIC_ENABLED_KEY = 'lihyara-question-music-enabled';
+const TRACKS = {
+  ocean: { name: 'Ocean Waves', url: '/audio/ocean.ogg' },
+  forest: { name: 'Forest Birds', url: '/audio/forest.ogg' },
+  lava: { name: 'Lava Flow', url: '/audio/lava.ogg' },
+  windmill: { name: 'Windmill Breeze', url: '/audio/windmill.ogg' },
+  final: { name: 'Final Challenge Theme', url: '/audio/final.ogg' },
+};
 
 interface QuestionMusicProps {
   card: Card;
 }
 
 export const QuestionMusic: React.FC<QuestionMusicProps> = ({ card }) => {
-  const track = getQuestionMusic(card);
+  const track = React.useMemo(() => {
+    const qrId = card.qrId?.toLowerCase() || '';
+
+    // 1. Check for Final Challenge ('f' in qrId or category check)
+    if (qrId.includes('f') || card.category?.toLowerCase() === 'final-challenge') {
+      return TRACKS.final;
+    }
+
+    // 2. Extract grade number: checks regex for g7, g8, g9, g10 patterns first, falls back to card.grade
+    const match = qrId.match(/^g(7|8|9|10)[eadfp]\d+$/);
+    const gradeNum = match ? parseInt(match[1], 10) : card.grade;
+
+    // 3. Map grade level (including portal challenges) to the corresponding theme sound
+    switch (gradeNum) {
+      case 7:
+        return TRACKS.ocean;
+      case 8:
+        return TRACKS.forest;
+      case 9:
+        return TRACKS.lava;
+      case 10:
+        return TRACKS.windmill;
+      default:
+        return TRACKS.windmill;
+    }
+  }, [card]);
+
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [enabled, setEnabled] = useState(() => {
-    if (typeof window === 'undefined') return true;
-    return window.localStorage.getItem(MUSIC_ENABLED_KEY) !== 'false';
-  });
 
   useEffect(() => {
     const audio = new Audio(track.url);
@@ -23,8 +49,10 @@ export const QuestionMusic: React.FC<QuestionMusicProps> = ({ card }) => {
     audio.volume = 0.2;
     audioRef.current = audio;
 
-    if (enabled) void audio.play().catch(() => undefined);
+    // Trigger automatic playback on mount
+    void audio.play().catch(() => undefined);
 
+    // Stop and clean up resources on unmount
     return () => {
       audio.pause();
       audio.removeAttribute('src');
@@ -33,37 +61,6 @@ export const QuestionMusic: React.FC<QuestionMusicProps> = ({ card }) => {
     };
   }, [track.url]);
 
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    if (enabled) void audio.play().catch(() => undefined);
-    else audio.pause();
-
-    window.localStorage.setItem(MUSIC_ENABLED_KEY, String(enabled));
-  }, [enabled]);
-
-  return (
-    <div className="fixed right-4 top-4 z-50 flex items-center gap-1.5">
-      <button
-        type="button"
-        onClick={() => setEnabled((isEnabled) => !isEnabled)}
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-textOnDark backdrop-blur-md transition-all hover:bg-white/20 active:scale-95"
-        aria-label={enabled ? `Mute ${track.name}` : `Play ${track.name}`}
-        title={`${track.name} - ${track.license}`}
-      >
-        {enabled ? <Volume2 className="h-5 w-5" /> : <VolumeX className="h-5 w-5" />}
-      </button>
-      <a
-        href={track.sourceUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="flex h-8 w-8 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-white"
-        aria-label={`Open source for ${track.name}`}
-        title={`Source: ${track.name}`}
-      >
-        <ExternalLink className="h-4 w-4" />
-      </a>
-    </div>
-  );
+  // Headless audio component rendering no UI controls
+  return null;
 };
